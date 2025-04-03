@@ -381,7 +381,7 @@ function Navbar(props) {
                   )}
                 </React.Fragment>
               ))}
-              <Button
+              {/* <Button
                 onClick={handleSignIn}
                 endIcon={<LoginOutlined />}
                 sx={{
@@ -392,7 +392,7 @@ function Navbar(props) {
                 }}
               >
                 {t("registerNow")}
-              </Button>
+              </Button> */}
             </Box>
 
             {/* <Typography
