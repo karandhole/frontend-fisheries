@@ -41,17 +41,17 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 const drawerWidth = 240;
 
 const departments = [
-  { name: "department1", route: "/" },
-  { name: "department2", route: "/" },
-  { name: "department3", route: "/" },
-  { name: "department4", route: "/" },
-  { name: "department5", route: "/" },
-  { name: "department6", route: "/" },
-  { name: "department7", route: "/" },
-  { name: "department8", route: "/" },
-  { name: "department9", route: "/" },
-  { name: "department10", route: "/" },
-  { name: "department11", route: "/" },
+  // { name: "department1", route: "/" },
+  // { name: "department2", route: "/" },
+  // { name: "department3", route: "/" },
+  // { name: "department4", route: "/" },
+  // { name: "department5", route: "/" },
+  // { name: "department6", route: "/" },
+  // { name: "department7", route: "/" },
+  // { name: "department8", route: "/" },
+  // { name: "department9", route: "/" },
+  // { name: "department10", route: "/" },
+  // { name: "department11", route: "/" },
 ];
 
 function Navbar(props) {
