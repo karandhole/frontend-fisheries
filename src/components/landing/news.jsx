@@ -96,7 +96,7 @@ const News = () => {
         <Grid item xs={12} md={4}>
           <Box
             sx={{
-              backgroundColor: '#f7931e',
+              backgroundColor: '#393185',
               padding: '20px',
               display: 'flex',
               flexDirection: 'column',
@@ -110,7 +110,7 @@ const News = () => {
             <Typography variant="h3" sx={{ color: '#fff', fontWeight: 'bold', mb: 4 }}>
               {t(translations.leftSection.subheading)} {/* Translated subheading */}
             </Typography>
-            <Button LinkComponent={Link} to="/blog" variant="contained" sx={{fontSize:13,color:'white',backgroundColor:'#800080','&:hover':{backgroundColor:'#9b009b'}}}>
+            <Button LinkComponent={Link} to="/blog" variant="contained" sx={{fontSize:13,color:'white',backgroundColor:'#9f79f7','&:hover':{backgroundColor:'#68578f'}}}>
               {t(translations.leftSection.buttonText)} {/* Translated button text */}
             </Button>
           </Box>
