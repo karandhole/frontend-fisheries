@@ -189,7 +189,7 @@ const ImageCarousel = () => {
               width: "12px",
               height: "12px",
               borderRadius: "50%",
-              backgroundColor: activeIndex === index ? "#f50057" : "#fff", // Active dot is pink
+              backgroundColor: activeIndex === index ? "#4287f5" : "#fff", // Active dot is pink
               margin: "0 8px",
               cursor: "pointer",
               transition: "background-color 0.3s ease",
