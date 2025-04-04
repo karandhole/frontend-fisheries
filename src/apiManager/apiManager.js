@@ -1,8 +1,8 @@
 import axios from "axios";
 import PATHS from "./apiEndPoints";
 
-const BASE_URL = "http://localhost:5000";
-// const BASE_URL = "https://api.mfdcfisheriesmumbai.co.in/";
+// const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://api.mfdcfisheriesmumbai.co.in/";
 
 const getHeaders = () => {
   const authToken = sessionStorage.getItem("@authToken");
@@ -13,6 +13,10 @@ const getHeaders = () => {
   };
   return headers;
 };
+
+
+
+
 
 class ApiManager {
   static adminLogin = async (data) => {
