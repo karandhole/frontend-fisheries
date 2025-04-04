@@ -34,7 +34,7 @@ const Landing = () => {
        {/* <Extented /> */}
        {/* <InfoSection/>
        <Campaigns/> */}
-       <Services/>
+       {/* <Services/> */}
       
         {/* <Slider/> */}
         {/* <Rule /> */}
