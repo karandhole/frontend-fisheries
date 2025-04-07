@@ -8,32 +8,32 @@ const DirectorsPage = () => {
 
   const directors = [
     { 
-        name:'person1Name',
-        designation:'person1Designation',
+        name:'person1Name1',
+        designation:'person1Designation1',
         image: '/path-to-image2.jpg' 
     },
     { 
-        name:'person2Name',
-        designation:'person2Designation',
+        name:'person2Name1',
+        designation:'person2Designation1',
         image: '/path-to-image4.jpg' 
     },
     { 
-        name:'person3Name',
-        designation:'person3Designation',
+        name:'person3Name1',
+        designation:'person3Designation1',
         image: '/path-to-image3.jpg' 
     },
     { 
-        name:'person4Name',
-        designation:'person4Designation',
+        name:'person4Name1',
+        designation:'person4Designation1',
         image: '/path-to-image1.jpg' 
     },
 ];
 
   return (
-    <Box sx={{ padding: '10px', backgroundImage:`url(${bgImage})`, backgroundPosition:'center',minHeight: '100vh', alignContent:'center', position: 'relative' }}>
+    <Box sx={{ padding: '10px', backgroundImage:`url(${bgImage})`, backgroundPosition:'center',minHeight: '80vh', alignContent:'center', position: 'relative' }}>
       {/* Heading Section */}
       <Box sx={{ textAlign: 'center', mb: 5 }}>
-    <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 2, color:'white' }}>
+    <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color:'white' }}>
           {t('peopleData')}
     </Typography>
       </Box>
@@ -48,7 +48,7 @@ const DirectorsPage = () => {
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
                 transition: '0.3s',
                 '&:hover': { boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)' },
-                minHeight: '350px',
+                minHeight: '300px',
               }}
             >
               <CardContent>

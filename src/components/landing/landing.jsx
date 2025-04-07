@@ -5,7 +5,7 @@ import Notice from './notice'
 import Duration from './duration'
 import Prizes from './prizes'
 import CompetenceCard from '../competenceCard'
-import DivyangAbout from './divyangAbout'
+import DivyangAbout from './FisheriesAbout'
 import Navbar from '../navbar'
 import Testimonials from './testimonials'
 import Rule from './rule'
@@ -21,6 +21,7 @@ import DirectorsPage from './director'
 import News from './news'
 import Update from './update'
 import QuickLinks from './quicklinks'
+import FisheriesAbout from './FisheriesAbout'
 
 const Landing = () => {
   return (
@@ -28,11 +29,12 @@ const Landing = () => {
       {/* <MyCarousel/> */}
         <ImageCarousel/>
         {/* <Update/> */}
-        {/* <WhoWeAre/>
-        <DirectorsPage/> */}
+        {/* <WhoWeAre/> */}
+        <DirectorsPage/>
+
         <QuickLinks/>
-       {/* <Extented /> */}
-       {/* <InfoSection/>
+       {/* <Extented />
+       <InfoSection/>
        <Campaigns/> */}
        {/* <Services/> */}
       
@@ -40,12 +42,13 @@ const Landing = () => {
         {/* <Rule /> */}
         {/* <Notice/> */}
         {/* <Duration/> */}
-        <News />
+        
         {/* <Support/> */}
         {/* <Prizes /> */}
         {/* <CompetenceCard/> */}
         {/* <Testimonials/> */}
-        {/* <DivyangAbout/> */}
+        <FisheriesAbout/>
+        <News />
         {/* <Jobs/> */}
    </Navbar>
   )

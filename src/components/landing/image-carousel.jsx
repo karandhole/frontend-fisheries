@@ -13,8 +13,8 @@ import divyangBanner1 from "../../assets/Deparments/pcmcimg.jpg";
 import divyangBanner2 from "../../assets/Deparments/pcmcimg2.jpg";
 import matWinner from "../../assets/matWinner2.jpeg";
 import purpleBanner from "../../assets/purpleHD.jpeg"
-import slider1 from "../../assets/fish-sl5.jpg";
-import slider2 from "../../assets/fish-sl6.jpg"
+import slider1 from "../../assets/bg1.jpg";
+import slider2 from "../../assets/bg2.jpg"
 import { useTranslation } from "react-i18next";
 
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";

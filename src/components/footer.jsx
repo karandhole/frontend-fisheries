@@ -166,9 +166,9 @@ const Footer = () => {
                   alignItems: "center",
                 }}
               >
-                <CallIcon fontSize="large" sx={{ paddingRight: "10px" }} /> 1800 120 8040 (TollFree)
+                <CallIcon fontSize="large" sx={{ paddingRight: "10px" }} /> 022-35114917 (TollFree)
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="body1"
                 sx={{
                   marginTop: "10px",
@@ -178,7 +178,7 @@ const Footer = () => {
               >
                 <PhoneAndroid fontSize="large" sx={{ paddingRight: "10px" }} />{" "}
                 +91888888888{" "}
-              </Typography>
+              </Typography> */}
               
               <Typography
                 variant="body1"
@@ -193,7 +193,22 @@ const Footer = () => {
                   fontSize="large"
                   sx={{ paddingRight: "10px" }}
                 />
-                mfdc.gov.in
+                mfdc73@gmail.com    
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  marginTop: "10px",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                {" "}
+                <MailOutlineIcon
+                  fontSize="large"
+                  sx={{ paddingRight: "10px" }}
+                />
+              mfdc@rediffmail.com
               </Typography>
               <Typography
                 variant="body1"

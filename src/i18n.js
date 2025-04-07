@@ -14,8 +14,7 @@ i18next.use(initReactI18next).init({
         contactUs: "Contact Us",
         tender: "Tender",
         privacyPolicy: "Privacy Policy",
-        mfdcAddress:
-          "Corporate office in Mumbai, Maharashtra",
+       
         pcmcName: "Pimpri Chinchwad Muncipal Corporation",
         connectWithUs: "Connect With Us",
         callNow: "Call Now",
@@ -706,6 +705,22 @@ i18next.use(initReactI18next).init({
         physioFeaturesDescription5:
           "We provide exclusive Fitness Training with equipped Machines like- Treadmill, Elliptical Trainer, Assisted Abdominal Workout Machine, 8 Multistation Outdoor Gym, Hydrotherapy (In Process)",
         floorPhysio: "Second Floor",
+
+
+
+
+
+        //  FISHERIES WEBSITE ***********************************************************************************************
+
+
+
+
+
+        fisheriesFoundation:"Maharashtra Fisheries Development Corporation Limited, Mumbai",
+
+        fisheriesaboutDescription:"To promote the development and growth of deep-sea fishing, the Maharashtra Fisheries Development Corporation was established in 1973. According to the government resolution, mechanized fishing has become the modern method compared to traditional small boat fishing, but the increasing number of mechanized boats poses a risk of overexploitation of fishing areas. Hence, fishing in deep-sea areas with depths greater than 30 fathoms is necessary. While private entrepreneurs are engaged in deep-sea fishing, the government lacked an official body to handle such operations. Therefore, to protect the interests of traditional fishermen, the government approved the establishment of the Maharashtra Fisheries Development Corporation Limited. This corporation is responsible for deep-sea surveys, fish landing, marketing, and export, as well as organizing, coordinating, and supervising fisheries development initiatives. It also works to develop regions with high fisheries potential to ensure that fishermen benefit directly. In recent years, the corporation has undergone significant changes, taking up projects like building fishing harbors and fish landing centers along the coast, managing fisheries in large reservoirs, and promoting cage fish farming to encourage entrepreneurship among those interested in aquaculture.",
+        mfdcAddress: "3rd Floor, N.K.M. International House, Babubhai M. Chinai Road, Mumbai - 400 020",
+      
       },
     },
     mt: {
@@ -715,8 +730,7 @@ i18next.use(initReactI18next).init({
         contactUs: "संपर्क करा",
         tender: "व्यवसाय निविदा",
         privacyPolicy: "गोपनीयता धोरण",
-        mfdcAddress:
-          "कॉर्पोरेट ऑफिस मुंबई, महाराष्ट्र",
+        
         pcmcName: "पिंपरी चिंचवड महानगर पालिका",
         connectWithUs: "आमच्याशी संपर्क साधा",
         callNow: "आता कॉल करा",
@@ -1405,6 +1419,24 @@ i18next.use(initReactI18next).init({
         physioFeaturesDescription5:
           "आम्ही ट्रेडमिल, एलिप्टिकल ट्रेनर, सहाय्यक पोटाच्या व्यायामाची यंत्रे, ८ मल्टिस्टेशन बाह्य व्यायामशाळा यासारख्या यंत्रसामग्रीसह खास फिटनेस प्रशिक्षण देतो, हायड्रोथेरपी (प्रक्रियेत आहे)",
         floorPhysio: "दुसरा मजला",
+
+
+
+
+
+
+
+        /// FISHERIES WEBSITE ************************************************************************************************************
+
+
+        
+
+        fisheriesFoundation:"महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित, मुंबई",
+        fisheriesaboutDescription:"खोल समुद्रातील मत्स्यव्यवसायाचा विकास व्हावा आणि मत्स्यव्यवसायात वृद्धी व्हावी यासाठी सन १९७३ मध्ये महाराष्ट्र मत्स्योद्योग विकास महामंडळाची स्थापना करण्यात आली. शासन निर्णयाच्या प्रस्तावनेनुसार, यांत्रिक मासेमारी ही आधुनिक पद्धत म्हणून स्वीकारली गेली असून यांत्रिक नौकांच्या वाढत्या संख्येमुळे मासेमारी क्षेत्रांचे अतिशोषण होण्याचा धोका आहे. त्यामुळे ३० फॅदमपेक्षा जास्त खोली असलेल्या खोल समुद्रात मासेमारी करणे गरजेचे ठरते. सध्या खाजगी उद्योजकांकडून खोल समुद्रात मासेमारी केली जात असली, तरी शासनाकडे अशा प्रकारचे कार्य हाताळणारा कोणताही अंगीकृत उपक्रम नसल्याने, पारंपरिक मच्छीमारांच्या हितासाठी शासनाने ‘महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित’ या नावाने महामंडळ स्थापन केले. हे महामंडळ खोल समुद्राचे सर्वेक्षण, माशांचे लँडिंग, विपणन आणि निर्यात यासह विविध मत्स्यविकास उपक्रमांचे संघटन, समन्वय व पर्यवेक्षण करते. मत्स्यविकासासाठी सक्षम असलेल्या भागांचा विकास करून मच्छीमारांना त्याचा थेट लाभ मिळावा, यासाठीही महामंडळ प्रयत्नशील आहे. गेल्या काही वर्षांत महामंडळाच्या कारभारात आमूलाग्र बदल घडले असून मासेमारी बंदरे, फिश लँडिंग सेंटर उभारण्यासह जलाशयांचे मासेमारी व्यवस्थापन व पिंजरा पद्धतीने मत्स्यसंवर्धनाचे प्रकल्प राबवले जात आहेत. त्यामुळे मत्स्यशेतीसाठी इच्छुक व्यक्तींमध्ये उद्योजकता निर्माण होण्यास हातभार लागतो आहे.",
+        mfdcAddress:"3 रा मजला, एन.के.एम. इंटरनॅशनल हाऊस, बाबुभाई एम. चिनॉय मार्ग, मुंबई- 400 020",  
+      
+      
+      
       },
     },
   },

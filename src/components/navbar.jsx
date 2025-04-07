@@ -429,7 +429,7 @@ function Navbar(props) {
         <Fab
           size="medium"
           sx={{
-            backgroundColor: "#800080",
+            backgroundColor: "#4682e3",
             "&:hover": { backgroundColor: "#9b009b" },
           }}
         >
