@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Box, Grid, Typography, Button, ToggleButton, ToggleButtonGroup, CircularProgress, Skeleton } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import bgImage from '../../assets/fish-sl2.jpg'
-
-
+import blog1 from '../../assets/blog2.jpeg'
+import blog2 from '../../assets/blog1.jpeg'
 import { Link } from 'react-router-dom';
 import ApiManager from '../../apiManager/apiManager';
 import { formatDate } from '../../utiils/dateFormatter';

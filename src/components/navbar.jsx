@@ -13,8 +13,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
 import {
   CalendarMonthOutlined,
   KeyboardArrowUp,
@@ -26,8 +24,8 @@ import { useTranslation } from "react-i18next";
 import Footer from "./footer";
 import { getFormatDate } from "../utiils/dateFormatter";
 
-import logoEN from "../assets/logo1.png";
-import logoMAR from "../assets/logo1.png";
+import logoEN from "../assets/logo.png";
+import logoMAR from "../assets/logo.png";
 
 import {
   Container,
@@ -43,12 +41,17 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 const drawerWidth = 240;
 
 const departments = [
-  { name: "department1", route: "/" },
-  { name: "department2", route: "/" },
-  { name: "department3", route: "/" },
-  { name: "department4", route: "/" },
-  { name: "department5", route: "/" },
-
+  // { name: "department1", route: "/" },
+  // { name: "department2", route: "/" },
+  // { name: "department3", route: "/" },
+  // { name: "department4", route: "/" },
+  // { name: "department5", route: "/" },
+  // { name: "department6", route: "/" },
+  // { name: "department7", route: "/" },
+  // { name: "department8", route: "/" },
+  // { name: "department9", route: "/" },
+  // { name: "department10", route: "/" },
+  // { name: "department11", route: "/" },
 ];
 
 function Navbar(props) {
@@ -328,14 +331,14 @@ function Navbar(props) {
                 transform: "translate(-50%, -50%)",
               }}
             >
-              <Typography component="img" src={logo} alt="Logo" height={50} />
+              <Typography component="img" src={logo} alt="Logo" height={55} />
             </Typography>
             <Typography
               variant="h6"
               component="div"
               sx={{ display: { xs: "none", sm: "block" }, pt: 1 }}
             >
-              <Typography component="img" src={logo} alt="Logo" height={80} />
+              <Typography component="img" src={logo} alt="Logo" height={70} />
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItem.map(({ route, page }, index) => (
@@ -355,8 +358,7 @@ function Navbar(props) {
                         aria-haspopup="true"
                         aria-expanded={open ? "true" : undefined}
                         onClick={handleDepartmentClick}
-                        sx={{ fontSize: pxToRem(15), mr: 1 }}
-                        endIcon={<KeyboardArrowDownIcon />}
+                        sx={{ fontSize: pxToRem(15), mr: 2 }}
                       >
                         {t("departments")}
                       </Button>
@@ -379,7 +381,7 @@ function Navbar(props) {
                   )}
                 </React.Fragment>
               ))}
-              <Button
+              {/* <Button
                 onClick={handleSignIn}
                 endIcon={<LoginOutlined />}
                 sx={{
@@ -390,11 +392,7 @@ function Navbar(props) {
                 }}
               >
                 {t("registerNow")}
-              </Button>
-
-
-      
-              
+              </Button> */}
             </Box>
 
             {/* <Typography

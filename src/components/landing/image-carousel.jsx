@@ -8,6 +8,11 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import engWinner from "../../assets/engWinner.png";
+import divyangBanner1 from "../../assets/Deparments/pcmcimg.jpg";
+import divyangBanner2 from "../../assets/Deparments/pcmcimg2.jpg";
+import matWinner from "../../assets/matWinner2.jpeg";
+import purpleBanner from "../../assets/purpleHD.jpeg"
 import slider1 from "../../assets/bg1.jpg";
 import slider2 from "../../assets/bg2.jpg"
 import { useTranslation } from "react-i18next";
@@ -72,7 +77,12 @@ const ImageCarousel = () => {
     height: "auto",
   }}
 >
- 
+  {/* <a
+    href="https://purplejallosh.pcmcdivyangbhavan.org/" // Replace with your desired URL
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "none", display: "block", width: "100%", height: "100%" }}
+  > */}
     <img
       src={image}
       alt={`Slider ${index + 1}`}

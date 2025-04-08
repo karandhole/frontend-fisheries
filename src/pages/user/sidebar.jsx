@@ -17,7 +17,7 @@ import ListItemText from '@mui/material/ListItemText';
 import  Collapse  from '@mui/material/Collapse';
 import { Home,ChevronRight,Logout, EmojiEventsOutlined,  Settings, HomeOutlined, AccountCircle, AccountCircleOutlined, MilitaryTechOutlined, AssignmentTurnedInOutlined, FileUploadOutlined, PersonOutline,} from '@mui/icons-material';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo1.png'
 import { Avatar, Menu, MenuItem, Tooltip } from '@mui/material';
 
 const drawerWidth = 220;
