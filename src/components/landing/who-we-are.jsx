@@ -6,7 +6,7 @@ import {
   Button
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import bgImage from "../../assets/WhoWeAre.jpeg"
+import bgImage from "../../assets/WhoWeAre.jpg"
 
 const WhoWeAre = () => {
   const { t } = useTranslation();
@@ -97,7 +97,7 @@ const WhoWeAre = () => {
           </Typography>
           <Button
             variant="contained"
-			sx={{fontSize:15,color:'white',backgroundColor:'#800080','&:hover':{backgroundColor:'#9b009b'}}}
+			sx={{fontSize:15,color:'white',backgroundColor:'#34a8eb','&:hover':{backgroundColor:'#66bced'}}}
           >
             {t(content.buttonText)}
           </Button>

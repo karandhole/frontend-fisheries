@@ -33,7 +33,7 @@ const DirectorsPage = () => {
     <Box sx={{ padding: '10px', backgroundImage:`url(${bgImage})`, backgroundPosition:'center',minHeight: '80vh', alignContent:'center', position: 'relative' }}>
       {/* Heading Section */}
       <Box sx={{ textAlign: 'center', mb: 5 }}>
-    <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color:'white' }}>
+    <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color:'white' }}>
           {t('peopleData')}
     </Typography>
       </Box>
