@@ -15,7 +15,7 @@ import VenderLogin from "../pages/vender/login"
 import Blog from "../pages/blog"
 import Gallery from "../pages/gallery"
 import AboutUs from "../pages/about-us"
-import Art from "../pages/Departments/Art"
+import Art from "../pages/Departments/mainoffice"
 import Counselling from "../pages/Departments/Counselling"
 import Dance from "../pages/Departments/Dance"
 import Occupational from "../pages/Departments/Occupational"
@@ -26,11 +26,12 @@ import Vocational from "../pages/Departments/Vocational"
 import Physiotherapy from "../pages/Departments/Physiotherapy"
 import Psychology from "../pages/Departments/Psychology"
 import Audio from "../pages/Departments/Audio"
+import Mainoffice from "../pages/Departments/mainoffice"
 
 export const publicRoutes = [
     {
-        path:'/art',
-        element:<Navbar><Art/></Navbar>
+        path:'/mainoffice',
+        element:<Navbar><Mainoffice/></Navbar>
     },
     {
         path:'/dance',
