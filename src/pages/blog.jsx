@@ -90,7 +90,7 @@ const Blog = () => {
       {/* Blog Section Header */}
       <Box
         sx={{
-          backgroundImage: `url("src/assets/image11.jpeg")`, 
+          backgroundImage: `url("src/assets/d15.jpg")`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: "auto",
