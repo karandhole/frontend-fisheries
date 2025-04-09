@@ -194,28 +194,7 @@ i18next.use(initReactI18next).init({
         lookingForKalaShikshak:
           "We are looking for Kala Shikshak, kindly get details and connect with us",
         carrerResult: "Recruited Staff List",
-        title: "Who We Are",
-        description:
-          "We've Provided Education & Training to More Than 100+ Disabled People",
-        buttonText: "Know More",
-        feature1Title: "AR VR ROOM",
-        feature1Description:
-          "We provide the best latest technology of equipment and our staff is available always.",
-        feature2Title: "ALL THERAPIES",
-        feature2Description:
-          "We have the latest equipment in our therapy centers.",
-        feature3Title: "DIGITAL LIBRARY",
-        feature3Description:
-          "We have advanced digital libraries for learning purposes.",
-        feature4Title: "COMPUTER LAB",
-        feature4Description:
-          "We have an advanced 'Computer Lab' for learning and service purposes.",
-        feature5Title: "ASSISTIVE DEVICE ROOMS",
-        feature5Description:
-          "We have maintained assistive device rooms in a well-organized manner.",
-        feature6Title: "VOACATIONAL SKILLS CLASSROOM",
-        feature6Description:
-          "Empowering Abilities Through Vocational Skills Education.",
+
         kalaShikshak: "Art Teacher",
         lookingForKalaShikshak:
           "We have vacancies for art teachers, please find more information and contact us.",
@@ -261,8 +240,7 @@ i18next.use(initReactI18next).init({
         service4Value: "50+",
 
 
-        quicklinesheading:"Quick Links",
-        quickLink1Title:"PMMSY",
+      
         person1Name: "Shekhar Singh",
         person1Designation: "Chairman",
 
@@ -372,185 +350,185 @@ i18next.use(initReactI18next).init({
         abMailId11: "",
 
         // deparments
-        department1: "Vocational Counselor Department",
-        roleVocational: "Role of the Vocational Counselor",
-        role1: "Identifying individuals’ abilities and interests",
-        role2: "Providing guidance on vocational education and training.",
-        role3: "Assisting in finding employment opportunities",
-        role4: "Ensuring adaptability and accessibility at the workplace",
-        role5:
-          "Supporting individuals in enhancing independence and empowerment.",
-        responsibilityVocational:
-          "Responsibilities of the Vocational Counselor",
-        responsibility1: "Recognizing individuals abilities and interests",
-        responsibility2:
-          "Developing plans for vocational education and training",
-        responsibility3: "Preparing individuals for employment opportunities",
-        responsibility4:
-          "Ensuring adaptability and accessibility in the workplace",
-        responsibility5:
-          "Providing mental and emotional support to individuals",
-        benefitsVocational: "Benefits of a Vocational Counselor",
-        benefits1: "Access to vocational education and training",
-        benefits2: "Employment opportunities",
-        benefits3: "Workplace adaptability and accessibility",
-        benefits4: "Enhanced independence and empowerment",
-        benefits5: "Mental and emotional support.",
-        qualitiesVocational: "Qualities of a Vocational Counselor",
-        qualities1: "Knowledge of vocational guidance",
-        qualities2: "Professionalism and integrity",
-        qualities3: "Ability to understand individuals needs.",
-        qualities4:
-          "Capacity to ensure workplace adaptability and accessibility",
-        qualities5: "Confidentiality and trustworthiness.",
-        taglineVocational:
-          "The role of a vocational counselor is essential for persons with disabilities. By providing guidance on vocational education, identifying employment opportunities, and ensuring workplace adaptability, they support individuals in achieving independence and empowerment.",
-        mail: "Contact Us",
-        floorVocationl: "Fourth Floor",
-        department2: "Special Education Department",
-        roleSE: "Role Of Special Educator",
-        roleSE1: "Assessment and Identification",
-        roleSE2: "Individualized Education Plans (IEPs)",
-        roleSE3: "Adapted Curriculum",
-        roleSE4: "Advocacy",
-        roleSE5: "Behavioural Assessment",
-        roleSE6: "Group Session",
-        seWork: "Special Educator's work on these disabilities",
-        seWork1: "Learning Disabilities",
-        seWork2: "Autism Spectrum Disorder",
-        seWork3: "Visual Impairment",
-        seWork4: "Hearing Impairment",
-        seWork5: "Intellectual Disabilities",
-        seWork6: "Cerebral Palsy",
-        seWork7: "Multiple Disabilities",
-        therapySE: "Therapy Services",
-        therapySE1: "Communication",
-        therapySE2: "Socialisation",
-        therapySE3: "Cognitive",
-        therapySE4: "Activities Of Daily Living",
-        therapySE5: "Motor (Gross & Fine)",
-        therapySE6: "Pre-Academic",
-        therapySE7: "Pre-Writing",
-        therapySE8: "Pre-Reading",
-        therapySE9: "Pre-Maths",
-        seTagline:
-          "Special educators play a vital role in fostering an inclusive and supportive educational atmosphere for all students. Special Educator's are taking group sessions to enhance socialization.",
-        floorSE: "Fourth Floor",
-        department3: "Sign Language Department",
-        signWork: "Work in the department",
-        signWork1:
-          "interpretation in program, Indian sign language classes, counselling for deaf candidate parents.",
-        signCapacity: "Capacity of the department",
-        signCapacity1:
-          "20 people at a time for group activity or one to one session ,Ex- ( ISL course)",
-        signFeatures: "Features of the department",
-        signFeatures1: "Communication",
-        signFeatures2: "Indian sign language learning",
-        signFeatures3: "Open for all",
-        signFeatures4: "We communicate with the deaf people in sign language",
-        signFeatures5:
-          "It helps to hearing and deaf group for break communication gap",
-        floorSign: "Fourth Floor",
-        department4: "Psychology Department",
-        testingService: "Testing and Assessment Services",
-        testingService1: "Developmental Assessment",
-        testingService2: "Cognitive Assessment (IQ)",
-        testingService3: "Social Development (SIQ)",
-        testingService4: "Scholastic Performance Assessment (LD/SLD)",
-        testingService5: "Behavioural Assessment",
-        testingService6:
-          "Any Other (QOL, Self Esteem, Beck-Stress, Anxiety, Depression Assessments) (in process)",
-        therapyServices: "Therapy Services",
-        therapyServices1: "Psycho education",
-        therapyServices2: "Individual therapy (Children, Adolescents, Adults)",
-        therapyServices3: "Cognitive Behavioral Therapy (CBT)",
-        therapyServices4: "Behavior therapy (BT)",
-        therapyServices5: "Group therapy",
-        therapyServices6: "Family therapy",
-        therapyServices7: "Transnational Analysis Therapy",
-        therapyServices8: "REBT",
-        therapyServices9: "Art Therapy",
-        therapyServices10:
-          "Eclectic Model (as per the client's requirement and their level of functioning)",
-        communityOutreac: "Community Outreach (Services For PwDs)",
-        communityOutreach1: "Workshops and Seminars",
-        communityOutreach2: "Support Groups",
-        communityOutreach3: "Community Events",
-        communityOutreach4: "Collaborations with Local Organizations",
-        communityOutreach5: "Behavioural Assessment",
-        communityOutreach6: "Referral Services",
-        amenities: "Client Amenities for PwDs",
-        amenities1: "Free Parking",
-        amenities2: "Wheelchair Accessibility",
-        amenities3: "Comfortable Waiting Area",
-        amenities4: "Refreshments (Food Truck - in process)",
-        amenities5: "Play Area for Children",
-        floorPsychology: "Fourth Floor",
-        department5: "Prosthetics & Orthotics Department",
-        prostheContent:
-          "The Prosthetics & Orthotics (P&O) Department at Divyang Bhavan Foundation PCMC , morwadi pimpri is dedicated to enhancing the quality of life for individuals with physical disabilities by providing state-of-the-art prosthetic and orthotic solutions.",
-        highlightContent:
-          "Our team of skilled professionals is committed to delivering compassionate care, custom devices, and rehabilitation support to help patients regain independence and mobility.",
-        prostheServises: "Servises Offered By Department",
-        prostheServiceTitle1: "Prosthetic Services",
-        prostheServiceDesciption1:
-          "Custom-made upper and lower limb prostheses, Myoelectric prostheses (advanced bionic arms), Post-amputation rehabilitation, Adjustment and maintenance of prosthetic devices",
-        prostheServiceTitle2: "Orthotic Services ",
-        prostheServiceDesciption2:
-          "Custom orthotic devices for spinal, lower, and upper limb conditions, Foot orthotics for diabetes, plantar fasciitis, and other conditions, Pediatric orthotics for congenital or developmental issues, Post-traumatic or post-surgical bracing and supports",
-        prostheServiceTitle3: "Rehabilitation & Support Services",
-        prostheServiceDesciption3:
-          "Physical therapy and rehabilitation for mobility and functionality improvement, Gait analysis and training, Follow-up care and device adjustments, Counseling and emotional support for individuals and families",
-        prostheServiceTitle4: "Assistive Devices",
-        prostheServiceDesciption4:
-          "1.Wheelchairs, crutches, and walking aids, 2.Custom seating systems for patients with complex mobility needs ",
-        featuresProsthe: "Features Of Department",
-        featuresProstheTitle1: "Advanced Technology",
-        featuresProstheDescription1:
-          "Our department is equipped with the latest tools and technologies  for  fabrication of prostheses and orthoses.",
-        featuresProstheTitle2: "Customized Solutions",
-        featuresProstheDescription2:
-          "We ensure that every device is tailored to fit the unique needs of each patient, enhancing comfort and functionality.",
-        featuresProstheTitle3: "Holistic Care",
-        featuresProstheDescription3:
-          "We provide comprehensive care including physical, emotional, and psychological support to help patients through the recovery and adaptation process",
-        featuresProstheTitle4: "Multidisciplinary Approach",
-        featuresProstheDescription4:
-          "Our team collaborates with orthopedic surgeons, physiotherapists, and other specialists to ensure a coordinated treatment plan for each patient",
-        featuresProstheTitle5: "Accessibility",
-        featuresProstheDescription5:
-          "We offer affordable services and ensure timely care for all patients, including those from underserved communities",
-        ourfacilities: "Our Facilities",
-        floorProsthe: "Second Floor",
-        department6: "Occupational Therapy Department",
-        occupationaltagline:
-          "Occupational therapy is a form of therapy designed to assist individuals with disabilities in their daily tasks and activities. This therapy helps individuals with disabilities become self-reliant and improves their quality of life.",
-        roleOccupational: "Role of Occupational Therapy",
-        roleOccupational1:
-          "Helping individuals with disabilities in their daily tasks and activities",
-        roleOccupational2:
-          "Encouraging individuals with disabilities to use their disabilities effectively",
-        roleOccupational3:
-          "Enhancing the physical and mental abilities of individuals with disabilities",
-        roleOccupational4:
-          "Supporting individuals with disabilities in achieving social and economic self-sufficiency",
-        roleOccupational5:
-          "Assisting families of individuals with disabilities in caregiving.",
-        typesOccupational: "Types of Occupational Therapy",
-        typesOccupational1: "Physical Occupational Therapy",
-        typesOccupational2: "Mental Occupational Therapy",
-        typesOccupational3: "Student Occupational Therapy",
-        typesOccupational4: "Rehabilitation Occupational Therapy",
-        benefitsOccupational: "Benefits of Occupational Therapy",
-        benefitsOccupational1: "Increases self-reliance",
-        benefitsOccupational2: "Assists in daily tasks and activities",
-        benefitsOccupational3: "Enhances physical and mental capabilities",
-        benefitsOccupational4: "Supports social and economic independence",
-        benefitsOccupational5: "Improves quality of life",
-        occupationalBottomLine:
-          "Occupational therapy is essential for individuals with disabilities, helping them achieve self-reliance and improve their quality of life.",
-        floorOccupational: "Second Floor",
-        department7: "Counselling & Program Management Department",
+        // department1: "Vocational Counselor Department",
+        // roleVocational: "Role of the Vocational Counselor",
+        // role1: "Identifying individuals’ abilities and interests",
+        // role2: "Providing guidance on vocational education and training.",
+        // role3: "Assisting in finding employment opportunities",
+        // role4: "Ensuring adaptability and accessibility at the workplace",
+        // role5:
+        //   "Supporting individuals in enhancing independence and empowerment.",
+        // responsibilityVocational:
+        //   "Responsibilities of the Vocational Counselor",
+        // responsibility1: "Recognizing individuals abilities and interests",
+        // responsibility2:
+        //   "Developing plans for vocational education and training",
+        // responsibility3: "Preparing individuals for employment opportunities",
+        // responsibility4:
+        //   "Ensuring adaptability and accessibility in the workplace",
+        // responsibility5:
+        //   "Providing mental and emotional support to individuals",
+        // benefitsVocational: "Benefits of a Vocational Counselor",
+        // benefits1: "Access to vocational education and training",
+        // benefits2: "Employment opportunities",
+        // benefits3: "Workplace adaptability and accessibility",
+        // benefits4: "Enhanced independence and empowerment",
+        // benefits5: "Mental and emotional support.",
+        // qualitiesVocational: "Qualities of a Vocational Counselor",
+        // qualities1: "Knowledge of vocational guidance",
+        // qualities2: "Professionalism and integrity",
+        // qualities3: "Ability to understand individuals needs.",
+        // qualities4:
+        //   "Capacity to ensure workplace adaptability and accessibility",
+        // qualities5: "Confidentiality and trustworthiness.",
+        // taglineVocational:
+        //   "The role of a vocational counselor is essential for persons with disabilities. By providing guidance on vocational education, identifying employment opportunities, and ensuring workplace adaptability, they support individuals in achieving independence and empowerment.",
+        // mail: "Contact Us",
+        // floorVocationl: "Fourth Floor",
+        // department2: "Special Education Department",
+        // roleSE: "Role Of Special Educator",
+        // roleSE1: "Assessment and Identification",
+        // roleSE2: "Individualized Education Plans (IEPs)",
+        // roleSE3: "Adapted Curriculum",
+        // roleSE4: "Advocacy",
+        // roleSE5: "Behavioural Assessment",
+        // roleSE6: "Group Session",
+        // seWork: "Special Educator's work on these disabilities",
+        // seWork1: "Learning Disabilities",
+        // seWork2: "Autism Spectrum Disorder",
+        // seWork3: "Visual Impairment",
+        // seWork4: "Hearing Impairment",
+        // seWork5: "Intellectual Disabilities",
+        // seWork6: "Cerebral Palsy",
+        // seWork7: "Multiple Disabilities",
+        // therapySE: "Therapy Services",
+        // therapySE1: "Communication",
+        // therapySE2: "Socialisation",
+        // therapySE3: "Cognitive",
+        // therapySE4: "Activities Of Daily Living",
+        // therapySE5: "Motor (Gross & Fine)",
+        // therapySE6: "Pre-Academic",
+        // therapySE7: "Pre-Writing",
+        // therapySE8: "Pre-Reading",
+        // therapySE9: "Pre-Maths",
+        // seTagline:
+        //   "Special educators play a vital role in fostering an inclusive and supportive educational atmosphere for all students. Special Educator's are taking group sessions to enhance socialization.",
+        // floorSE: "Fourth Floor",
+        // department3: "Sign Language Department",
+        // signWork: "Work in the department",
+        // signWork1:
+        //   "interpretation in program, Indian sign language classes, counselling for deaf candidate parents.",
+        // signCapacity: "Capacity of the department",
+        // signCapacity1:
+        //   "20 people at a time for group activity or one to one session ,Ex- ( ISL course)",
+        // signFeatures: "Features of the department",
+        // signFeatures1: "Communication",
+        // signFeatures2: "Indian sign language learning",
+        // signFeatures3: "Open for all",
+        // signFeatures4: "We communicate with the deaf people in sign language",
+        // signFeatures5:
+        //   "It helps to hearing and deaf group for break communication gap",
+        // floorSign: "Fourth Floor",
+        // department4: "Psychology Department",
+        // testingService: "Testing and Assessment Services",
+        // testingService1: "Developmental Assessment",
+        // testingService2: "Cognitive Assessment (IQ)",
+        // testingService3: "Social Development (SIQ)",
+        // testingService4: "Scholastic Performance Assessment (LD/SLD)",
+        // testingService5: "Behavioural Assessment",
+        // testingService6:
+        //   "Any Other (QOL, Self Esteem, Beck-Stress, Anxiety, Depression Assessments) (in process)",
+        // therapyServices: "Therapy Services",
+        // therapyServices1: "Psycho education",
+        // therapyServices2: "Individual therapy (Children, Adolescents, Adults)",
+        // therapyServices3: "Cognitive Behavioral Therapy (CBT)",
+        // therapyServices4: "Behavior therapy (BT)",
+        // therapyServices5: "Group therapy",
+        // therapyServices6: "Family therapy",
+        // therapyServices7: "Transnational Analysis Therapy",
+        // therapyServices8: "REBT",
+        // therapyServices9: "Art Therapy",
+        // therapyServices10:
+        //   "Eclectic Model (as per the client's requirement and their level of functioning)",
+        // communityOutreac: "Community Outreach (Services For PwDs)",
+        // communityOutreach1: "Workshops and Seminars",
+        // communityOutreach2: "Support Groups",
+        // communityOutreach3: "Community Events",
+        // communityOutreach4: "Collaborations with Local Organizations",
+        // communityOutreach5: "Behavioural Assessment",
+        // communityOutreach6: "Referral Services",
+        // amenities: "Client Amenities for PwDs",
+        // amenities1: "Free Parking",
+        // amenities2: "Wheelchair Accessibility",
+        // amenities3: "Comfortable Waiting Area",
+        // amenities4: "Refreshments (Food Truck - in process)",
+        // amenities5: "Play Area for Children",
+        // floorPsychology: "Fourth Floor",
+        // department5: "Prosthetics & Orthotics Department",
+        // prostheContent:
+        //   "The Prosthetics & Orthotics (P&O) Department at Divyang Bhavan Foundation PCMC , morwadi pimpri is dedicated to enhancing the quality of life for individuals with physical disabilities by providing state-of-the-art prosthetic and orthotic solutions.",
+        // highlightContent:
+        //   "Our team of skilled professionals is committed to delivering compassionate care, custom devices, and rehabilitation support to help patients regain independence and mobility.",
+        // prostheServises: "Servises Offered By Department",
+        // prostheServiceTitle1: "Prosthetic Services",
+        // prostheServiceDesciption1:
+        //   "Custom-made upper and lower limb prostheses, Myoelectric prostheses (advanced bionic arms), Post-amputation rehabilitation, Adjustment and maintenance of prosthetic devices",
+        // prostheServiceTitle2: "Orthotic Services ",
+        // prostheServiceDesciption2:
+        //   "Custom orthotic devices for spinal, lower, and upper limb conditions, Foot orthotics for diabetes, plantar fasciitis, and other conditions, Pediatric orthotics for congenital or developmental issues, Post-traumatic or post-surgical bracing and supports",
+        // prostheServiceTitle3: "Rehabilitation & Support Services",
+        // prostheServiceDesciption3:
+        //   "Physical therapy and rehabilitation for mobility and functionality improvement, Gait analysis and training, Follow-up care and device adjustments, Counseling and emotional support for individuals and families",
+        // prostheServiceTitle4: "Assistive Devices",
+        // prostheServiceDesciption4:
+        //   "1.Wheelchairs, crutches, and walking aids, 2.Custom seating systems for patients with complex mobility needs ",
+        // featuresProsthe: "Features Of Department",
+        // featuresProstheTitle1: "Advanced Technology",
+        // featuresProstheDescription1:
+        //   "Our department is equipped with the latest tools and technologies  for  fabrication of prostheses and orthoses.",
+        // featuresProstheTitle2: "Customized Solutions",
+        // featuresProstheDescription2:
+        //   "We ensure that every device is tailored to fit the unique needs of each patient, enhancing comfort and functionality.",
+        // featuresProstheTitle3: "Holistic Care",
+        // featuresProstheDescription3:
+        //   "We provide comprehensive care including physical, emotional, and psychological support to help patients through the recovery and adaptation process",
+        // featuresProstheTitle4: "Multidisciplinary Approach",
+        // featuresProstheDescription4:
+        //   "Our team collaborates with orthopedic surgeons, physiotherapists, and other specialists to ensure a coordinated treatment plan for each patient",
+        // featuresProstheTitle5: "Accessibility",
+        // featuresProstheDescription5:
+        //   "We offer affordable services and ensure timely care for all patients, including those from underserved communities",
+        // ourfacilities: "Our Facilities",
+        // floorProsthe: "Second Floor",
+        // department6: "Occupational Therapy Department",
+        // occupationaltagline:
+        //   "Occupational therapy is a form of therapy designed to assist individuals with disabilities in their daily tasks and activities. This therapy helps individuals with disabilities become self-reliant and improves their quality of life.",
+        // roleOccupational: "Role of Occupational Therapy",
+        // roleOccupational1:
+        //   "Helping individuals with disabilities in their daily tasks and activities",
+        // roleOccupational2:
+        //   "Encouraging individuals with disabilities to use their disabilities effectively",
+        // roleOccupational3:
+        //   "Enhancing the physical and mental abilities of individuals with disabilities",
+        // roleOccupational4:
+        //   "Supporting individuals with disabilities in achieving social and economic self-sufficiency",
+        // roleOccupational5:
+        //   "Assisting families of individuals with disabilities in caregiving.",
+        // typesOccupational: "Types of Occupational Therapy",
+        // typesOccupational1: "Physical Occupational Therapy",
+        // typesOccupational2: "Mental Occupational Therapy",
+        // typesOccupational3: "Student Occupational Therapy",
+        // typesOccupational4: "Rehabilitation Occupational Therapy",
+        // benefitsOccupational: "Benefits of Occupational Therapy",
+        // benefitsOccupational1: "Increases self-reliance",
+        // benefitsOccupational2: "Assists in daily tasks and activities",
+        // benefitsOccupational3: "Enhances physical and mental capabilities",
+        // benefitsOccupational4: "Supports social and economic independence",
+        // benefitsOccupational5: "Improves quality of life",
+        // occupationalBottomLine:
+        //   "Occupational therapy is essential for individuals with disabilities, helping them achieve self-reliance and improve their quality of life.",
+        // floorOccupational: "Second Floor",
+        // department7: "Counselling & Program Management Department",
         featuresCPM: "Features Of Department",
         featuresCPMTitle1: "1.Support Services",
         featuresCPMDescription1:
@@ -720,6 +698,55 @@ i18next.use(initReactI18next).init({
 
         fisheriesaboutDescription:"To promote the development and growth of deep-sea fishing, the Maharashtra Fisheries Development Corporation was established in 1973. According to the government resolution, mechanized fishing has become the modern method compared to traditional small boat fishing, but the increasing number of mechanized boats poses a risk of overexploitation of fishing areas. Hence, fishing in deep-sea areas with depths greater than 30 fathoms is necessary. While private entrepreneurs are engaged in deep-sea fishing, the government lacked an official body to handle such operations. Therefore, to protect the interests of traditional fishermen, the government approved the establishment of the Maharashtra Fisheries Development Corporation Limited. This corporation is responsible for deep-sea surveys, fish landing, marketing, and export, as well as organizing, coordinating, and supervising fisheries development initiatives. It also works to develop regions with high fisheries potential to ensure that fishermen benefit directly. In recent years, the corporation has undergone significant changes, taking up projects like building fishing harbors and fish landing centers along the coast, managing fisheries in large reservoirs, and promoting cage fish farming to encourage entrepreneurship among those interested in aquaculture.",
         mfdcAddress: "3rd Floor, N.K.M. International House, Babubhai M. Chinai Road, Mumbai - 400 020",
+   
+        latestnewst:"Latest News",
+        latestnews1:"Notice regarding upcoming fisheries project",
+        latestnews2:"Government subsidy updates for fish farmers",
+        latestnews3:"New deep-sea fishing guidelines announced",
+
+        
+        // deparments
+        department1: "Head Office",
+        department2: "Nagpur Division",
+        department3: "Aurangabad Division",
+        department4: "Sassoon Dock",
+        
+        department5: "Parallel Pay Scale Employees",
+        department6: "Through External Agency",
+
+
+// who we are
+        title: "Who We Are",
+        description:
+          "About Maharashtra Fisheries Development Corporation (MFDC)",
+        buttonText: "Know More",
+        feature1Title: "Ice Plants & Cold Storage",
+        feature1Description:
+          "MFDC establishes and operates ice factories, cold storage units, and fish processing centers to preserve the freshness and quality of fish products across the state.",
+        feature2Title: " Manufacturing of Fishing Equipment",
+        feature2Description:
+          "The Corporation produces and supplies fishing nets, marine and diesel engines, ropes, boats, and other gear, enabling fishermen to access reliable tools and materials.",
+        feature3Title: "Value-Added Products & Exports",
+        feature3Description:
+          "MFDC is engaged in processing and marketing products like canned fish, fish oil, and fish-based poultry feed for wholesale, retail, and export markets.",
+        feature4Title: "Fisheries Infrastructure Development",
+        feature4Description:
+          "It builds and maintains essential infrastructure such as jetties, fishing harbors, fish landing centers, and boatyards, enhancing the efficiency and safety of fishing operations.",
+        feature5Title: "Training, Research & Innovation",
+        feature5Description:
+          "MFDC invests in technical training, research, and skill development programs to support modern, sustainable, and scientifically backed fishing practices in the sector.",
+        feature6Title: "Employment & Economic Upliftment",
+        feature6Description:
+          "With a focus on economically weaker communities, MFDC creates employment opportunities.",
+       
+
+
+          quicklinesheading:"Quick Links",
+          quickLink1Title:"PMMSY",
+          quickLink2Title:"Fisheries Department Government of Maharashtra, India",
+          quickLink3Title :"Marine and Inland Water Dashboard",
+          quickLink4Title :"SagarMala - Ministry of Shipping, GOI, Government of India",
+        
       
       },
     },
@@ -910,28 +937,7 @@ i18next.use(initReactI18next).init({
         lookingForKalaShikshak:
           "आमच्या कडे कला शिक्षकांसाठी रिक्त जागा आहेत, कृपया अधिक माहिती मिळवा आणि आमच्या शी संपर्क करा",
         carrerResult: "भरती केलेले कर्मचारी",
-        title: "आमच्या बद्दल अधिक माहिती",
-        description:
-          "आम्ही 100 हून अधिक दिव्यांग व्यक्तींना शिक्षण आणि प्रशिक्षण प्रदान केले आहे.",
-        buttonText: "आणखी माहिती",
-        feature1Title: "AR VR कक्ष",
-        feature1Description:
-          "आम्ही सर्वोत्तम तंत्रज्ञानाच्या उपकरणे प्रदान करतो आणि आमचा स्टाफ नेहमी उपलब्ध आहे.",
-        feature2Title: "सर्व थेरपी",
-        feature2Description:
-          "आमच्याकडे थेरपी केंद्रात सर्वात नवीन उपकरणे आहेत.",
-        feature3Title: "सुलभ डिजिटल लायब्ररी",
-        feature3Description:
-          "आमच्याकडे शिक्षणासाठी प्रगत डिजिटल लायब्ररी आहेत.",
-        feature4Title: "कंप्यूटर लॅब",
-        feature4Description:
-          "आमच्याकडे शिकण्यासाठी आणि सेवा उद्देशाने एक प्रगत 'कंप्यूटर लॅब' आहे.",
-        feature5Title: "सहाय्यक उपकरण कक्ष",
-        feature5Description: "आमच्या कडे आद्ययावत उपकरण कक्ष आहेत.",
-        feature6Title: "व्यावसायिक कौशल्य वर्ग",
-        feature6Description:
-          "कौशल्य विकसित करणे आणि व्यावसायिक शिक्षणाद्वारे क्षमता अनलॉक करणे.",
-        kalaShikshak: "कला शिक्षक",
+                kalaShikshak: "कला शिक्षक",
         lookingForKalaShikshak:
           "आमच्या कडे कला शिक्षकांसाठी रिक्त जागा आहेत, कृपया अधिक माहिती मिळवा आणि आमच्या शी संपर्क करा",
         carrerResult: "भरती केलेले कर्मचारी",
@@ -976,8 +982,7 @@ i18next.use(initReactI18next).init({
         service4Value: "५०+",
 
 
-        quicklinesheading:"जलद दुवे",
-        quickLink1Title:"PMMSY",
+     
 
 
         person1Name: "शेखर सिंह",
@@ -1087,181 +1092,181 @@ i18next.use(initReactI18next).init({
         abMailId11: "",
 
         // deparments
-        department1: "व्यावसायिक सल्लागार विभाग",
-        roleVocational: "व्यावसायिक सल्लागाराची भूमिका",
-        role1: "व्यक्तींच्या क्षमता व आवडी ओळखणे",
-        role2: "व्यावसायिक शिक्षण व प्रशिक्षणाबाबत मार्गदर्शन करणे",
-        role3: "रोजगाराच्या संधी शोधण्यात मदत करणे",
-        role4: "कार्यक्षेत्रातील अनुकूलता आणि प्रवेशसुलभता सुनिश्चित करणे",
-        role5: "व्यक्तींना स्वावलंबन व सक्षमीकरणात मदत करणे",
-        responsibilityVocational: "व्यावसायिक सल्लागाराच्या जबाबदाऱ्या",
-        responsibility1: "व्यक्तींच्या क्षमता व आवडी ओळखणे",
-        responsibility2: "व्यावसायिक शिक्षण व प्रशिक्षणासाठी योजना तयार करणे",
-        responsibility3: "रोजगाराच्या संधींसाठी व्यक्तींना तयार करणे",
-        responsibility4:
-          "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता सुनिश्चित करणे",
-        responsibility5: "व्यक्तींना मानसिक व भावनिक आधार देणे",
-        benefitsVocational: "व्यावसायिक सल्लागारांमुळे होणारे फायदे",
-        benefits1: "व्यावसायिक शिक्षण व प्रशिक्षणाचा लाभ",
-        benefits2: "रोजगाराच्या संधी उपलब्ध करणे",
-        benefits3: "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता",
-        benefits4: "वाढलेले स्वावलंबन व सक्षमीकरण",
-        benefits5: "मानसिक व भावनिक आधार",
-        qualitiesVocational: "व्यावसायिक सल्लागारांची गुणवैशिष्ट्ये",
-        qualities1: "व्यावसायिक मार्गदर्शनाचे ज्ञान",
-        qualities2: "उत्कृष्ट संवाद कौशल्य",
-        qualities3: "व्यक्तींच्या गरजा समजून घेण्याची क्षमता",
-        qualities4:
-          "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता सुनिश्चित करण्याची क्षमता",
-        qualities5: "गोपनीयता व विश्वासार्हता",
-        taglineVocational:
-          "व्यावसायिक सल्लागाराची भूमिका दिव्यांग व्यक्तींसाठी अत्यावश्यक आहे. व्यावसायिक शिक्षणाबाबत मार्गदर्शन, रोजगाराच्या संधी ओळखणे, व कार्यक्षेत्रातील अनुकूलता सुनिश्चित करून, ते व्यक्तींना स्वावलंबन व सक्षमीकरण मिळवून देण्यासाठी सहकार्य करतात.",
-        mail: "संपर्क",
-        floorVocationl: "चौथा मजला",
-        department2: "विशेष शिक्षण विभाग",
-        roleSE: "विशेष शिक्षकाची भूमिका",
-        roleSE1: "मूल्यांकन आणि ओळख",
-        roleSE2: "व्यक्तिनिष्ठ शैक्षणिक योजना (IEPs)",
-        roleSE3: "अनुकूलित अभ्यासक्रम",
-        roleSE4: "वकिली",
-        roleSE5: "वर्तन मूल्यांकन",
-        roleSE6: "गट सत्रे",
-        seWork: "विशेष शिक्षक खालील प्रकारच्या दिव्यांगत्वांवर कार्य करतात",
-        seWork1: "शिक्षणाशी संबंधित अडचणी (Learning Disabilities)",
-        seWork2: "ऑटिझम स्पेक्ट्रम डिसऑर्डर",
-        seWork3: "दृक्‍दृष्टी अडचणी (Visual Impairment)",
-        seWork4: "श्रवण अडचणी (Hearing Impairment)",
-        seWork5: "बौद्धिक दिव्यांगत्व",
-        seWork6: "सेरेब्रल पाल्सी",
-        seWork7: "बहुविध दिव्यांगत्व",
-        therapySE: "थेरपी सेवा",
-        therapySE1: "संवाद कौशल्य (Communication)",
-        therapySE2: "सामाजिक कौशल्य (Socialisation)",
-        therapySE3: "संज्ञानात्मक विकास (Cognitive)",
-        therapySE4: "दैनंदिन जीवनातील क्रिया (Activities of Daily Living)",
-        therapySE5: "मोटर कौशल्ये (स्थूल व सूक्ष्म)",
-        therapySE6: "पूर्व-अकादमिक शिक्षण (Pre-Academic)",
-        therapySE7: "पूर्व-लेखन कौशल्य (Pre-Writing)",
-        therapySE8: "पूर्व-वाचन कौशल्य (Pre-Reading)",
-        therapySE9: "पूर्व-गणित कौशल्य (Pre-Maths)",
-        seTagline:
-          "विशेष शिक्षक वर्तन मूल्यांकनाद्वारे व्यक्तींच्या शैक्षणिक यशासाठी महत्त्वपूर्ण योगदान देतात, त्यासाठी संवाद, सामाजिक वर्तन, आणि दैनंदिन जीवनातील कौशल्ये वाढवण्यावर लक्ष केंद्रित केले जाते.",
-        floorSE: "चौथा मजला",
-        department3: "सांकेतिक भाषा विभाग",
-        signWork: "विभागातील कार्य",
-        signWork1:
-          "कार्यक्रमांमध्ये संकेत भाषेचे भाषांतर करणे, भारतीय संकेत भाषा (ISL) वर्ग घेणे, कर्णबधिर व्यक्तींच्या पालकांसाठी समुपदेशन",
-        signCapacity: "विभागाची क्षमता",
-        signCapacity1:
-          "गट क्रियाकलाप किंवा वैयक्तिक सत्रांसाठी एकावेळी २० व्यक्तींची क्षमता (उदा. - ISL कोर्स)",
-        signFeatures: "विभागाची वैशिष्ट्ये",
-        signFeatures1: "संवाद कौशल्ये विकसित करणे",
-        signFeatures2: "भारतीय संकेत भाषा शिकवणे",
-        signFeatures3: "सर्वांसाठी खुले",
-        signFeatures4: "कर्णबधिर व्यक्तींशी संकेत भाषेत संवाद साधणे",
-        signFeatures5:
-          "ऐकणारे आणि कर्णबधिर गटांमध्ये संवादाचा दुरावा कमी करण्यास मदत करणे ",
-        floorSign: "चौथा मजला",
-        department4: "मानसशास्त्र विभाग",
-        testingService: "चाचणी आणि मूल्यमापन सेवा",
-        testingService1: "विकासात्मक मूल्यमापन (Developmental Assessment)",
-        testingService2: "संज्ञानात्मक मूल्यमापन (IQ चाचणी)",
-        testingService3: "सामाजिक विकास मूल्यमापन (SIQ)",
-        testingService4: "शैक्षणिक कामगिरी मूल्यमापन (LD/SLD)",
-        testingService5: "वर्तन मूल्यांकन (Behavioural Assessment)",
-        testingService6:
-          "इतर सेवा (प्रक्रियेत)-जीवनमान गुणवत्ता (QOL) मूल्यमापन, आत्मसन्मान चाचणी (Self Esteem), बेक-तणाव, चिंतेचे व नैराश्य मूल्यमापन (Beck-Stress, Anxiety, Depression Assessments)",
-        therapyServices: "थेरपी सेवा",
-        therapyServices1: "मानसशैक्षणिक मार्गदर्शन (Psycho Education)",
-        therapyServices2: "वैयक्तिक थेरपी (मुले, किशोरवयीन, प्रौढ)",
-        therapyServices3: "संज्ञानात्मक वर्तन थेरपी (CBT)",
-        therapyServices4: "वर्तन थेरपी (BT)",
-        therapyServices5: "गट थेरपी",
-        therapyServices6: "कौटुंबिक थेरपी",
-        therapyServices7: "ट्रान्झॅक्शनल अनालिसिस थेरपी",
-        therapyServices8: "REBT (रॅशनल एमोटिव्ह बिहेवियर थेरपी)",
-        therapyServices9: "कला थेरपी (Art Therapy)",
-        therapyServices10:
-          "ग्राहकाच्या गरजेनुसार आणि कार्यक्षमतेनुसार विविध मॉडेल (Eclectic Model)",
-        communityOutreac: "समुदाय संपर्क सेवा (दिव्यांग व्यक्तींसाठी)",
-        communityOutreach1: "कार्यशाळा आणि सेमिनार",
-        communityOutreach2: "सपोर्ट ग्रुप",
-        communityOutreach3: "समुदाय कार्यक्रम",
-        communityOutreach4: "स्थानिक संस्थांसोबत सहयोग",
-        communityOutreach5: "वर्तन मूल्यांकन",
-        communityOutreach6: "संदर्भ सेवा (Referral Services)",
-        amenities: "दिव्यांग व्यक्तींसाठी उपलब्ध सुविधा",
-        amenities1: "मोफत पार्किंग",
-        amenities2: "व्हीलचेअर प्रवेशसुलभता",
-        amenities3: "आरामदायक प्रतीक्षागृह",
-        amenities4: "अल्पोपहार सेवा (फूड ट्रक - प्रक्रियेत)",
-        amenities5: "मुलांसाठी खेळाची जागा",
-        floorPsychology: "चौथा मजला",
-        department5: "प्रोस्थेटिक्स आणि ऑर्थोटिक्स विभाग",
-        prostheContent:
-          "पिंपरी चिंचवड महानगरपालिका दिव्यांग भवन फाउंडेशन, मोरवाडी पिंपरी येथील प्रोस्थेटिक्स आणि ऑर्थोटिक्स (P&O) विभाग शारीरिक अपंगत्व असलेल्या व्यक्तींसाठी अत्याधुनिक प्रोस्थेटिक आणि ऑर्थोटिक उपाययोजना पुरवून त्यांचा जीवनमान सुधारण्याचे काम करतो. ",
-        highlightContent:
-          "कुशल व्यावसायिकांच्या आमच्या टीमकडून सहानुभूतीपूर्ण काळजी, कस्टम डिव्हाइस, आणि पुनर्वसन समर्थन प्रदान केले जाते, ज्यामुळे रुग्णांना स्वातंत्र्य आणि गतिशीलता पुन्हा मिळविण्यात मदत होते.",
-        prostheServises: "विभागाद्वारे दिल्या जाणाऱ्या सेवा",
-        prostheServiceTitle1: "प्रोस्थेटिक सेवा",
-        prostheServiceDesciption1:
-          "सानुकूलित वरच्या आणि खालच्या अंगांचे कृत्रिम अवयव, मायोइलेक्ट्रिक कृत्रिम अवयव (प्रगत बायोनिक हात), अंगच्छेदानंतर पुनर्वसन, कृत्रिम अवयवांचे समायोजन आणि देखभाल",
-        prostheServiceTitle2: "ऑर्थोटिक सेवा ",
-        prostheServiceDesciption2:
-          "पाठीचा, खालचा व वरच्या अंगासाठी कस्टम ऑर्थोटिक उपकरणे, मधुमेह, प्लांटर फॅसिआयटीस व इतर समस्यांसाठी पायाचे ऑर्थोटिक्स, जन्मजात/विकासात्मक समस्यांसाठी बाल ऑर्थोटिक्स, शस्त्रक्रियेनंतर समर्थन ब्रेस  ",
-        prostheServiceTitle3: "पुनर्वसन आणि समर्थन सेवा",
-        prostheServiceDesciption3:
-          "गतिशीलता व कार्यक्षमतेच्या सुधारासाठी फिजिकल थेरपी आणि पुनर्वसन, चालण्याच्या पद्धतीचे विश्लेषण व प्रशिक्षण, उपकरणांची फॉलो-अप काळजी व समायोजन, समुपदेशन व भावनिक समर्थन  ",
-        prostheServiceTitle4: "सहाय्यक उपकरणे",
-        prostheServiceDesciption4:
-          "1.व्हीलचेअर्स, काठ्या, आणि चालण्याची साधने, 2.गुंतागुंतीच्या गतिशीलता गरजा असलेल्या रुग्णांसाठी कस्टम सीटिंग सिस्टिम  ",
-        featuresProsthe: "विभागाची वैशिष्ट्ये",
-        featuresProstheTitle1: "अत्याधुनिक तंत्रज्ञान",
-        featuresProstheDescription1:
-          "आमचा विभाग नवीनतम साधने व तंत्रज्ञानाने सुसज्ज आहे, ज्यामुळे प्रोस्थेसिस व ऑर्थोसिसची निर्मिती सुलभ होते. ",
-        featuresProstheTitle2: "सानुकूलित उपाय योजना",
-        featuresProstheDescription2:
-          "आम्ही प्रत्येक रुग्णाच्या विशिष्ट गरजेनुसार डिव्हाइस तयार करतो, ज्यामुळे त्यांना अधिक आराम आणि कार्यक्षमता मिळते",
-        featuresProstheTitle3: "सर्वांगीण काळजी",
-        featuresProstheDescription3:
-          "शारीरिक, भावनिक आणि मानसिक समर्थनासह पुनर्वसन व अनुकूलता प्रक्रियेतील रुग्णांना मदत करतो.  ",
-        featuresProstheTitle4: "बहुविभागीय दृष्टिकोन",
-        featuresProstheDescription4:
-          "ऑर्थोपेडिक सर्जन, फिजिओथेरपिस्ट, व इतर विशेषज्ञांसोबत टीमचे सहकार्य असते, ज्यामुळे प्रत्येक रुग्णासाठी समन्वित उपचार योजना सुनिश्चित केली जाते.  ",
-        featuresProstheTitle5: "सुलभता",
-        featuresProstheDescription5:
-          "आम्ही परवडणाऱ्या सेवांसह वेळेवर काळजी देतो, विशेषतः दुर्लक्षित समुदायातील रुग्णांसाठी",
-        ourfacilities: "आमच्या सुविधा",
-        floorProsthe: "दुसरा मजला",
-        department6: "व्यावसायिक थेरपी विभाग",
-        occupationaltagline:
-          "व्यावसायिक थेरपी ही एक प्रकारची थेरपी आहे जी दिव्यांग व्यक्तींना त्यांचे दैनंदिन कामे आणि क्रियाकलाप करण्यास मदत करते. ही थेरपी दिव्यांग व्यक्तींना स्वावलंबी होण्यास आणि त्यांच्या जीवनमानात सुधारणा करण्यास सहाय्य करते.",
-        roleOccupational: "व्यावसायिक थेरपीचे कार्य",
-        roleOccupational1:
-          "दिव्यांग व्यक्तींना स्वावलंबन प्राप्त करण्यात मदत करणे.",
-        roleOccupational2:
-          "दिव्यांग व्यक्तींना त्यांच्या दैनंदिन कामे आणि क्रियाकलाप शिकवणे.",
-        roleOccupational3:
-          "दिव्यांग व्यक्तींच्या शारीरिक आणि मानसिक क्षमतांमध्ये सुधारणा करणे",
-        roleOccupational4:
-          "दिव्यांग व्यक्तींना सामाजिक आणि आर्थिक स्वावलंबन प्राप्त करण्यासाठी सहाय्य करणे.",
-        roleOccupational5:
-          "दिव्यांग व्यक्तींच्या कुटुंबियांना काळजी घेण्यात सहाय्य करणे..",
-        typesOccupational: "व्यावसायिक थेरपीचे प्रकार",
-        typesOccupational1: "शारीरिक व्यावसायिक थेरपी",
-        typesOccupational2: "मानसिक व्यावसायिक थेरपी",
-        typesOccupational3: "विद्यार्थी व्यावसायिक थेरपी",
-        typesOccupational4: "पुनर्वसन व्यावसायिक थेरपी",
-        benefitsOccupational: "व्यावसायिक थेरपीचे फायदे",
-        benefitsOccupational1: "स्वावलंबनात वाढ होते.",
-        benefitsOccupational2: "दैनंदिन कामे आणि क्रियाकलाप करण्यास मदत मिळते.",
-        benefitsOccupational3: "शारीरिक आणि मानसिक क्षमतांमध्ये सुधारणा होते.",
-        benefitsOccupational4:
-          "सामाजिक आणि आर्थिक स्वावलंबनासाठी सहाय्य मिळते.",
-        benefitsOccupational5: "जीवनमानात सुधारणा होते.",
-        occupationalBottomLine:
-          "व्यावसायिक थेरपी ही दिव्यांग व्यक्तींसाठी अत्यंत महत्त्वाची आहे, जी त्यांना स्वावलंबन प्राप्त करण्यात आणि त्यांच्या जीवनमानात सुधारणा करण्यात मदत करते.",
-        floorOccupational: "दुसरा मजला",
+        // department1: "व्यावसायिक सल्लागार विभाग",
+        // roleVocational: "व्यावसायिक सल्लागाराची भूमिका",
+        // role1: "व्यक्तींच्या क्षमता व आवडी ओळखणे",
+        // role2: "व्यावसायिक शिक्षण व प्रशिक्षणाबाबत मार्गदर्शन करणे",
+        // role3: "रोजगाराच्या संधी शोधण्यात मदत करणे",
+        // role4: "कार्यक्षेत्रातील अनुकूलता आणि प्रवेशसुलभता सुनिश्चित करणे",
+        // role5: "व्यक्तींना स्वावलंबन व सक्षमीकरणात मदत करणे",
+        // responsibilityVocational: "व्यावसायिक सल्लागाराच्या जबाबदाऱ्या",
+        // responsibility1: "व्यक्तींच्या क्षमता व आवडी ओळखणे",
+        // responsibility2: "व्यावसायिक शिक्षण व प्रशिक्षणासाठी योजना तयार करणे",
+        // responsibility3: "रोजगाराच्या संधींसाठी व्यक्तींना तयार करणे",
+        // responsibility4:
+        //   "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता सुनिश्चित करणे",
+        // responsibility5: "व्यक्तींना मानसिक व भावनिक आधार देणे",
+        // benefitsVocational: "व्यावसायिक सल्लागारांमुळे होणारे फायदे",
+        // benefits1: "व्यावसायिक शिक्षण व प्रशिक्षणाचा लाभ",
+        // benefits2: "रोजगाराच्या संधी उपलब्ध करणे",
+        // benefits3: "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता",
+        // benefits4: "वाढलेले स्वावलंबन व सक्षमीकरण",
+        // benefits5: "मानसिक व भावनिक आधार",
+        // qualitiesVocational: "व्यावसायिक सल्लागारांची गुणवैशिष्ट्ये",
+        // qualities1: "व्यावसायिक मार्गदर्शनाचे ज्ञान",
+        // qualities2: "उत्कृष्ट संवाद कौशल्य",
+        // qualities3: "व्यक्तींच्या गरजा समजून घेण्याची क्षमता",
+        // qualities4:
+        //   "कार्यक्षेत्रातील अनुकूलता व प्रवेशसुलभता सुनिश्चित करण्याची क्षमता",
+        // qualities5: "गोपनीयता व विश्वासार्हता",
+        // taglineVocational:
+        //   "व्यावसायिक सल्लागाराची भूमिका दिव्यांग व्यक्तींसाठी अत्यावश्यक आहे. व्यावसायिक शिक्षणाबाबत मार्गदर्शन, रोजगाराच्या संधी ओळखणे, व कार्यक्षेत्रातील अनुकूलता सुनिश्चित करून, ते व्यक्तींना स्वावलंबन व सक्षमीकरण मिळवून देण्यासाठी सहकार्य करतात.",
+        // mail: "संपर्क",
+        // floorVocationl: "चौथा मजला",
+        // department2: "विशेष शिक्षण विभाग",
+        // roleSE: "विशेष शिक्षकाची भूमिका",
+        // roleSE1: "मूल्यांकन आणि ओळख",
+        // roleSE2: "व्यक्तिनिष्ठ शैक्षणिक योजना (IEPs)",
+        // roleSE3: "अनुकूलित अभ्यासक्रम",
+        // roleSE4: "वकिली",
+        // roleSE5: "वर्तन मूल्यांकन",
+        // roleSE6: "गट सत्रे",
+        // seWork: "विशेष शिक्षक खालील प्रकारच्या दिव्यांगत्वांवर कार्य करतात",
+        // seWork1: "शिक्षणाशी संबंधित अडचणी (Learning Disabilities)",
+        // seWork2: "ऑटिझम स्पेक्ट्रम डिसऑर्डर",
+        // seWork3: "दृक्‍दृष्टी अडचणी (Visual Impairment)",
+        // seWork4: "श्रवण अडचणी (Hearing Impairment)",
+        // seWork5: "बौद्धिक दिव्यांगत्व",
+        // seWork6: "सेरेब्रल पाल्सी",
+        // seWork7: "बहुविध दिव्यांगत्व",
+        // therapySE: "थेरपी सेवा",
+        // therapySE1: "संवाद कौशल्य (Communication)",
+        // therapySE2: "सामाजिक कौशल्य (Socialisation)",
+        // therapySE3: "संज्ञानात्मक विकास (Cognitive)",
+        // therapySE4: "दैनंदिन जीवनातील क्रिया (Activities of Daily Living)",
+        // therapySE5: "मोटर कौशल्ये (स्थूल व सूक्ष्म)",
+        // therapySE6: "पूर्व-अकादमिक शिक्षण (Pre-Academic)",
+        // therapySE7: "पूर्व-लेखन कौशल्य (Pre-Writing)",
+        // therapySE8: "पूर्व-वाचन कौशल्य (Pre-Reading)",
+        // therapySE9: "पूर्व-गणित कौशल्य (Pre-Maths)",
+        // seTagline:
+        //   "विशेष शिक्षक वर्तन मूल्यांकनाद्वारे व्यक्तींच्या शैक्षणिक यशासाठी महत्त्वपूर्ण योगदान देतात, त्यासाठी संवाद, सामाजिक वर्तन, आणि दैनंदिन जीवनातील कौशल्ये वाढवण्यावर लक्ष केंद्रित केले जाते.",
+        // floorSE: "चौथा मजला",
+        // department3: "सांकेतिक भाषा विभाग",
+        // signWork: "विभागातील कार्य",
+        // signWork1:
+        //   "कार्यक्रमांमध्ये संकेत भाषेचे भाषांतर करणे, भारतीय संकेत भाषा (ISL) वर्ग घेणे, कर्णबधिर व्यक्तींच्या पालकांसाठी समुपदेशन",
+        // signCapacity: "विभागाची क्षमता",
+        // signCapacity1:
+        //   "गट क्रियाकलाप किंवा वैयक्तिक सत्रांसाठी एकावेळी २० व्यक्तींची क्षमता (उदा. - ISL कोर्स)",
+        // signFeatures: "विभागाची वैशिष्ट्ये",
+        // signFeatures1: "संवाद कौशल्ये विकसित करणे",
+        // signFeatures2: "भारतीय संकेत भाषा शिकवणे",
+        // signFeatures3: "सर्वांसाठी खुले",
+        // signFeatures4: "कर्णबधिर व्यक्तींशी संकेत भाषेत संवाद साधणे",
+        // signFeatures5:
+        //   "ऐकणारे आणि कर्णबधिर गटांमध्ये संवादाचा दुरावा कमी करण्यास मदत करणे ",
+        // floorSign: "चौथा मजला",
+        // department4: "मानसशास्त्र विभाग",
+        // testingService: "चाचणी आणि मूल्यमापन सेवा",
+        // testingService1: "विकासात्मक मूल्यमापन (Developmental Assessment)",
+        // testingService2: "संज्ञानात्मक मूल्यमापन (IQ चाचणी)",
+        // testingService3: "सामाजिक विकास मूल्यमापन (SIQ)",
+        // testingService4: "शैक्षणिक कामगिरी मूल्यमापन (LD/SLD)",
+        // testingService5: "वर्तन मूल्यांकन (Behavioural Assessment)",
+        // testingService6:
+        //   "इतर सेवा (प्रक्रियेत)-जीवनमान गुणवत्ता (QOL) मूल्यमापन, आत्मसन्मान चाचणी (Self Esteem), बेक-तणाव, चिंतेचे व नैराश्य मूल्यमापन (Beck-Stress, Anxiety, Depression Assessments)",
+        // therapyServices: "थेरपी सेवा",
+        // therapyServices1: "मानसशैक्षणिक मार्गदर्शन (Psycho Education)",
+        // therapyServices2: "वैयक्तिक थेरपी (मुले, किशोरवयीन, प्रौढ)",
+        // therapyServices3: "संज्ञानात्मक वर्तन थेरपी (CBT)",
+        // therapyServices4: "वर्तन थेरपी (BT)",
+        // therapyServices5: "गट थेरपी",
+        // therapyServices6: "कौटुंबिक थेरपी",
+        // therapyServices7: "ट्रान्झॅक्शनल अनालिसिस थेरपी",
+        // therapyServices8: "REBT (रॅशनल एमोटिव्ह बिहेवियर थेरपी)",
+        // therapyServices9: "कला थेरपी (Art Therapy)",
+        // therapyServices10:
+        //   "ग्राहकाच्या गरजेनुसार आणि कार्यक्षमतेनुसार विविध मॉडेल (Eclectic Model)",
+        // communityOutreac: "समुदाय संपर्क सेवा (दिव्यांग व्यक्तींसाठी)",
+        // communityOutreach1: "कार्यशाळा आणि सेमिनार",
+        // communityOutreach2: "सपोर्ट ग्रुप",
+        // communityOutreach3: "समुदाय कार्यक्रम",
+        // communityOutreach4: "स्थानिक संस्थांसोबत सहयोग",
+        // communityOutreach5: "वर्तन मूल्यांकन",
+        // communityOutreach6: "संदर्भ सेवा (Referral Services)",
+        // amenities: "दिव्यांग व्यक्तींसाठी उपलब्ध सुविधा",
+        // amenities1: "मोफत पार्किंग",
+        // amenities2: "व्हीलचेअर प्रवेशसुलभता",
+        // amenities3: "आरामदायक प्रतीक्षागृह",
+        // amenities4: "अल्पोपहार सेवा (फूड ट्रक - प्रक्रियेत)",
+        // amenities5: "मुलांसाठी खेळाची जागा",
+        // floorPsychology: "चौथा मजला",
+        // department5: "प्रोस्थेटिक्स आणि ऑर्थोटिक्स विभाग",
+        // prostheContent:
+        //   "पिंपरी चिंचवड महानगरपालिका दिव्यांग भवन फाउंडेशन, मोरवाडी पिंपरी येथील प्रोस्थेटिक्स आणि ऑर्थोटिक्स (P&O) विभाग शारीरिक अपंगत्व असलेल्या व्यक्तींसाठी अत्याधुनिक प्रोस्थेटिक आणि ऑर्थोटिक उपाययोजना पुरवून त्यांचा जीवनमान सुधारण्याचे काम करतो. ",
+        // highlightContent:
+        //   "कुशल व्यावसायिकांच्या आमच्या टीमकडून सहानुभूतीपूर्ण काळजी, कस्टम डिव्हाइस, आणि पुनर्वसन समर्थन प्रदान केले जाते, ज्यामुळे रुग्णांना स्वातंत्र्य आणि गतिशीलता पुन्हा मिळविण्यात मदत होते.",
+        // prostheServises: "विभागाद्वारे दिल्या जाणाऱ्या सेवा",
+        // prostheServiceTitle1: "प्रोस्थेटिक सेवा",
+        // prostheServiceDesciption1:
+        //   "सानुकूलित वरच्या आणि खालच्या अंगांचे कृत्रिम अवयव, मायोइलेक्ट्रिक कृत्रिम अवयव (प्रगत बायोनिक हात), अंगच्छेदानंतर पुनर्वसन, कृत्रिम अवयवांचे समायोजन आणि देखभाल",
+        // prostheServiceTitle2: "ऑर्थोटिक सेवा ",
+        // prostheServiceDesciption2:
+        //   "पाठीचा, खालचा व वरच्या अंगासाठी कस्टम ऑर्थोटिक उपकरणे, मधुमेह, प्लांटर फॅसिआयटीस व इतर समस्यांसाठी पायाचे ऑर्थोटिक्स, जन्मजात/विकासात्मक समस्यांसाठी बाल ऑर्थोटिक्स, शस्त्रक्रियेनंतर समर्थन ब्रेस  ",
+        // prostheServiceTitle3: "पुनर्वसन आणि समर्थन सेवा",
+        // prostheServiceDesciption3:
+        //   "गतिशीलता व कार्यक्षमतेच्या सुधारासाठी फिजिकल थेरपी आणि पुनर्वसन, चालण्याच्या पद्धतीचे विश्लेषण व प्रशिक्षण, उपकरणांची फॉलो-अप काळजी व समायोजन, समुपदेशन व भावनिक समर्थन  ",
+        // prostheServiceTitle4: "सहाय्यक उपकरणे",
+        // prostheServiceDesciption4:
+        //   "1.व्हीलचेअर्स, काठ्या, आणि चालण्याची साधने, 2.गुंतागुंतीच्या गतिशीलता गरजा असलेल्या रुग्णांसाठी कस्टम सीटिंग सिस्टिम  ",
+        // featuresProsthe: "विभागाची वैशिष्ट्ये",
+        // featuresProstheTitle1: "अत्याधुनिक तंत्रज्ञान",
+        // featuresProstheDescription1:
+        //   "आमचा विभाग नवीनतम साधने व तंत्रज्ञानाने सुसज्ज आहे, ज्यामुळे प्रोस्थेसिस व ऑर्थोसिसची निर्मिती सुलभ होते. ",
+        // featuresProstheTitle2: "सानुकूलित उपाय योजना",
+        // featuresProstheDescription2:
+        //   "आम्ही प्रत्येक रुग्णाच्या विशिष्ट गरजेनुसार डिव्हाइस तयार करतो, ज्यामुळे त्यांना अधिक आराम आणि कार्यक्षमता मिळते",
+        // featuresProstheTitle3: "सर्वांगीण काळजी",
+        // featuresProstheDescription3:
+        //   "शारीरिक, भावनिक आणि मानसिक समर्थनासह पुनर्वसन व अनुकूलता प्रक्रियेतील रुग्णांना मदत करतो.  ",
+        // featuresProstheTitle4: "बहुविभागीय दृष्टिकोन",
+        // featuresProstheDescription4:
+        //   "ऑर्थोपेडिक सर्जन, फिजिओथेरपिस्ट, व इतर विशेषज्ञांसोबत टीमचे सहकार्य असते, ज्यामुळे प्रत्येक रुग्णासाठी समन्वित उपचार योजना सुनिश्चित केली जाते.  ",
+        // featuresProstheTitle5: "सुलभता",
+        // featuresProstheDescription5:
+        //   "आम्ही परवडणाऱ्या सेवांसह वेळेवर काळजी देतो, विशेषतः दुर्लक्षित समुदायातील रुग्णांसाठी",
+        // ourfacilities: "आमच्या सुविधा",
+        // floorProsthe: "दुसरा मजला",
+        // department6: "व्यावसायिक थेरपी विभाग",
+        // occupationaltagline:
+        //   "व्यावसायिक थेरपी ही एक प्रकारची थेरपी आहे जी दिव्यांग व्यक्तींना त्यांचे दैनंदिन कामे आणि क्रियाकलाप करण्यास मदत करते. ही थेरपी दिव्यांग व्यक्तींना स्वावलंबी होण्यास आणि त्यांच्या जीवनमानात सुधारणा करण्यास सहाय्य करते.",
+        // roleOccupational: "व्यावसायिक थेरपीचे कार्य",
+        // roleOccupational1:
+        //   "दिव्यांग व्यक्तींना स्वावलंबन प्राप्त करण्यात मदत करणे.",
+        // roleOccupational2:
+        //   "दिव्यांग व्यक्तींना त्यांच्या दैनंदिन कामे आणि क्रियाकलाप शिकवणे.",
+        // roleOccupational3:
+        //   "दिव्यांग व्यक्तींच्या शारीरिक आणि मानसिक क्षमतांमध्ये सुधारणा करणे",
+        // roleOccupational4:
+        //   "दिव्यांग व्यक्तींना सामाजिक आणि आर्थिक स्वावलंबन प्राप्त करण्यासाठी सहाय्य करणे.",
+        // roleOccupational5:
+        //   "दिव्यांग व्यक्तींच्या कुटुंबियांना काळजी घेण्यात सहाय्य करणे..",
+        // typesOccupational: "व्यावसायिक थेरपीचे प्रकार",
+        // typesOccupational1: "शारीरिक व्यावसायिक थेरपी",
+        // typesOccupational2: "मानसिक व्यावसायिक थेरपी",
+        // typesOccupational3: "विद्यार्थी व्यावसायिक थेरपी",
+        // typesOccupational4: "पुनर्वसन व्यावसायिक थेरपी",
+        // benefitsOccupational: "व्यावसायिक थेरपीचे फायदे",
+        // benefitsOccupational1: "स्वावलंबनात वाढ होते.",
+        // benefitsOccupational2: "दैनंदिन कामे आणि क्रियाकलाप करण्यास मदत मिळते.",
+        // benefitsOccupational3: "शारीरिक आणि मानसिक क्षमतांमध्ये सुधारणा होते.",
+        // benefitsOccupational4:
+        //   "सामाजिक आणि आर्थिक स्वावलंबनासाठी सहाय्य मिळते.",
+        // benefitsOccupational5: "जीवनमानात सुधारणा होते.",
+        // occupationalBottomLine:
+        //   "व्यावसायिक थेरपी ही दिव्यांग व्यक्तींसाठी अत्यंत महत्त्वाची आहे, जी त्यांना स्वावलंबन प्राप्त करण्यात आणि त्यांच्या जीवनमानात सुधारणा करण्यात मदत करते.",
+        // floorOccupational: "दुसरा मजला",
         department7: "समुपदेशन आणि कार्यक्रम व्यवस्थापन विभाग",
         featuresCPM: "विभागाची वैशिष्ट्ये",
         featuresCPMTitle1: "1.समर्थन सेवा",
@@ -1434,7 +1439,55 @@ i18next.use(initReactI18next).init({
         fisheriesFoundation:"महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित, मुंबई",
         fisheriesaboutDescription:"खोल समुद्रातील मत्स्यव्यवसायाचा विकास व्हावा आणि मत्स्यव्यवसायात वृद्धी व्हावी यासाठी सन १९७३ मध्ये महाराष्ट्र मत्स्योद्योग विकास महामंडळाची स्थापना करण्यात आली. शासन निर्णयाच्या प्रस्तावनेनुसार, यांत्रिक मासेमारी ही आधुनिक पद्धत म्हणून स्वीकारली गेली असून यांत्रिक नौकांच्या वाढत्या संख्येमुळे मासेमारी क्षेत्रांचे अतिशोषण होण्याचा धोका आहे. त्यामुळे ३० फॅदमपेक्षा जास्त खोली असलेल्या खोल समुद्रात मासेमारी करणे गरजेचे ठरते. सध्या खाजगी उद्योजकांकडून खोल समुद्रात मासेमारी केली जात असली, तरी शासनाकडे अशा प्रकारचे कार्य हाताळणारा कोणताही अंगीकृत उपक्रम नसल्याने, पारंपरिक मच्छीमारांच्या हितासाठी शासनाने ‘महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित’ या नावाने महामंडळ स्थापन केले. हे महामंडळ खोल समुद्राचे सर्वेक्षण, माशांचे लँडिंग, विपणन आणि निर्यात यासह विविध मत्स्यविकास उपक्रमांचे संघटन, समन्वय व पर्यवेक्षण करते. मत्स्यविकासासाठी सक्षम असलेल्या भागांचा विकास करून मच्छीमारांना त्याचा थेट लाभ मिळावा, यासाठीही महामंडळ प्रयत्नशील आहे. गेल्या काही वर्षांत महामंडळाच्या कारभारात आमूलाग्र बदल घडले असून मासेमारी बंदरे, फिश लँडिंग सेंटर उभारण्यासह जलाशयांचे मासेमारी व्यवस्थापन व पिंजरा पद्धतीने मत्स्यसंवर्धनाचे प्रकल्प राबवले जात आहेत. त्यामुळे मत्स्यशेतीसाठी इच्छुक व्यक्तींमध्ये उद्योजकता निर्माण होण्यास हातभार लागतो आहे.",
         mfdcAddress:"3 रा मजला, एन.के.एम. इंटरनॅशनल हाऊस, बाबुभाई एम. चिनॉय मार्ग, मुंबई- 400 020",  
-      
+
+
+        latestnewst: "ताज्या घडामोडी",
+        latestnews1: "मत्स्य प्रकल्पांबाबत लवकरच सूचना जाहीर होणार",
+        latestnews2: "मत्स्यशेतीसाठी शासनाच्या अनुदानात सुधारणा",
+        latestnews3: "खोल समुद्रातील मासेमारीसाठी नवीन मार्गदर्शक तत्त्वे जारी",
+
+
+        // deparments
+        department1: "मुख्य कार्यालय ",
+        department2: "नागपूर विभाग",
+
+        department3: "औरंगाबाद विभाग ",
+        
+        department4: "ससुन गोदी ",
+       
+        department5: "समांतर वेतन श्रेणी कर्मचारी",
+        department6: "बाहययंत्रणेद्वारे ",
+
+        //who we are
+
+        title: "आमच्या बद्दल अधिक माहिती",
+        description:
+          "महाराष्ट्र मत्स्योद्योग विकास महामंडळ (MFDC)",
+        buttonText: "आणखी माहिती",
+        feature1Title: "बर्फ कारखाने व शीतगृह सुविधा",
+        feature1Description:
+          "मासळीच्या ताजेपणासाठी MFDC बर्फ निर्मिती यंत्रणा, शीतगृहे आणि प्रक्रीया केंद्रे उभारते व कार्यान्वित करते, जे मासळीच्या जतनासाठी महत्त्वाचे आहेत.",
+        feature2Title: "मासेमारी साहित्य निर्मिती",
+        feature2Description:
+          "महामंडळ जाळी, डिझेल व सागरी इंजिने, दोर, नावा यासारख्या मत्स्यसंबंधी साहित्याचे उत्पादन व पुरवठा करते, जे स्थानिक मासेमारांना स्वावलंबी बनवतात.",
+        feature3Title: "मूल्यवर्धित उत्पादने व निर्यात",
+        feature3Description:
+          "MFDC कडून डबाबंद मासळी, मासळीचे तेल, कुक्कुट खाद्य इ. उत्पादनांचे उत्पादन व विक्री देशांतर्गत तसेच आंतरराष्ट्रीय बाजारात केली जाते.",
+        feature4Title: "मासेमारी पायाभूत सुविधा",
+        feature4Description:
+          "महामंडळ लहान धक्के (जेट्टी), मत्स्य बंदरे, उतरवणी केंद्रे, नाव बांधणी केंद्रे यांसारखी पायाभूत सुविधांची उभारणी करून मासेमारांसाठी सुलभता निर्माण करते.   ",
+        feature5Title: "प्रशिक्षण, संशोधन व नवोन्मेष",
+        feature5Description: "तांत्रिक प्रशिक्षण, संशोधन प्रकल्प व आधुनिक तंत्रज्ञान आत्मसात करण्यासाठी MFDC विविध योजनांद्वारे मत्स्य व्यवसायास वैज्ञानिक दृष्टिकोनातून सक्षम करते.",
+        feature6Title: "रोजगार संधी व सामाजिक उत्थान",
+        feature6Description:
+          "आर्थिकदृष्ट्या दुर्बल घटकांकरिता रोजगार निर्मिती हे MFDC चे मुख्य उद्दिष्ट असून, सहकारी संस्था व स्वयं-सहायता गटांना प्रोत्साहन दिले जाते.",
+
+
+          quicklinesheading:"जलद दुवे",
+          quickLink1Title:"प्रधानमंत्री मत्स्यसंपदा योजना डॅशबोर्ड",
+          quickLink2Title:"मत्स्यव्यवसाय विभाग महाराष्ट्र शासन, भारत",
+          quickLink3Title:"सागरी आणि भूजल डॅशबोर्ड",
+          quickLink4Title :"सागरमाला - भारत सरकारचे नौवहन मंत्रालय",
       
       
       },
