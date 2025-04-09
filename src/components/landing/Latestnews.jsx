@@ -10,14 +10,14 @@ import {
   CardActionArea,
 } from '@mui/material';
 
-const Latestnews = () => {
+const  Latestnews = () => {
   const { t } = useTranslation();
 
   const latestNews = [
     {
       id: 1,
       title: 'latestnews1',
-      date: 'April 1, 2025',
+      date: 'April 10, 2025',
       link: '#', // Replace with actual URL or route
     },
     {
