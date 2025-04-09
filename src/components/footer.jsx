@@ -78,28 +78,28 @@ const Footer = () => {
               <Box sx={{ textAlign: "center" }}>
                 <IconButton
                   component="a"
-                  href="https://www.facebook.com/profile.php?id=61563587007236"
+                  href="#"
                   target="_blank"
                 >
                   <Typography component="img" src={facebook} height={30} />
                 </IconButton>
                 <IconButton
                   component="a"
-                  href="https://www.instagram.com/divyang_bhavan_pcmc/"
+                  href="#"
                   target="_blank"
                 >
                   <Typography component="img" src={instagram} height={30} />
                 </IconButton>
                 <IconButton
                   component="a"
-                  href="https://linkedin.com/company/divyang-bhavan-pcmc"
+                  href="#"
                   target="_blank"
                 >
                   <Typography component="img" src={linkedin} height={30} />
                 </IconButton>
                 <IconButton
                   component="a"
-                  href="https://www.youtube.com/@DivyangBhavanPCMC"
+                  href="#"
                   target="_blank"
                 >
                   <Typography component="img" src={youtube} height={30} />
