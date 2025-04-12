@@ -27,7 +27,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logo from "../assets/logo.png"
 import logo1 from "../assets/logo1.png"
-import logo2 from "../assets/swach-bharat.png"
+import logo2 from "../assets/Swach-Bharat.png"
 import { getFormatDate } from '../utility/dateformator';
 
 
