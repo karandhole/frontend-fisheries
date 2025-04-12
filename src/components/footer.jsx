@@ -96,7 +96,7 @@ const Footer = () => {
 
                         {/* Second Grid - Services */}
                         <Grid item xs={12} sm={6} md={3}>
-                            <Box sx={{ marginBottom: "20px", textAlign: "center" }}>
+                            <Box sx={{ marginBottom: "20px", textAlign:"center" }}>
                                 <Typography variant="h6" gutterBottom>
                                     {t("quickLinks")}
                                 </Typography>
@@ -140,7 +140,7 @@ const Footer = () => {
 
                         {/* Third Grid - Legal */}
                         <Grid item xs={12} sm={6} md={3}>
-                            <Box sx={{ marginBottom: "20px" }}>
+                            <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
                                 <Typography variant="h6" gutterBottom>
                                     {t("contact")}
                                 </Typography>

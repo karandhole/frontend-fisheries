@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Intro from "../pages/AboutUs/Intro"
 const About = () => {
   return (
-    <div>
-      <h4>about us</h4>
+    <div style={{ marginTop: '30px' }}>
+    <Intro/>
     </div>
   )
 }

@@ -46,13 +46,14 @@ function Navbar(props) {
         { page: 'guidlines', route: '/' },
         { page: 'activities', route: '/' },
         { page: 'keyprojects', route: '/' },
+        { page: 'gallery', route: '/' },
         { page: 'contact', route: '/contact' },
     ];
 
     const departmentItems = [
-        { label: 'department1', route: '/' },
-        { label: 'department2', route: '/' },
-        { label: 'department3', route: '/' },
+        { label: 'department1', route: '/maindivision' },
+        { label: 'department2', route: '/nagpurdivision' },
+        { label: 'department3', route: '/aurangabaddivision' },
     ];
 
     const NFDCProjects = [
