@@ -11,7 +11,7 @@ const MainLayout = () => {
         component="main"
         sx={{
           minHeight: '80vh',
-          paddingTop: { xs: '8rem', sm: '2.5rem' }, // Adjust based on your Navbar height
+          paddingTop: { xs: '0rem', sm: '2rem' },
         }}
       >
         <Outlet />
