@@ -5,6 +5,7 @@ import DirectorsPage from './Members'
 import QuickLinks from './Quicklineks'
 
 import Vision from './vision'
+import PlantSlider from './PlantSlider'
 
 
 
@@ -16,6 +17,7 @@ const MainPage = () => {
     <DirectorsPage/>
     <Vision/>
     <QuickLinks/>
+    <PlantSlider/>
   </>
   )
 }

@@ -50,10 +50,10 @@ export default function Vision() {
   return (
     <Box sx={{ width: '100%',justifyContent:'center' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="Vision Mission Goals Tabs">
-          <Tab label={t("vision")} {...a11yProps(0)} />
-          <Tab label={t("mission")} {...a11yProps(1)} />
-          <Tab label={t("goals")} {...a11yProps(2)} />
+        <Tabs value={value} onChange={handleChange} aria-label="Vision Mission Goals Tabs" >
+          <Tab label={t("vision")} sx={{fontWeight:'600'}} {...a11yProps(0)} />
+          <Tab label={t("mission")} sx={{fontWeight:'600'}} {...a11yProps(1)} />
+          <Tab label={t("goals")} sx={{fontWeight:'600'}} {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
