@@ -34,7 +34,7 @@ const Footer = () => {
                 }}
             >
                 <Toolbar>
-                    <Grid container spacing={4}>
+                    <Grid container spacing={6}>
                         <Grid item xs={12} sm={6} md={3}>
                             <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
                                 <Typography variant="h5" gutterBottom>
@@ -129,12 +129,7 @@ const Footer = () => {
                                         {t("privacyPolicy")}
                                     </Link>
                                 </Typography>
-                                <Typography variant="body1" sx={{ marginTop: "8px" }}>
-                                    {t("advertisementInfo")}
-                                </Typography>
-                                <Typography variant="body1" sx={{ marginTop: "8px" }}>
-                                    {t("rightToInformation")}
-                                </Typography>
+
                             </Box>
                         </Grid>
 
@@ -210,7 +205,8 @@ const Footer = () => {
                                     fontSize="large"
                                     sx={{ paddingRight: "10px" }}
                                 />{" "}
-                                {t("mfdcAddress")}
+                                {t("mfdcAddress")} <br/>
+                                {t("mfdcAddress1")}
                             </Typography>
                         </Grid>
 
