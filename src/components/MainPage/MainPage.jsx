@@ -16,7 +16,7 @@ const MainPage = () => {
     <>
     <ImageSlider />
     <Latestnews />
-    <AboutWithScroll/>
+    {/* <AboutWithScroll/> */}
     <Scheme/>
     <DirectorsPage/>
     <Vision/>
