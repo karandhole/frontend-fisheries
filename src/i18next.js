@@ -21,6 +21,7 @@ i18next.use(initReactI18next).init({
         keyprojects: "key Projects",
         schemes: "Schemes",
         gallery: "Gallery",
+        reports:"Reports",
 
 
         fisheriesFoundation: "Maharashtra Fisheries Development Corporation Limited, Mumbai",
@@ -117,6 +118,15 @@ i18next.use(initReactI18next).init({
       fisherieslocation: " Mumbai, Maharashtra",
       accessibleGuide: "Accessible Guide",
 
+      //schemes
+      schemes:"SERVICES AND SCHEMES",
+      schemetitle1:"Pradhan Mantri Matsya Sampada Yojana",
+      schemetitle2:"Group Accident Insurance Scheme under PMMSY",
+      schemetitle3:"Kisan Credit Cards (KCC)",
+      schemetitle4:"Pradhan Mantri Matsya Sampada Yojana",
+      schemetitle5:"Pradhan Mantri Matsya Sampada Yojana",
+      viewmore:"View More",
+
       }
     },
 
@@ -132,6 +142,7 @@ i18next.use(initReactI18next).init({
         keyprojects: "प्रमुख प्रकल्प",
         schemes: "योजना",
         gallery: "गॅलरी",
+        reports:"अहवाल",
 
         fisheriesFoundation: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित, मुंबई",
         fisheriesaboutDescription: "खोल समुद्रातील मत्स्यव्यवसायाचा विकास व्हावा आणि मत्स्यव्यवसायात वृद्धी व्हावी यासाठी सन १९७३ मध्ये महाराष्ट्र मत्स्योद्योग विकास महामंडळाची स्थापना करण्यात आली. शासन निर्णयाच्या प्रस्तावनेनुसार, यांत्रिक मासेमारी ही आधुनिक पद्धत म्हणून स्वीकारली गेली असून यांत्रिक नौकांच्या वाढत्या संख्येमुळे मासेमारी क्षेत्रांचे अतिशोषण होण्याचा धोका आहे. त्यामुळे ३० फॅदमपेक्षा जास्त खोली असलेल्या खोल समुद्रात मासेमारी करणे गरजेचे ठरते. सध्या खाजगी उद्योजकांकडून खोल समुद्रात मासेमारी केली जात असली, तरी शासनाकडे अशा प्रकारचे कार्य हाताळणारा कोणताही अंगीकृत उपक्रम नसल्याने, पारंपरिक मच्छीमारांच्या हितासाठी शासनाने ‘महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित’ या नावाने महामंडळ स्थापन केले. हे महामंडळ खोल समुद्राचे सर्वेक्षण, माशांचे लँडिंग, विपणन आणि निर्यात यासह विविध मत्स्यविकास उपक्रमांचे संघटन, समन्वय व पर्यवेक्षण करते. मत्स्यविकासासाठी सक्षम असलेल्या भागांचा विकास करून मच्छीमारांना त्याचा थेट लाभ मिळावा, यासाठीही महामंडळ प्रयत्नशील आहे. गेल्या काही वर्षांत महामंडळाच्या कारभारात आमूलाग्र बदल घडले असून मासेमारी बंदरे, फिश लँडिंग सेंटर उभारण्यासह जलाशयांचे मासेमारी व्यवस्थापन व पिंजरा पद्धतीने मत्स्यसंवर्धनाचे प्रकल्प राबवले जात आहेत. त्यामुळे मत्स्यशेतीसाठी इच्छुक व्यक्तींमध्ये उद्योजकता निर्माण होण्यास हातभार लागतो आहे.",
@@ -227,6 +238,16 @@ i18next.use(initReactI18next).init({
       
         fisherieslocation: " मुंबई, महाराष्ट्र",
         accessibleGuide: "सुविधायुक्त मार्गदर्शक",
+
+         //schemes
+      schemes:"सेवा आणि योजना",
+      schemetitle1:"प्रधानमंत्री मत्स्य संपदा योजना",
+      schemetitle2:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+      schemetitle3:"किसान क्रेडिट कार्ड (केसीसी)",
+      schemetitle4:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+      schemetitle5:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+      viewmore:"अधिक पहा",
+
 
 
       }

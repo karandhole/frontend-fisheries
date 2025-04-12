@@ -66,7 +66,7 @@ export default function Intro() {
         flexDirection: isMobile ? 'column' : 'row',
         minHeight: 500,
         border: '1px solid #ccc',
-        borderRadius: 2,
+        borderRadius: 0,
         overflow: 'hidden'
       }}
     >

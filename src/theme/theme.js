@@ -10,7 +10,7 @@ export const theme = createTheme({
       contrastText: '#f1ffff',
     },
     secondary: {
-      main: '#f50057',
+      main: '#2496ed',
     },
     
     text: {
@@ -20,7 +20,7 @@ export const theme = createTheme({
     },
   },
   typography:{
-    fontFamily:'Roboto',
+    fontFamily:'Poppins',
     body2:{
       fontSize:pxToRem(18),
       fontWeight:600

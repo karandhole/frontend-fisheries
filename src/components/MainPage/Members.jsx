@@ -30,9 +30,9 @@ const DirectorsPage = () => {
 ];
 
   return (
-    <Box sx={{ padding: '10px', backgroundImage:`url(${bgImage})`, backgroundPosition:'center',minHeight: '80vh', alignContent:'center', position: 'relative' }}>
+    <Box sx={{ padding: '10px', backgroundImage:`url(${bgImage})`, backgroundPosition:'center',minHeight: '60vh', alignContent:'center', position: 'relative' }}>
       {/* Heading Section */}
-      <Box sx={{ textAlign: 'center', mb: 5 }}>
+      <Box sx={{ textAlign: 'center', mb:4  }}>
     <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color:'white' }}>
           {t('peopleData')}
     </Typography>
@@ -48,18 +48,19 @@ const DirectorsPage = () => {
                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
                 transition: '0.3s',
                 '&:hover': { boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)' },
-                minHeight: '300px',
-                padding:'20px'
+                minHeight: '250px',
+                padding:'20px',
+                backgroundColor:'rgb(247, 247, 246);'
               }}
             >
               <CardContent>
                 {/* Image */}
                 <Avatar
                   sx={{
-                    width: 150,
-                    height: 150,
+                    width: '100%',
+                    height: 120,
                     margin: '0 auto 20px',
-                    borderRadius: '50%',
+                    borderRadius: '0%',
                   }}
                 />
                 {/* Name and Designation */}

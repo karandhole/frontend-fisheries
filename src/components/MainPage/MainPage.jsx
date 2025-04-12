@@ -6,6 +6,8 @@ import QuickLinks from './Quicklineks'
 
 import Vision from './vision'
 import PlantSlider from './PlantSlider'
+import Scheme from './Scheme'
+import AboutWithScroll from './about'
 
 
 
@@ -14,6 +16,8 @@ const MainPage = () => {
     <>
     <ImageSlider />
     <Latestnews />
+    <AboutWithScroll/>
+    <Scheme/>
     <DirectorsPage/>
     <Vision/>
     <QuickLinks/>

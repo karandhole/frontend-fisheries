@@ -47,6 +47,7 @@ function Navbar(props) {
         { page: 'activities', route: '/' },
         { page: 'keyprojects', route: '/' },
         { page: 'gallery', route: '/' },
+        { page: 'reports', route: '/' },
         { page: 'contact', route: '/contact' },
     ];
 
