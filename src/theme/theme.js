@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material";
-import { pxToRem } from "../utiils/utility";
+import { pxToRem } from "../utility/utility";
 
 export const theme = createTheme({
   palette: {
@@ -12,9 +12,7 @@ export const theme = createTheme({
     secondary: {
       main: '#f50057',
     },
-    background: {
-      default: '#f2f4f6',
-    },
+    
     text: {
       // primary: '#2c2932',
       primary: '#04072E',
@@ -28,26 +26,26 @@ export const theme = createTheme({
       fontWeight:600
     }
   },components:{
-    MuiButton:{
-      defaultProps:{
-        size:'small',
-        variant:'contained'
-      },
-        styleOverrides:{
-            root:()=>({
-                textTransform:'none',
-                borderRadius:8,
-            })
-        }
-    },
-    MuiInputLabel:{
-        styleOverrides:{
-            root:()=>({
-                color:"#1f2937",
-                fontWeight:'600'
-            })
-        }
-    },
+    // MuiButton:{
+    //   defaultProps:{
+    //     size:'small',
+    //     variant:'contained'
+    //   },
+    //     styleOverrides:{
+    //         root:()=>({
+    //             textTransform:'none',
+    //             borderRadius:8,
+    //         })
+    //     }
+    // },
+    // MuiInputLabel:{
+    //     styleOverrides:{
+    //         root:()=>({
+    //             color:"#1f2937",
+    //             fontWeight:'600'
+    //         })
+    //     }
+    // },
     MuiDialogTitle:{
         styleOverrides:{
             root:()=>({

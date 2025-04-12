@@ -1,446 +1,397 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import {
-  CalendarMonthOutlined,
-  KeyboardArrowUp,
-  LoginOutlined,
-  Logout,
-} from "@mui/icons-material";
-import { Link, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import Footer from "./footer";
-import { getFormatDate } from "../utiils/dateFormatter";
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import CalendarMonthOutlined from '@mui/icons-material/CalendarMonthOutlined';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Collapse from '@mui/material/Collapse';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
 
-import logoEN from "../assets/logo.png";
-import logoMAR from "../assets/logo.png";
 
-import {
-  Container,
-  Fab,
-  Fade,
-  useScrollTrigger,
-  Menu,
-  MenuItem,
-} from "@mui/material";
-import { pxToRem } from "../utiils/utility";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import MenuIcon from '@mui/icons-material/Menu';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import logo from "../assets/logo.png"
+import logo1 from "../assets/logo1.png"
+import logo2 from "../assets/swach-bharat.png"
+import { getFormatDate } from '../utility/dateformator';
+
 
 const drawerWidth = 240;
 
-const departments = [
-  { name: "department1", route: "/mainoffice" },
-  { name: "department2", route: "/nagpurv" },
-  { name: "department3", route: "/aurangabadv" },
-  { name: "department4", route: "/sasung" },
-  { name: "department5", route: "/" },
-  { name: "department6", route: "/" },
-
-];
-
 function Navbar(props) {
-  const { window } = props;
-  const navigate = useNavigate();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const { t, i18n } = useTranslation();
-  const navItem = [
-    {
-      page: "home",
-      route: "/",
-    },
-    {
-      page: "aboutUs",
-      route: "/",
-    },
-    {
-      page: "career",
-      route: "/",
-    },
-    {
-      page: "tender",
-      route: "/",
-    },
-    {
-      page: "gallery",
-      route: "/gallery",
-    },
-    {
-      page: "blog",
-      route: "/",
-    },
-    {
-      page: "contactUs",
-      route: "/",
-    },
-  ];
-  // const navItems = [t('home'), t('contactUs')];
-  const handleChangeLanguage = () => {
-    const languageCode = i18n.language === "mt" ? "en" : "mt";
-    i18n.changeLanguage(languageCode);
-  };
+    const { window } = props;
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { t, i18n } = useTranslation();
 
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
-  const handleDrawerToggle = () => {
-    if (isSmallScreen) {
-      setMobileOpen((prevState) => !prevState);
-    }
-  };
+    const navItems = [
+        { page: 'home', route: '/' },
+        { page: 'about', route: '/about' },
+        { page: 'schemes', route: '/' },
+        { page: 'rti', route: '/' },
+        { page: 'guidlines', route: '/' },
+        { page: 'activities', route: '/' },
+        { page: 'keyprojects', route: '/' },
+        { page: 'contact', route: '/contact' },
+    ];
 
-  const handleSignIn = () => {
-    if (
-      sessionStorage.getItem("@authToken") &&
-      sessionStorage.getItem("@userType") === "user"
-    ) {
-      navigate("/dashboard");
-    } else {
-      navigate("/user-login");
-    }
-  };
+    const departmentItems = [
+        { label: 'department1', route: '/' },
+        { label: 'department2', route: '/' },
+        { label: 'department3', route: '/' },
+    ];
 
-  const handleFontSize = (type) => {
-    switch (type) {
-      case "A+":
-        document.documentElement.style.fontSize = "1.3rem";
-        break;
-      case "A-":
-        document.documentElement.style.fontSize = "0.8rem";
-        break;
-      case "A":
-        document.documentElement.style.fontSize = "1rem";
-        break;
-    }
-  };
+    const NFDCProjects = [
+        { label: 'project1', route: '/' },
+        { label: 'project2', route: '/' },
+        { label: 'project3', route: '/' },
+        { label: 'project4', route: '/' },
+    ];
 
-  const logo = i18n.language === "en" ? logoEN : logoMAR;
+    const [mobileDeptOpen, setMobileDeptOpen] = React.useState(false);
+    const [mobileNFDCOpen, setMobileNFDCOpen] = React.useState(false);
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-
-  const handleDepartmentClick = (event) => {
-    setAnchorEl(event.currentTarget);
-    event.stopPropagation();
-  };
-
-  const handleDepartmentClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleDepartmentChange = (route) => {
-    navigate(route);
-    setAnchorEl(null);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <Typography component="img" src={logo} alt="Logo" height={50} sx />
-      </Typography>
-      <Divider />
-      <List>
-        {navItem.map(({ route, page }) => (
-          <ListItem key={page} disablePadding>
-            <ListItemButton
-              component={Link}
-              to={route}
-              sx={{ textAlign: "center" }}
-            >
-              <ListItemText primary={t(page)} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={handleDepartmentClick}
-            sx={{ textAlign: "center" }}
-          >
-            <ListItemText primary={t("departments")} />
-          </ListItemButton>
-        </ListItem>
-        <Menu
-          id="departments-menu"
-          anchorEl={anchorEl}
-          open={open}
-          onClose={handleDepartmentClose}
-        >
-          {departments.map(({ name, route }) => (
-            <MenuItem key={name} onClick={() => handleDepartmentChange(route)}>
-              {t(name)}
-            </MenuItem>
-          ))}
-        </Menu>
-        <ListItem disablePadding>
-          <ListItemButton onClick={handleSignIn} sx={{ textAlign: "center" }}>
-            <ListItemText primary={t("registerNow")} />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
-  );
-
-  function ScrollTop(props) {
-    const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
-    const trigger = useScrollTrigger({
-      target: window ? window() : undefined,
-      disableHysteresis: true,
-      threshold: 100,
-    });
-
-    const handleClick = (event) => {
-      const anchor = (event.target.ownerDocument || document).querySelector(
-        "#back-to-top-anchor"
-      );
-
-      if (anchor) {
-        anchor.scrollIntoView({
-          block: "center",
-        });
-      }
+    const handleMobileDeptToggle = () => {
+        setMobileDeptOpen(!mobileDeptOpen);
     };
 
-    return (
-      <Fade in={trigger}>
-        <Box
-          onClick={handleClick}
-          role="presentation"
-          sx={{ position: "fixed", bottom: 16, right: 16, zIndex: 2 }}
-        >
-          {children}
+    const [NFDCMenuAnchorEl, setNFDCMenuAnchorEl] = React.useState(null);
+
+
+
+    const handleDrawerToggle = () => {
+        setMobileOpen((prevState) => !prevState);
+    };
+
+    const [deptAnchorEl, setDeptAnchorEl] = React.useState(null);
+    const deptMenuOpen = Boolean(deptAnchorEl);
+
+    const handleDeptMenuClick = (event) => {
+        setDeptAnchorEl(event.currentTarget);
+    };
+
+    const handleDeptMenuClose = () => {
+        setDeptAnchorEl(null);
+    };
+
+
+    const handleFontSize = (type) => {
+        switch (type) {
+            case "A+":
+                document.documentElement.style.fontSize = "1.3rem";
+                break;
+            case "A-":
+                document.documentElement.style.fontSize = "0.8rem";
+                break;
+            case "A":
+                document.documentElement.style.fontSize = "1rem";
+                break;
+            default:
+                break;
+        }
+    };
+
+
+    const handleChangeLanguage = () => {
+        const languageCode = i18n.language === "mr" ? "en" : "mr";
+        i18n.changeLanguage(languageCode);
+    };
+
+    const drawer = (
+        <Box sx={{ textAlign: 'center' }}>
+            <Divider />
+            <List>
+                {navItems.map((item) => (
+                    <React.Fragment key={item.page}>
+                        <ListItem disablePadding onClick={handleDrawerToggle}>
+                            <ListItemButton component={Link} to={item.route} sx={{ textAlign: 'center' }}>
+                                <ListItemText primary={t(item.page)} />
+                            </ListItemButton>
+                        </ListItem>
+
+                        {/* Insert Departments after 'about' */}
+                        {item.page === 'about' && (
+                            <>
+                                <ListItem button onClick={handleMobileDeptToggle} sx={{ textAlign: 'center' }}>
+                                    <ListItemText primary={t("departments")} />
+                                    {mobileDeptOpen ? <ExpandLess /> : <ExpandMore />}
+                                </ListItem>
+
+                                <Collapse in={mobileDeptOpen} timeout="auto" unmountOnExit>
+                                    <List component="div" disablePadding>
+                                        {departmentItems.map((dept) => (
+                                            <ListItem key={dept.label} disablePadding onClick={handleDrawerToggle}>
+                                                <ListItemButton
+                                                    component={Link}
+                                                    to={dept.route}
+                                                    sx={{ textAlign: 'center' }}
+                                                >
+                                                    <ListItemText primary={t(dept.label)} />
+                                                </ListItemButton>
+                                            </ListItem>
+                                        ))}
+                                    </List>
+                                </Collapse>
+
+                                {/* NFDC Projects Section */}
+                                <ListItem button onClick={() => setMobileNFDCOpen(!mobileNFDCOpen)} sx={{ textAlign: 'center' }}>
+                                    <ListItemText primary={t("nfdc_projects")} />
+                                    {mobileNFDCOpen ? <ExpandLess /> : <ExpandMore />}
+                                </ListItem>
+
+                                <Collapse in={mobileNFDCOpen} timeout="auto" unmountOnExit>
+                                    <List component="div" disablePadding>
+                                        {NFDCProjects.map((project) => (
+                                            <ListItem key={project.label} disablePadding onClick={handleDrawerToggle}>
+                                                <ListItemButton
+                                                    component={Link}
+                                                    to={project.route}
+                                                    sx={{ textAlign: 'center' }}
+                                                >
+                                                    <ListItemText primary={t(project.label)} />
+                                                </ListItemButton>
+                                            </ListItem>
+                                        ))}
+                                    </List>
+                                </Collapse>
+                            </>
+
+                        )}
+                    </React.Fragment>
+                ))}
+            </List>
         </Box>
-      </Fade>
     );
-  }
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+    const container = window !== undefined ? () => window().document.body : undefined;
 
-  return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
+    return (
+        <Box sx={{ display: 'flex' }}>
+            <CssBaseline />
+            <AppBar component="nav">
+                <Box
+                    sx={{
+                        backgroundColor: "#393185",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        px: { xs: 0, sm: 10 },
+                    }}
+                >
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Button sx={{ color: "white" }} size="small" onClick={handleChangeLanguage}>
+                            {i18n.language === "en" ? "Marathi" : "English"}
+                        </Button>
+                        <Button sx={{ color: "white" }} onClick={() => handleFontSize("A+")} size="small">
+                            A+
+                        </Button>
+                        <Button sx={{ color: "white" }} onClick={() => handleFontSize("A")} size="small">
+                            A
+                        </Button>
+                        <Button sx={{ color: "white" }} onClick={() => handleFontSize("A-")} size="small">
+                            A-
+                        </Button>
+                    </Box>
 
-      <AppBar component="nav" sx={{ backgroundColor: "white", color: "black" }}>
-        <Box
-          sx={{
-            backgroundColor: "#393185",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            px: { xs: 0, sm: 10 },
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Box sx={{ borderRight: "2px solid #393185" }}>
-              <Button
-                sx={{ color: "white" }}
-                size="small"
-                onClick={handleChangeLanguage}
-              >
-                {i18n.language === "en" ? "Marathi" : "English"}
-              </Button>
-            </Box>
-            <Box sx={{ borderRight: "2px solid #393185" }}>
-              <Button
-                sx={{ color: "white" }}
-                onClick={() => handleFontSize("A+")}
-                size="small"
-              >
-                A+
-              </Button>
-            </Box>
-            <Box sx={{ borderRight: "2px solid #393185" }}>
-              <Button
-                sx={{ color: "white" }}
-                onClick={() => handleFontSize("A")}
-                size="small"
-              >
-                A
-              </Button>
-            </Box>
-            <Box sx={{ borderRight: "2px solid #393185" }}>
-              <Button
-                sx={{ color: "white" }}
-                onClick={() => handleFontSize("A-")}
-                size="small"
-              >
-                A-
-              </Button>
-            </Box>
-          </Box>
+                    <Typography
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            color: "white",
+                            gap: 1,
+                            fontSize: 15,
+                        }}
+                        mr={1}
+                    >
+                        <CalendarMonthOutlined
+                            sx={{ display: { xs: "none", md: "block" } }}
+                        />{" "}
+                        {getFormatDate(new Date())}
+                    </Typography>
 
-          <Box>
-            <Typography
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "white",
-                gap: 1,
-                fontSize: 15,
-              }}
-              mr={1}
-            >
-              <CalendarMonthOutlined
-                sx={{ display: { xs: "none", md: "block" } }}
-              />{" "}
-              {getFormatDate(new Date())}
-            </Typography>
-          </Box>
-        </Box>
-        <Container maxWidth="xl">
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              variant="h6"
-              sx={{
-                display: { xs: "flex", md: "none" },
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              <Typography component="img" src={logo} alt="Logo" height={55} />
-            </Typography>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ display: { xs: "none", sm: "block" }, pt: 1 }}
-            >
-              <Typography component="img" src={logo} alt="Logo" height={70} />
-            </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItem.map(({ route, page }, index) => (
-                <React.Fragment key={page}>
-                  <Button
-                    component={Link}
-                    to={route}
-                    sx={{ fontSize: pxToRem(15), mr: 2 }}
-                  >
-                    {t(page)}
-                  </Button>
-                  {/* Insert the Departments dropdown right after About Us */}
-                  {page === "aboutUs" && (
-                    <>
-                      <Button
-                        aria-controls={open ? "departments-menu" : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? "true" : undefined}
-                        onClick={handleDepartmentClick}
-                        sx={{ fontSize: pxToRem(15), mr: 2 }}
-                      >
-                        {t("departments")}
-                      </Button>
-                      <Menu
-                        id="departments-menu"
-                        anchorEl={anchorEl}
-                        open={open}
-                        onClose={handleDepartmentClose}
-                      >
-                        {departments.map(({ name, route }) => (
-                          <MenuItem
-                            key={name}
-                            onClick={() => handleDepartmentChange(route)}
-                          >
-                            {name}
-                          </MenuItem>
+
+                </Box>
+
+                {/* ////////////// */}
+
+
+                <Toolbar sx={{ backgroundColor: "white", px: { xs: 2, sm: 0 } }}>
+                    <IconButton color="inherit">
+                        <MenuIcon />
+                    </IconButton>
+
+                    <Box
+                        sx={{
+                            flex: 1,
+                            display: "flex",
+                            flexDirection: { xs: "row", sm: "row" }, // Stack vertically on xs
+                            alignItems: "center",
+                            justifyContent: "flex-start",
+                            gap: { xs: 1, sm: 6 }, // Smaller gap on mobile
+                            py: 1,
+                        }}
+                    >
+                        <Box
+                            component="img"
+                            src={logo}
+                            alt="Logo 1"
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
+                        />
+                        <Box
+                            component="img"
+                            src={logo1}
+                            alt="Logo 2"
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
+                        />
+                        <Box
+                            component="img"
+                            src={logo2}
+                            alt="Logo 3"
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
+                        />
+                    </Box>
+                </Toolbar>
+
+
+                {/* third nav */}
+                <Toolbar sx={{
+                    backgroundColor: "#388de8",
+                    minHeight: '0px !important',         // force override MUI default
+                                         
+                    paddingTop: '2px',
+                    paddingBottom: '2px',
+                }}>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ display: { sm: 'none' }, padding: '0px' }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+
+                    {/* Desktop nav buttons */}
+                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2, }}
+                    >
+                        {navItems.map((item) => (
+                            <React.Fragment key={item.page}>
+                                <Button
+                                    component={Link}
+                                    to={item.route}
+                                    sx={{ color: 'white', fontWeight: '600' }}
+                                >
+                                    {t(item.page)}
+                                </Button>
+
+                                {/* Show the department dropdown right after 'about' */}
+                                {item.page === "about" && (
+                                    <>
+                                        <Button
+                                            sx={{ color: 'white', fontWeight: '600' }}
+                                            onClick={handleDeptMenuClick}
+                                            endIcon={<ArrowDropDownIcon />}
+                                        >
+                                            {t('departments')}
+                                        </Button>
+                                        <Menu
+                                            anchorEl={deptAnchorEl}
+                                            open={deptMenuOpen}
+                                            onClose={handleDeptMenuClose}
+                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                                            transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+                                        >
+                                            {departmentItems.map((dept) => (
+                                                <MenuItem
+                                                    key={dept.label}
+                                                    component={Link}
+                                                    to={dept.route}
+                                                    onClick={handleDeptMenuClose}
+                                                >
+                                                    {t(dept.label)}
+                                                </MenuItem>
+                                            ))}
+                                        </Menu>
+
+
+                                        {/* NFDC Projects Button */}
+                                        <Button
+                                            sx={{ color: 'white', fontWeight: '600' }}
+                                            onClick={(e) => setNFDCMenuAnchorEl(e.currentTarget)}
+                                            endIcon={<ArrowDropDownIcon />}
+                                        >
+                                            {t('nfdc_projects')}
+                                        </Button>
+                                        <Menu
+                                            anchorEl={NFDCMenuAnchorEl}
+                                            open={Boolean(NFDCMenuAnchorEl)}
+                                            onClose={() => setNFDCMenuAnchorEl(null)}
+                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                                            transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+                                        >
+                                            {NFDCProjects.map((project) => (
+                                                <MenuItem
+                                                    key={project.label}
+                                                    component={Link}
+                                                    to={project.route}
+                                                    onClick={() => setNFDCMenuAnchorEl(null)}
+                                                >
+                                                    {t(project.label)}
+                                                </MenuItem>
+                                            ))}
+                                        </Menu>
+                                    </>
+                                )}
+                            </React.Fragment>
                         ))}
-                      </Menu>
-                    </>
-                  )}
-                </React.Fragment>
-              ))}
-              {/* <Button
-                onClick={handleSignIn}
-                endIcon={<LoginOutlined />}
-                sx={{
-                  fontSize: 15,
-                  color: "white",
-                  backgroundColor: "#393185",
-                  "&:hover": { backgroundColor: "#9b009b" },
-                }}
-              >
-                {t("registerNow")}
-              </Button> */}
+                    </Box>
+                </Toolbar>
+            </AppBar>
+            <nav>
+                <Drawer
+                    container={container}
+                    variant="temporary"
+                    open={mobileOpen}
+                    onClose={handleDrawerToggle}
+                    ModalProps={{ keepMounted: true }}
+                    sx={{
+                        display: { xs: 'block', sm: 'none' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    }}
+                >
+                    {drawer}
+                </Drawer>
+            </nav>
+            <Box component="main" sx={{ p: 3 }}>
+                <Toolbar />
             </Box>
-
-            {/* <Typography
-            variant="h6"
-            component="div"
-            sx={{  display: { xs: 'none', sm: 'block' }, }}
-          >
-            <Typography component='img' src={shivajiLogo} alt='Logo' width={120} />
-          </Typography> */}
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-      <ScrollTop {...props}>
-        <Fab
-          size="medium"
-          sx={{
-            backgroundColor: "#4682e3",
-            "&:hover": { backgroundColor: "#9b009b" },
-          }}
-        >
-          <KeyboardArrowUp sx={{ color: "white" }} />
-        </Fab>
-      </ScrollTop>
-      <Box component="main" sx={{ width: "100%" }}>
-        <Toolbar id="back-to-top-anchor" />
-        {props.children}
-        <Box id="footer">
-          <Footer />
         </Box>
-      </Box>
-    </Box>
-  );
+    );
 }
+
+Navbar.propTypes = {
+    window: PropTypes.func,
+};
 
 export default Navbar;
