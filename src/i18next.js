@@ -127,6 +127,19 @@ i18next.use(initReactI18next).init({
       schemetitle5:"Pradhan Mantri Matsya Sampada Yojana",
       viewmore:"View More",
 
+
+      //RTi
+
+      RtiHeadlines:"Right to Information",
+      rti1:"Proactive Disclosure on Website",
+      rti2:"Disposal of Online RTI/Appeal: The online RTI filed by an applicant directly to Department of Fisheries will first come in the Nodal Account of DOF which is managed by RTI Cell.",
+      rti3:"Disposal of Offline RTI/Appeal",
+      rti4:"RTI Cell is responsible for the timely submission of RTI Quarterly Returns to Central Information Commission.",
+      rti5:"RTI Cell is responsible for the circulation of instructions relating to RTI issued by CIC/DoPT among all CPIOs/FAAs in Department of Fisheries as well as among all Public Authorities under Department of Fisheries by post/email.",
+      rti6:"RTI Cell is responsible to issue User ID and Password to every officer who joins as CPIO or First Appellate Authority in Department of Fisheries.",
+      rti7:"RTI Cell is responsible to see whether there are any pending RTI/Appeals inside the account of any CPIO/FAA for a long time.",
+      titlerti:"Title",
+      filerti:"Download File"
       }
     },
 
@@ -248,6 +261,19 @@ i18next.use(initReactI18next).init({
       schemetitle5:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
       viewmore:"अधिक पहा",
 
+     //RTi
+
+     RtiHeadlines:"माहितीचा अधिकार",
+     rti1:"वेबसाइटवर सक्रिय खुलासा",
+     rti2:"ऑनलाइन आरटीआय/अपीलचा निपटारा: अर्जदाराने थेट मत्स्यव्यवसाय विभागाकडे दाखल केलेला ऑनलाइन आरटीआय प्रथम आरटीआय सेलद्वारे व्यवस्थापित केलेल्या डीओएफच्या नोडल खात्यात येईल.",
+     rti3:"ऑफलाइन आरटीआय/अपीलचा निपटारा",
+     rti4:"केंद्रीय माहिती आयोगाकडे आरटीआय तिमाही विवरणपत्रे वेळेवर सादर करण्याची जबाबदारी आरटीआय सेलची आहे.",
+     rti5:"मत्स्यव्यवसाय विभागातील सर्व सीपीआयओ/एफएए तसेच मत्स्यव्यवसाय विभागाच्या अंतर्गत येणाऱ्या सर्व सार्वजनिक प्राधिकरणांमध्ये सीआयसी/डीओपीटीने जारी केलेल्या आरटीआयशी संबंधित सूचना पोस्ट/ईमेलद्वारे प्रसारित करण्याची जबाबदारी आरटीआय सेलची आहे.",
+     rti6:"मत्स्यव्यवसाय विभागात सीपीआयओ किंवा प्रथम अपीलीय अधिकारी म्हणून सामील होणाऱ्या प्रत्येक अधिकाऱ्याला यूजर आयडी आणि पासवर्ड जारी करण्याची जबाबदारी आरटीआय सेलची आहे.",
+     rti7:"कोणत्याही सीपीआयओ/एफएएच्या खात्यात दीर्घकाळापासून कोणतेही प्रलंबित आरटीआय/अपील आहेत का हे पाहण्याची जबाबदारी आरटीआय सेलची आहे.",
+
+     titlerti:"शीर्षक",
+     filerti:"फाइल डाउनलोड करा",
 
 
       }

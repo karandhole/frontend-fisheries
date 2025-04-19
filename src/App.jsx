@@ -10,6 +10,7 @@ import Sidebar from './pages/admin/sidebar';
 import Home from './pages/admin/user';
 import Dammanage from './pages/admin/dammanage';
 import Cagemanage from './pages/admin/cagemanage';
+import Rti from './pages/rti';
 
 
 
@@ -23,15 +24,16 @@ function App() {
         <Route path="/maindivision" element={<MainDivision />} />
         <Route path="/aurangabaddivision" element={<AurangabadDivision />} />
         <Route path="/nagpurdivision" element={<NagpurDivision />} />
+        <Route path="/rti" element={<Rti />} />
 
 
         
       </Route>
-      <Route path="/admin-sidebar" element={<Sidebar />} />
+      <Route path="/admin-sidebar" element={<Sidebar/>} />
        {/* Sidebar-wrapped Routes */}
-       <Route path="/dashbord" element={<Sidebar><Home /></Sidebar>} />
+       <Route path="/dashbord" element={<Sidebar><Home/></Sidebar>} />
         <Route path="/dam" element={<Sidebar>< Dammanage/></Sidebar>} />
-        <Route path="/cage" element={<Sidebar><Cagemanage /></Sidebar>} />
+        <Route path="/cage" element={<Sidebar><Cagemanage/></Sidebar>} />
     </Routes>
   );
 }

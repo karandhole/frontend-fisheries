@@ -42,7 +42,7 @@ function Navbar(props) {
         { page: 'home', route: '/' },
         { page: 'about', route: '/about' },
         { page: 'schemes', route: '/' },
-        { page: 'rti', route: '/' },
+        { page: 'rti', route: '/rti' },
         { page: 'guidlines', route: '/' },
         { page: 'activities', route: '/' },
         { page: 'keyprojects', route: '/' },

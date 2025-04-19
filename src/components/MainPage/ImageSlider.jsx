@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import slider1 from "../../assets/bg2.jpg";
-import slider2 from "../../assets/bg1.jpg"
+import slider2 from "../../assets/slider2.jpg"
 import { useTranslation } from "react-i18next";
 
 const ImageSlider = () => {

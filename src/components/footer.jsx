@@ -44,19 +44,7 @@ const Footer = () => {
                                     {t("fisherieslocation")}
                                 </Typography>
                             </Box>
-                            <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
-                                <Typography
-                                    variant="body1"
-                                    sx={{
-                                        marginTop: "5px",
-                                        paddingLeft: "30px",
-                                        paddingRight: "30px",
-                                    }}
-                                >
-                                    "{t("committedEmpowerment")} -<br />{" "}
-                                    {t("mfdc")}"
-                                </Typography>
-                            </Box>
+                            
                             <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
                                 <Typography variant="body1" sx={{ marginTop: "5px" }}>
                                     {t("connectWithUs")}

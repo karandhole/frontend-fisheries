@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { useTranslation } from 'react-i18next';
+import bg from "../../assets/bg3.jpg";
 
 
 
@@ -48,7 +49,7 @@ export default function Vision() {
   };
 
   return (
-    <Box sx={{ width: '100%',justifyContent:'center',backgroundColor:'rgb(247, 247, 246);',pb:4 }}>
+    <Box sx={{ width: '100%',justifyContent:'center',backgroundImage: `url(${bg})`,pb:4 }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="Vision Mission Goals Tabs" >
           <Tab label={t("vision")} sx={{fontWeight:'600'}} {...a11yProps(0)} />
