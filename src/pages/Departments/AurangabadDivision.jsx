@@ -66,16 +66,16 @@ export default function AurangabadDivision() {
       <Typography variant="h5" gutterBottom>
         {t("contactinfo1")}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("corpName1")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         {t("address1")}
       </Typography>
-      {/* <Typography variant="body1">
+      {/* <Typography variant="body2">
         <strong>{t("email1")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("phone1")}</strong>
       </Typography> */}
     </Box>

@@ -25,11 +25,7 @@ export const theme = createTheme({
       fontSize:pxToRem(18),
       fontWeight:600
     },
-    body1:{
-      fontSize:pxToRem(18),
-      fontWeight:500,
-      padding:4,
-    }
+ 
     
   },components:{
    

@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 const MainLayout = () => {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Box
         component="main"
         sx={{

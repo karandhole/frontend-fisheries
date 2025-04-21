@@ -8,11 +8,11 @@ import {
   useMediaQuery,
   useTheme
 } from '@mui/material';
+import img1 from '../../assets/plant/plant1.jpg';
+import img2 from '../../assets/plant/plant8.jpg';
 import { useTranslation } from 'react-i18next';
 
-// Tab Panel
 function TabPanel(props) {
-
   const { children, value, index, ...other } = props;
 
   return (
@@ -25,7 +25,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: { xs: 2, sm: 3 } }}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -45,15 +45,28 @@ function a11yProps(index) {
   };
 }
 
-// Tab Content Components
 const Introduction = () => {
   const { t } = useTranslation();
   return (
     <>
       <Typography variant="h6" gutterBottom>{t("introduction")}</Typography>
-      <Typography>
-        {t("introduction_description")}
-      </Typography>
+      <Typography>{t("intro_desc")}</Typography>
+
+      {/* Image Section */}
+      <Box sx={{ display: 'flex', gap: 2, mt: 2, flexWrap: 'wrap' }}>
+        <Box
+          component="img"
+          src={img1}
+          alt="Image 1"
+          sx={{ width: { xs: '100%', sm: '48%' }, borderRadius: 2 }}
+        />
+        <Box
+          component="img"
+          src={img2}
+          alt="Image 2"
+          sx={{ width: { xs: '100%', sm: '48%' }, borderRadius: 2 }}
+        />
+      </Box>
     </>
   );
 };
@@ -63,9 +76,7 @@ const WhoWe = () => {
   return (
     <>
       <Typography variant="h6" gutterBottom>{t("who_we_are")}</Typography>
-      <Typography>
-        {t("who_we_are_description")}
-      </Typography>
+      <Typography>{t("who_we_are_description")}</Typography>
     </>
   );
 };
@@ -75,14 +86,10 @@ const WhatWeDo = () => {
   return (
     <>
       <Typography variant="h6" gutterBottom>{t("what_we_do")}</Typography>
-      <Typography>
-        {t("what_we_do_description")}
-      </Typography>
+      <Typography>{t("what_we_do_description")}</Typography>
     </>
   );
 };
-
-
 
 const OurMission = () => {
   const { t } = useTranslation();
@@ -96,7 +103,6 @@ const OurMission = () => {
   );
 };
 
-
 const TheStory = () => {
   const { t } = useTranslation();
   return (
@@ -109,7 +115,6 @@ const TheStory = () => {
   );
 };
 
-
 const Objectives = () => {
   const { t } = useTranslation();
   return (
@@ -121,7 +126,6 @@ const Objectives = () => {
     </>
   );
 };
-
 
 const OurValues = () => {
   const { t } = useTranslation();
@@ -147,7 +151,6 @@ const FutureVision = () => {
   );
 };
 
-// Main Component
 export default function Intro() {
   const { t } = useTranslation();
   const [value, setValue] = React.useState(0);
@@ -161,13 +164,12 @@ export default function Intro() {
   return (
     <Box
       sx={{
-        flexGrow: 1,
-        bgcolor: 'background.paper',
         display: 'flex',
         flexDirection: isMobile ? 'column' : 'row',
-        minHeight: 500,
-        border: '1px solid #ccc',
-        borderRadius: 0,
+        minHeight: '80vh',
+        maxHeight: 'auto',
+        borderRadius: 2,
+        boxShadow: 2,
         overflow: 'hidden'
       }}
     >
@@ -178,23 +180,25 @@ export default function Intro() {
         onChange={handleChange}
         aria-label="About Us Tabs"
         sx={{
-          borderRight: isMobile ? 0 : 1,
-          borderBottom: isMobile ? 1 : 0,
-          borderColor: 'divider',
-          width: isMobile ? '100%' : '30%',
+          width: isMobile ? '100%' : '280px',
+           minWidth:'280px',
           backgroundColor: '#f7f9fc',
+          borderRight: isMobile ? 0 : '1px solid #ccc',
           '& .MuiTab-root': {
             fontWeight: 600,
             fontSize: '1rem',
             textTransform: 'none',
             px: 2,
             py: 1.5,
-            transition: '0.3s',
+            textAlign: 'left',
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
             borderRadius: isMobile ? '8px' : '0px 40px 40px 0px',
             '&:hover': {
               backgroundColor: '#e0f0ff',
               color: '#1976d2',
             },
+           
           },
           '& .Mui-selected': {
             color: '#fff',
@@ -205,7 +209,7 @@ export default function Intro() {
             height: isMobile ? 3 : '100%',
             width: isMobile ? '100%' : 4,
             borderRadius: isMobile ? 0 : '0px 5px 5px 0px',
-          }
+          },
         }}
       >
         <Tab label={t("introduction")} {...a11yProps(0)} />
@@ -218,7 +222,7 @@ export default function Intro() {
         <Tab label={t("future_vision")} {...a11yProps(7)} />
       </Tabs>
 
-      <Box sx={{ flexGrow: 1, overflowY: 'auto' }}>
+      <Box sx={{ flexGrow: 1, p: 3, maxHeight: '80vh', overflowY: 'auto' }}>
         <TabPanel value={value} index={0}><Introduction /></TabPanel>
         <TabPanel value={value} index={1}><WhoWe /></TabPanel>
         <TabPanel value={value} index={2}><WhatWeDo /></TabPanel>

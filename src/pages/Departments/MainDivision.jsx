@@ -67,16 +67,16 @@ export default function MainDivision() {
       <Typography variant="h5" gutterBottom>
         {t("contactinfo")}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("corpName")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         {t("address")}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("email")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("phone")}</strong>
       </Typography>
     </Box>

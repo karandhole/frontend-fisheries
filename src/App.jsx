@@ -11,6 +11,9 @@ import Home from './pages/admin/user';
 import Dammanage from './pages/admin/dammanage';
 import Cagemanage from './pages/admin/cagemanage';
 import Rti from './pages/rti';
+import Pmmsy from './pages/guidlines/Pmmsy';
+import Fidf from './pages/guidlines/Fidf';
+import General from './pages/guidlines/general';
 
 
 
@@ -25,7 +28,11 @@ function App() {
         <Route path="/aurangabaddivision" element={<AurangabadDivision />} />
         <Route path="/nagpurdivision" element={<NagpurDivision />} />
         <Route path="/rti" element={<Rti />} />
-        
+        <Route path="/pmmsyguidlines" element={<Pmmsy />} />
+        <Route path="/fidfguidlines" element={<Fidf />} />
+        <Route path="/generalguidlines" element={<General />} />
+
+
 
 
         

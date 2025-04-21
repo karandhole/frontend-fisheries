@@ -71,16 +71,16 @@ export default function NagpurDivision() {
       <Typography variant="h5" gutterBottom>
         {t("contactinfo")}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("corpName2")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         {t("address2")}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("email2")}</strong>
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body2">
         <strong>{t("phone2")}</strong>
       </Typography>
     </Box>

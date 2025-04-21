@@ -28,6 +28,7 @@ import { useTranslation } from 'react-i18next';
 import logo from "../assets/logo.png"
 import logo1 from "../assets/logo1.png"
 import logo2 from "../assets/Swach-Bharat.png"
+import logo3 from "../assets/logo4.png";
 import { getFormatDate } from '../utility/dateformator';
 
 
@@ -41,9 +42,9 @@ function Navbar(props) {
     const navItems = [
         { page: 'home', route: '/' },
         { page: 'about', route: '/about' },
-        { page: 'schemes', route: '/' },
+        { page: 'schemes1', route: '/' },
         { page: 'rti', route: '/rti' },
-        { page: 'guidlines', route: '/' },
+        // { page: 'guidlines', route: '/' },
         { page: 'activities', route: '/' },
         { page: 'keyprojects', route: '/' },
         { page: 'gallery', route: '/' },
@@ -58,6 +59,12 @@ function Navbar(props) {
         { label: 'department3', route: '/aurangabaddivision' },
     ];
 
+    const Guidlines = [
+        { label: 'pmmsyguidlines', route: '/pmmsyguidlines' },
+        { label: 'fidfguidlines', route: '/fidfguidlines' },
+        { label: 'generalguidlines', route: '/generalguidlines' },
+    ];
+
     const NFDCProjects = [
         { label: 'project1', route: '/' },
         { label: 'project2', route: '/' },
@@ -67,12 +74,14 @@ function Navbar(props) {
 
     const [mobileDeptOpen, setMobileDeptOpen] = React.useState(false);
     const [mobileNFDCOpen, setMobileNFDCOpen] = React.useState(false);
+    const [mobileGuidlinesOpen, setMobileGuidlinesOpen] = React.useState(false);
 
     const handleMobileDeptToggle = () => {
         setMobileDeptOpen(!mobileDeptOpen);
     };
 
     const [NFDCMenuAnchorEl, setNFDCMenuAnchorEl] = React.useState(null);
+    const [GuidlinesMenuAnchorEl, setGuidlinesMenuAnchorEl] = React.useState(null);
 
 
 
@@ -171,6 +180,29 @@ function Navbar(props) {
                                         ))}
                                     </List>
                                 </Collapse>
+
+
+                                 {/* Guidlines  Section */}
+                                 <ListItem button onClick={() => setMobileGuidlinesOpen(!mobileGuidlinesOpen)} sx={{ textAlign: 'center' }}>
+                                    <ListItemText primary={t("guidlines")} />
+                                    {mobileGuidlinesOpen ? <ExpandLess /> : <ExpandMore />}
+                                </ListItem>
+
+                                <Collapse in={mobileGuidlinesOpen} timeout="auto" unmountOnExit>
+                                    <List component="div" disablePadding>
+                                        {Guidlines.map((guidlines) => (
+                                            <ListItem key={guidlines.label} disablePadding onClick={handleDrawerToggle}>
+                                                <ListItemButton
+                                                    component={Link}
+                                                    to={guidlines.route}
+                                                    sx={{ textAlign: 'center' }}
+                                                >
+                                                    <ListItemText primary={t(guidlines.label)} />
+                                                </ListItemButton>
+                                            </ListItem>
+                                        ))}
+                                    </List>
+                                </Collapse>
                             </>
 
                         )}
@@ -236,7 +268,7 @@ function Navbar(props) {
 
                 </Box>
 
-                {/* ////////////// */}
+                {/*///////////////////////// second nav////////////////////////////////// */}
 
 
                 <Toolbar sx={{ backgroundColor: "white", px: { xs: 2, sm: 0 } }}>
@@ -267,21 +299,28 @@ function Navbar(props) {
                             alt="Logo 2"
                             sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
                         />
+                         <Box
+                            component="img"
+                            src={logo3}
+                            alt="Logo 3"
+                            sx={{ height: { xs: 50, sm: 80 }, paddingRight:{xs: 1, sm: 10}, maxWidth: "100%", objectFit: "contain" }}
+                        />
                         <Box
                             component="img"
                             src={logo2}
                             alt="Logo 3"
-                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%",  objectFit: "contain" }}
                         />
+                       
                     </Box>
                 </Toolbar>
 
 
-                {/* third nav */}
+                {/* ////////////////////////////////// third nav ////////////////////////////////// */}
                 <Toolbar sx={{
                     backgroundColor: "#388de8",
                     minHeight: '0px !important',         // force override MUI default
-                                         
+
                     paddingTop: '2px',
                     paddingBottom: '2px',
                 }}>
@@ -361,6 +400,34 @@ function Navbar(props) {
                                                     onClick={() => setNFDCMenuAnchorEl(null)}
                                                 >
                                                     {t(project.label)}
+                                                </MenuItem>
+                                            ))}
+                                        </Menu>
+
+
+                                         {/* Guidlines Button */}
+                                         <Button
+                                            sx={{ color: 'white', fontWeight: '600' }}
+                                            onClick={(e) => setGuidlinesMenuAnchorEl(e.currentTarget)}
+                                            endIcon={<ArrowDropDownIcon />}
+                                        >
+                                            {t('guidlines')}
+                                        </Button>
+                                        <Menu
+                                            anchorEl={GuidlinesMenuAnchorEl}
+                                            open={Boolean(GuidlinesMenuAnchorEl)}
+                                            onClose={() => setGuidlinesMenuAnchorEl(null)}
+                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                                            transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+                                        >
+                                            {Guidlines.map((guidlines) => (
+                                                <MenuItem
+                                                    key={guidlines.label}
+                                                    component={Link}
+                                                    to={guidlines.route}
+                                                    onClick={() => setNFDCMenuAnchorEl(null)}
+                                                >
+                                                    {t(guidlines.label)}
                                                 </MenuItem>
                                             ))}
                                         </Menu>
