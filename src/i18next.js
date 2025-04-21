@@ -21,14 +21,14 @@ i18next.use(initReactI18next).init({
         keyprojects: "key Projects",
         schemes: "Schemes",
         gallery: "Gallery",
-        reports:"Reports",
+        reports: "Reports",
 
 
         fisheriesFoundation: "Maharashtra Fisheries Development Corporation Limited, Mumbai",
 
         fisheriesaboutDescription: "To promote the development and growth of deep-sea fishing, the Maharashtra Fisheries Development Corporation was established in 1973. According to the government resolution, mechanized fishing has become the modern method compared to traditional small boat fishing, but the increasing number of mechanized boats poses a risk of overexploitation of fishing areas. Hence, fishing in deep-sea areas with depths greater than 30 fathoms is necessary. While private entrepreneurs are engaged in deep-sea fishing, the government lacked an official body to handle such operations. Therefore, to protect the interests of traditional fishermen, the government approved the establishment of the Maharashtra Fisheries Development Corporation Limited. This corporation is responsible for deep-sea surveys, fish landing, marketing, and export, as well as organizing, coordinating, and supervising fisheries development initiatives. It also works to develop regions with high fisheries potential to ensure that fishermen benefit directly. In recent years, the corporation has undergone significant changes, taking up projects like building fishing harbors and fish landing centers along the coast, managing fisheries in large reservoirs, and promoting cage fish farming to encourage entrepreneurship among those interested in aquaculture.",
         mfdcAddress: "3rd Floor, N.K.M. International House, ",
-        mfdcAddress1:"Babubhai M. Chinai Road, Mumbai - 400 020",
+        mfdcAddress1: "Babubhai M. Chinai Road, Mumbai - 400 020",
         latestnewst: "Latest News",
         latestnews1: "Notice regarding upcoming fisheries project",
         latestnews2: "Government subsidy updates for fish farmers",
@@ -107,39 +107,107 @@ i18next.use(initReactI18next).init({
         //footer
 
         fisheriesCorporation:
-        "Maharashtra Fisheries Development Corporation,",
-      committedEmpowerment: "Empowering Fisheries, Enriching Livelihoods",
-      quickLinks: "Quick Links",
-      aboutUs: "About Us",
-      home: "Home",
-      contactUs: "Contact Us",
-      tender: "Tender",
-      privacyPolicy: "Privacy Policy",
-      fisherieslocation: " Mumbai, Maharashtra",
-      accessibleGuide: "Accessible Guide",
+          "Maharashtra Fisheries Development Corporation,",
+        committedEmpowerment: "Empowering Fisheries, Enriching Livelihoods",
+        quickLinks: "Quick Links",
+        aboutUs: "About Us",
+        home: "Home",
+        contactUs: "Contact Us",
+        tender: "Tender",
+        privacyPolicy: "Privacy Policy",
+        fisherieslocation: " Mumbai, Maharashtra",
+        accessibleGuide: "Accessible Guide",
 
-      //schemes
-      schemes:"SERVICES AND SCHEMES",
-      schemetitle1:"Pradhan Mantri Matsya Sampada Yojana",
-      schemetitle2:"Group Accident Insurance Scheme under PMMSY",
-      schemetitle3:"Kisan Credit Cards (KCC)",
-      schemetitle4:"Pradhan Mantri Matsya Sampada Yojana",
-      schemetitle5:"Pradhan Mantri Matsya Sampada Yojana",
-      viewmore:"View More",
+        //schemes
+        schemes: "SERVICES AND SCHEMES",
+        schemetitle1: "Pradhan Mantri Matsya Sampada Yojana",
+        schemetitle2: "Group Accident Insurance Scheme under PMMSY",
+        schemetitle3: "Kisan Credit Cards (KCC)",
+        schemetitle4: "Pradhan Mantri Matsya Sampada Yojana",
+        schemetitle5: "Pradhan Mantri Matsya Sampada Yojana",
+        viewmore: "View More",
 
 
-      //RTi
+        //RTi
 
-      RtiHeadlines:"Right to Information",
-      rti1:"Proactive Disclosure on Website",
-      rti2:"Disposal of Online RTI/Appeal: The online RTI filed by an applicant directly to Department of Fisheries will first come in the Nodal Account of DOF which is managed by RTI Cell.",
-      rti3:"Disposal of Offline RTI/Appeal",
-      rti4:"RTI Cell is responsible for the timely submission of RTI Quarterly Returns to Central Information Commission.",
-      rti5:"RTI Cell is responsible for the circulation of instructions relating to RTI issued by CIC/DoPT among all CPIOs/FAAs in Department of Fisheries as well as among all Public Authorities under Department of Fisheries by post/email.",
-      rti6:"RTI Cell is responsible to issue User ID and Password to every officer who joins as CPIO or First Appellate Authority in Department of Fisheries.",
-      rti7:"RTI Cell is responsible to see whether there are any pending RTI/Appeals inside the account of any CPIO/FAA for a long time.",
-      titlerti:"Title",
-      filerti:"Download File"
+        RtiHeadlines: "Right to Information",
+        rti1: "Proactive Disclosure on Website",
+        rti2: "Disposal of Online RTI/Appeal: The online RTI filed by an applicant directly to Department of Fisheries will first come in the Nodal Account of DOF which is managed by RTI Cell.",
+        rti3: "Disposal of Offline RTI/Appeal",
+        rti4: "RTI Cell is responsible for the timely submission of RTI Quarterly Returns to Central Information Commission.",
+        rti5: "RTI Cell is responsible for the circulation of instructions relating to RTI issued by CIC/DoPT among all CPIOs/FAAs in Department of Fisheries as well as among all Public Authorities under Department of Fisheries by post/email.",
+        rti6: "RTI Cell is responsible to issue User ID and Password to every officer who joins as CPIO or First Appellate Authority in Department of Fisheries.",
+        rti7: "RTI Cell is responsible to see whether there are any pending RTI/Appeals inside the account of any CPIO/FAA for a long time.",
+        titlerti: "Title",
+        filerti: "Download File",
+
+        srno: "SR.NO.",
+        name: "Officers name ",
+        designation: "Designation",
+        officer1: "Mr. Yuvraj K. Phirke",
+        designation1: "Administrative Officer",
+
+        officer2: "Mr. Kishor V. Salgaonkar",
+        designation2: "Senior Accountant",
+
+        officer3: "Mrs. Shweta More",
+        designation3: "Assistant Accountant",
+
+        officer4: "Mr. Prakash S. Katkade",
+        designation4: "Driver",
+
+        officer11: "Mr. Mohammad A. Jabbar",
+        designation11: "Driver",
+
+        officer21: "Mr. Ashok Na. Wahul",
+        designation21: "Peon",
+
+        officer31: "Mr. B. D. Garad",
+designation31: "Divisional Manager",
+
+officer32: "Mr. Rajesh T. Chandanbatwe",
+designation32: "Senior Assistant",
+
+officer33: "Mr. Sunil B. Thakre",
+designation33: "Fisheries Inspector",
+
+officer34: "Mr. Lala R. Meshram",
+designation34: "Fisheries Inspector",
+
+officer35: "Mr. Irfan Shaikh",
+designation35: "Peon",
+
+officer36: "Mr. Padam B. Rijal",
+designation36: "Watchman",
+
+officer37: "Mr. Vasant B. Parshive",
+designation37: "Watchman",
+
+officer38: "Mr. Dinesh Dhoke",
+designation38: "Junior Clerk",
+
+
+
+
+        contactinfo: "Contact Information",
+        corpName: "Maharashtra Fisheries Development Corporation Ltd.",
+        address: "3rd Floor, N.K.M. International House, Babu Bhai M. Chinoy Road, Behind LIC Yogakshema, Mumbai - 400 020.",
+        email: "Email: mfdc73@gmail.com, mfdc@rediffmail.com",
+        phone: "Phone: 022-35114917",
+
+        contactinfo1: "Contact Information",
+        corpName1: "Maharashtra Fisheries Development Corporation Ltd.",
+        address1: "Ice Factory, Plot No. G-10, M.I.D.C. Chikalthana, Aurangabad 431 006.",
+
+        corpName2: "Maharashtra Fisheries Development Corporation Ltd.",
+        address2: "Administrative Building No. 2, 5th Floor, A Wing, Civil Lines, Nagpur 440 001.",
+        email2: "Email: mfdcnagpur@rediffmail.com",
+        phone2: "Phone: 0712-2566106",
+
+
+
+
+
       }
     },
 
@@ -155,12 +223,12 @@ i18next.use(initReactI18next).init({
         keyprojects: "प्रमुख प्रकल्प",
         schemes: "योजना",
         gallery: "गॅलरी",
-        reports:"अहवाल",
+        reports: "अहवाल",
 
         fisheriesFoundation: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित, मुंबई",
         fisheriesaboutDescription: "खोल समुद्रातील मत्स्यव्यवसायाचा विकास व्हावा आणि मत्स्यव्यवसायात वृद्धी व्हावी यासाठी सन १९७३ मध्ये महाराष्ट्र मत्स्योद्योग विकास महामंडळाची स्थापना करण्यात आली. शासन निर्णयाच्या प्रस्तावनेनुसार, यांत्रिक मासेमारी ही आधुनिक पद्धत म्हणून स्वीकारली गेली असून यांत्रिक नौकांच्या वाढत्या संख्येमुळे मासेमारी क्षेत्रांचे अतिशोषण होण्याचा धोका आहे. त्यामुळे ३० फॅदमपेक्षा जास्त खोली असलेल्या खोल समुद्रात मासेमारी करणे गरजेचे ठरते. सध्या खाजगी उद्योजकांकडून खोल समुद्रात मासेमारी केली जात असली, तरी शासनाकडे अशा प्रकारचे कार्य हाताळणारा कोणताही अंगीकृत उपक्रम नसल्याने, पारंपरिक मच्छीमारांच्या हितासाठी शासनाने ‘महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित’ या नावाने महामंडळ स्थापन केले. हे महामंडळ खोल समुद्राचे सर्वेक्षण, माशांचे लँडिंग, विपणन आणि निर्यात यासह विविध मत्स्यविकास उपक्रमांचे संघटन, समन्वय व पर्यवेक्षण करते. मत्स्यविकासासाठी सक्षम असलेल्या भागांचा विकास करून मच्छीमारांना त्याचा थेट लाभ मिळावा, यासाठीही महामंडळ प्रयत्नशील आहे. गेल्या काही वर्षांत महामंडळाच्या कारभारात आमूलाग्र बदल घडले असून मासेमारी बंदरे, फिश लँडिंग सेंटर उभारण्यासह जलाशयांचे मासेमारी व्यवस्थापन व पिंजरा पद्धतीने मत्स्यसंवर्धनाचे प्रकल्प राबवले जात आहेत. त्यामुळे मत्स्यशेतीसाठी इच्छुक व्यक्तींमध्ये उद्योजकता निर्माण होण्यास हातभार लागतो आहे.",
         mfdcAddress: "3 रा मजला, एन.के.एम. इंटरनॅशनल हाऊस, ",
-        mfdcAddress1:"बाबुभाई एम. चिनॉय मार्ग, मुंबई- 400 020",
+        mfdcAddress1: "बाबुभाई एम. चिनॉय मार्ग, मुंबई- 400 020",
 
         latestnewst: "ताज्या घडामोडी",
         latestnews1: "मत्स्य प्रकल्पांबाबत लवकरच सूचना जाहीर होणार",
@@ -236,44 +304,124 @@ i18next.use(initReactI18next).init({
         our_values: "आमच्या मूल्यांचा",
         future_vision: "भविष्यातील दृष्टिकोन",
 
+        intro_desc: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ ही संस्था १९७३ मध्ये स्थापन करण्यात आली, ज्याचा मुख्य उद्देश खोल समुद्रातील मत्स्यव्यवसायाचा विकास व पारंपरिक मच्छीमारांच्या हिताचे रक्षण करणे आहे. ही संस्था आधुनिक आणि शाश्वत मत्स्यव्यवसायास चालना देण्यासाठी कार्यरत आहे.",
+        who_we_are_desc1: "आम्ही महाराष्ट्र शासनाच्या अधिपत्याखालील एक महामंडळ आहोत, जे खोल समुद्रातील मत्स्यसंपत्तीचा शाश्वत वापर आणि मच्छीमार समाजाच्या समृद्धीसाठी कार्य करतो. आम्ही आधुनिक तंत्रज्ञानाचा उपयोग करून मत्स्यव्यवसायाचा सर्वांगीण विकास साधतो.",
 
         //footer
         fisheriesCorporation: "महाराष्ट्र मत्स्यव्यवसाय विकास महामंडळ,",
         committedEmpowerment: "मत्स्यव्यवसाय सक्षम करणे, उपजीविका समृद्ध करणे",
         quickLinks: "जलद लिंक्स",
-       
+
 
         aboutUs: "आमच्याबद्दल",
         home: "मुख्यपृष्ठ",
         contactUs: "संपर्क करा",
         tender: "व्यवसाय निविदा",
         privacyPolicy: "गोपनीयता धोरण",
-      
+
         fisherieslocation: " मुंबई, महाराष्ट्र",
         accessibleGuide: "सुविधायुक्त मार्गदर्शक",
 
-         //schemes
-      schemes:"सेवा आणि योजना",
-      schemetitle1:"प्रधानमंत्री मत्स्य संपदा योजना",
-      schemetitle2:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
-      schemetitle3:"किसान क्रेडिट कार्ड (केसीसी)",
-      schemetitle4:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
-      schemetitle5:"पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
-      viewmore:"अधिक पहा",
+        //schemes
+        schemes: "सेवा आणि योजना",
+        schemetitle1: "प्रधानमंत्री मत्स्य संपदा योजना",
+        schemetitle2: "पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+        schemetitle3: "किसान क्रेडिट कार्ड (केसीसी)",
+        schemetitle4: "पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+        schemetitle5: "पीएमएमएसवाय अंतर्गत गट अपघात विमा योजना",
+        viewmore: "अधिक पहा",
 
-     //RTi
+        //RTi
 
-     RtiHeadlines:"माहितीचा अधिकार",
-     rti1:"वेबसाइटवर सक्रिय खुलासा",
-     rti2:"ऑनलाइन आरटीआय/अपीलचा निपटारा: अर्जदाराने थेट मत्स्यव्यवसाय विभागाकडे दाखल केलेला ऑनलाइन आरटीआय प्रथम आरटीआय सेलद्वारे व्यवस्थापित केलेल्या डीओएफच्या नोडल खात्यात येईल.",
-     rti3:"ऑफलाइन आरटीआय/अपीलचा निपटारा",
-     rti4:"केंद्रीय माहिती आयोगाकडे आरटीआय तिमाही विवरणपत्रे वेळेवर सादर करण्याची जबाबदारी आरटीआय सेलची आहे.",
-     rti5:"मत्स्यव्यवसाय विभागातील सर्व सीपीआयओ/एफएए तसेच मत्स्यव्यवसाय विभागाच्या अंतर्गत येणाऱ्या सर्व सार्वजनिक प्राधिकरणांमध्ये सीआयसी/डीओपीटीने जारी केलेल्या आरटीआयशी संबंधित सूचना पोस्ट/ईमेलद्वारे प्रसारित करण्याची जबाबदारी आरटीआय सेलची आहे.",
-     rti6:"मत्स्यव्यवसाय विभागात सीपीआयओ किंवा प्रथम अपीलीय अधिकारी म्हणून सामील होणाऱ्या प्रत्येक अधिकाऱ्याला यूजर आयडी आणि पासवर्ड जारी करण्याची जबाबदारी आरटीआय सेलची आहे.",
-     rti7:"कोणत्याही सीपीआयओ/एफएएच्या खात्यात दीर्घकाळापासून कोणतेही प्रलंबित आरटीआय/अपील आहेत का हे पाहण्याची जबाबदारी आरटीआय सेलची आहे.",
+        RtiHeadlines: "माहितीचा अधिकार",
+        rti1: "वेबसाइटवर सक्रिय खुलासा",
+        rti2: "ऑनलाइन आरटीआय/अपीलचा निपटारा: अर्जदाराने थेट मत्स्यव्यवसाय विभागाकडे दाखल केलेला ऑनलाइन आरटीआय प्रथम आरटीआय सेलद्वारे व्यवस्थापित केलेल्या डीओएफच्या नोडल खात्यात येईल.",
+        rti3: "ऑफलाइन आरटीआय/अपीलचा निपटारा",
+        rti4: "केंद्रीय माहिती आयोगाकडे आरटीआय तिमाही विवरणपत्रे वेळेवर सादर करण्याची जबाबदारी आरटीआय सेलची आहे.",
+        rti5: "मत्स्यव्यवसाय विभागातील सर्व सीपीआयओ/एफएए तसेच मत्स्यव्यवसाय विभागाच्या अंतर्गत येणाऱ्या सर्व सार्वजनिक प्राधिकरणांमध्ये सीआयसी/डीओपीटीने जारी केलेल्या आरटीआयशी संबंधित सूचना पोस्ट/ईमेलद्वारे प्रसारित करण्याची जबाबदारी आरटीआय सेलची आहे.",
+        rti6: "मत्स्यव्यवसाय विभागात सीपीआयओ किंवा प्रथम अपीलीय अधिकारी म्हणून सामील होणाऱ्या प्रत्येक अधिकाऱ्याला यूजर आयडी आणि पासवर्ड जारी करण्याची जबाबदारी आरटीआय सेलची आहे.",
+        rti7: "कोणत्याही सीपीआयओ/एफएएच्या खात्यात दीर्घकाळापासून कोणतेही प्रलंबित आरटीआय/अपील आहेत का हे पाहण्याची जबाबदारी आरटीआय सेलची आहे.",
 
-     titlerti:"शीर्षक",
-     filerti:"फाइल डाउनलोड करा",
+        titlerti: "शीर्षक",
+        filerti: "फाइल डाउनलोड करा",
+
+        srno: "अनुक्रमांक",
+        name: "अधिकाऱ्यांचे नाव",
+        designation: "पद",
+        officer1: "श्री. युवराज खे. फिरके",
+        designation1: "प्रशासकीय अधिकारी",
+
+        officer2: "श्री. किशोर वि. साळगांवकर",
+        designation2: "वरिष्ठ लेखापाल",
+
+        officer3: "सौ. श्वेता मोरे",
+        designation3: "सहायक लेखापाल",
+
+        officer4: "श्री. प्रकाश सं. कातकडे",
+        designation4: "वाहनचालक",
+
+        officer11: "श्री. मोहम्मद अ. जब्बार",
+        designation11: "वाहनचालक",
+
+        officer21: "श्री.अशोक ना. वाहूळ",
+        designation21: "शिपाई",
+
+        officer31: "श्री. बी. डी. गरड",
+designation31: "विभागीय व्यवस्थापक",
+
+officer32: "श्री. राजेश तू. चंदनबटवे",
+designation32: "वरिष्ठ सहायक",
+
+officer33: "श्री. सुनिल भि. ठाकरे",
+designation33: "मत्स्यनिरीक्षक",
+
+officer34: "श्री. लाला रा. मेश्राम",
+designation34: "मत्स्यनिरीक्षक",
+
+officer35: "श्री. इरफान शेख",
+designation35: "शिपाई",
+
+officer36: "श्री. पदम ब. रिजाल",
+designation36: "पहारेकरी",
+
+officer37: "श्री. वंसत भु. पारशिवे",
+designation37: "पहारेकरी",
+
+officer38: "श्री. दिनेश ढोके",
+designation38: "कनिष्ठ लिपिक",
+
+
+
+
+
+
+        contactinfo: "संपर्क माहिती",
+        corpName: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित",
+        address: "३ रा मजला, एन. के. एम. इंटरनॅशनल हाऊस, बाबुभाई एम. चिनॉय मार्ग, एल. आय. सी. योगक्षेम च्या मागे, मुंबई - ४०० ०२०.",
+        email: "ई-मेल: mfdc73@gmail.com, mfdc@rediffmail.com",
+        phone: "दुरध्वनी क्रमांक: ०२२-३५११४९१७",
+
+        contactinfo1: "संपर्क माहिती",
+        corpName1: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित,",
+        address1: "बर्फ कारखाना, प्लॉट नं. जी-10, एम.आय.डी.सी.  चिखलठाणा, औरंगाबाद 431 006.",
+
+
+        corpName2: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित",
+        address2: "प्रशासकीय ईमारत क्र. 2, पाचवा माळा, ए विंग, सिव्हिल लाईन, नागपूर  440 001.",
+        email2: "ई-मेल: mfdcnagpur@rediffmail.com",
+        phone2: "दुरध्वनी क्रमांक :- 0712-2566106 ",
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       }
