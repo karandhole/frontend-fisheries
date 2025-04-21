@@ -95,7 +95,7 @@ const Footer = () => {
                                 </Typography>
                                 <Typography variant="body1" sx={{ marginTop: "8px" }}>
                                     <Link
-                                        to="/about-us"
+                                        to="/"
                                         style={{ textDecoration: "none", color: "white" }}
                                     >
                                         {t("aboutUs")}
@@ -103,7 +103,7 @@ const Footer = () => {
                                 </Typography>
                                 <Typography variant="body1" sx={{ marginTop: "8px" }}>
                                     <Link
-                                        to="/contact-us"
+                                        to="/"
                                         style={{ textDecoration: "none", color: "white" }}
                                     >
                                         {t("contactUs")}
@@ -111,7 +111,7 @@ const Footer = () => {
                                 </Typography>
                                 <Typography variant="body1" sx={{ marginTop: "8px" }}>
                                     <Link
-                                        to="/privacy-policy"
+                                        to="/"
                                         style={{ textDecoration: "none", color: "white" }}
                                     >
                                         {t("privacyPolicy")}

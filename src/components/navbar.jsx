@@ -48,6 +48,7 @@ function Navbar(props) {
         { page: 'keyprojects', route: '/' },
         { page: 'gallery', route: '/' },
         { page: 'reports', route: '/' },
+        { page: 'recuitment', route: '/' },
         { page: 'contact', route: '/contact' },
     ];
 
@@ -295,7 +296,7 @@ function Navbar(props) {
                     </IconButton>
 
                     {/* Desktop nav buttons */}
-                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2, }}
+                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 1, }}
                     >
                         {navItems.map((item) => (
                             <React.Fragment key={item.page}>

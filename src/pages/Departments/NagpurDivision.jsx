@@ -36,9 +36,9 @@ export default function NagpurDivision() {
         <Table sx={{ minWidth: 450 }} aria-label="division table">
           <TableHead>
             <TableRow sx={{backgroundColor:'#76a6f5'}}>
-              <TableCell><strong>{t("srno")}</strong></TableCell>
-              <TableCell align="right"><strong>{t("name")}</strong></TableCell>
-              <TableCell align="right"><strong>{t("designation")}</strong></TableCell>
+              <TableCell align="center"><strong>{t("srno")}</strong></TableCell>
+              <TableCell align="center"><strong>{t("name")}</strong></TableCell>
+              <TableCell align="center"><strong>{t("designation")}</strong></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -47,9 +47,9 @@ export default function NagpurDivision() {
                 key={row.no}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
-                <TableCell component="th" scope="row">{row.no}</TableCell>
-                <TableCell align="right">{t(row.name)}</TableCell>
-                <TableCell align="right">{t(row.designation)}</TableCell>
+                <TableCell component="th" scope="row" align="center" >{row.no}</TableCell>
+                <TableCell align="center">{t(row.name)}</TableCell>
+                <TableCell align="center"  >{t(row.designation)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
