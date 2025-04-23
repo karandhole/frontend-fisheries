@@ -13,7 +13,7 @@ import Cagemanage from './pages/admin/cagemanage';
 import Rti from './pages/rti';
 import Pmmsy from './pages/guidlines/Pmmsy';
 import Fidf from './pages/guidlines/Fidf';
-import General from './pages/guidlines/general';
+import GeneralGuid from './pages/guidlines/GeneralGuid';
 
 
 
@@ -30,7 +30,7 @@ function App() {
         <Route path="/rti" element={<Rti />} />
         <Route path="/pmmsyguidlines" element={<Pmmsy />} />
         <Route path="/fidfguidlines" element={<Fidf />} />
-        <Route path="/generalguidlines" element={<General />} />
+        <Route path="/generalguidlines" element={<GeneralGuid />} />
         
 
 
