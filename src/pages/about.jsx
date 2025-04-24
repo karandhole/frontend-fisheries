@@ -4,7 +4,7 @@ import PlantSlider from '../components/MainPage/PlantSlider'
 const About = () => {
   return (
     <>
-    <div style={{ marginTop: '30px',padding:'10px' }}>
+    <div style={{ marginTop: '30px',padding:'10pxs' }}>
     <Intro/>
     <PlantSlider/>
     </div>
