@@ -25,10 +25,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const schemes = [
-  { name: 'PMMSY', path: '/schemes' },
-  { name: 'GAIS', path: '/schemes' },
-  { name: 'FIDF', path: '/schemes' },
-  { name: 'Blue Revolution', path: '/schemes' },
+  { name: 'PMMSY', path: '/pmmsy_scheme' },
+  { name: 'GAIS', path: '/gais_scheme' },
+  { name: 'FIDF', path: '/fidf_scheme' },
+  { name: 'Blue Revolution', path: '/bluer_scheme' },
 ];
 
 export default function Schemes() {
@@ -38,8 +38,8 @@ export default function Schemes() {
     <Box sx={{ width: '100%', mt: 6, px: { xs: 2, sm: 4, md: 6 } }}>
       <Grid container spacing={3}>
         {schemes.map((scheme, index) => (
-          <Grid item xs={12} sm={6} md={6} key={index}>
-            <Item>
+          <Grid item xs={12} sm={6} md={6} key={index} >
+            <Item sx={{backgroundColor:'rgba(67, 155, 248, 0.29)'}}>
               <Typography variant="h6" gutterBottom>
                 {scheme.name}
               </Typography>

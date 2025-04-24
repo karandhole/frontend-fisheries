@@ -16,6 +16,10 @@ import Fidf from './pages/guidlines/Fidf';
 import GeneralGuid from './pages/guidlines/GeneralGuid';
 import Csrproject from './pages/nfdbproject/csrproject';
 import Schemes from './pages/schemes';
+import Pmmsy_scheme from './pages/Schemes/Pmmsy_scheme';
+import Gais_Scheme from './pages/Schemes/Gais_Scheme';
+import Fidf_Scheme from './pages/Schemes/Fidf_Scheme';
+import BlueR_Scheme from './pages/Schemes/BlueR_Scheme';
 
 
 
@@ -35,6 +39,12 @@ function App() {
         <Route path="/generalguidlines" element={<GeneralGuid />} />
         <Route path="/csr" element={<Csrproject/>} />
         <Route path="/schemes" element={<Schemes/>} />
+
+        {/* schemes */}
+        <Route path="/pmmsy_scheme" element={<Pmmsy_scheme/>} />
+        <Route path="/gais_scheme" element={<Gais_Scheme/>} />
+        <Route path="/fidf_scheme" element={<Fidf_Scheme/>} />
+        <Route path="/bluer_scheme" element={<BlueR_Scheme/>} />
         
 
 
