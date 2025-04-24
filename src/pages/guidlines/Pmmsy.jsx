@@ -80,7 +80,7 @@ export default function Pmmsy() {
 
     <Box sx={{marginTop:'40px'}}>
 
-        {/* Header with Breadcrumb and Image */}
+        {/* Header with Breadcrumb  */}
         <Box
         sx={{
          backgroundColor:"#e3e4e6",
@@ -93,11 +93,17 @@ export default function Pmmsy() {
          
         }}
       >
-        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'blue' }}>
-          <Link underline="hover" color="inherit" href="/">
+        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
+          <Link underline="hover" color="inherit" href="/" 
+          sx={{backgroundColor:'skyblue',  
+            py:1,
+          px: 4,
+          }}>
             {t("home")}
           </Link>
-          <Typography color="blue">{t("pmmsyguidlines")}</Typography>
+          <Typography color="blue" sx={{
+           
+          }}>{t("pmmsyguidlines")}</Typography>
         </Breadcrumbs>
        
       </Box>

@@ -15,6 +15,7 @@ import Pmmsy from './pages/guidlines/Pmmsy';
 import Fidf from './pages/guidlines/Fidf';
 import GeneralGuid from './pages/guidlines/GeneralGuid';
 import Csrproject from './pages/nfdbproject/csrproject';
+import Schemes from './pages/schemes';
 
 
 
@@ -33,7 +34,9 @@ function App() {
         <Route path="/fidfguidlines" element={<Fidf />} />
         <Route path="/generalguidlines" element={<GeneralGuid />} />
         <Route path="/csr" element={<Csrproject/>} />
+        <Route path="/schemes" element={<Schemes/>} />
         
+
 
 
 

@@ -42,7 +42,7 @@ function Navbar(props) {
     const navItems = [
         { page: 'home', route: '/' },
         { page: 'about', route: '/about' },
-        { page: 'schemes1', route: '/' },
+        { page: 'schemes1', route: '/schemes' },
         { page: 'rti', route: '/rti' },
         // { page: 'guidlines', route: '/' },
         { page: 'activities', route: '/' },
@@ -303,7 +303,7 @@ function Navbar(props) {
                             component="img"
                             src={logo3}
                             alt="Logo 3"
-                            sx={{ height: { xs: 50, sm: 80 }, paddingRight:{xs: 1, sm: 10}, maxWidth: "100%", objectFit: "contain" }}
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
                         />
                         <Box
                             component="img"

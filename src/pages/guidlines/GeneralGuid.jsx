@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import {  Breadcrumbs, Link,  } from '@mui/material';
 import PdfViewer from '../../components/pdfviewer';
 import { useTranslation } from 'react-i18next';
 import pdf1 from '../../assets/guidlines/general01.pdf';
@@ -56,6 +57,36 @@ export default function GeneralGuid() {
 
   return (
     <Box sx={{ marginTop: '40px' }}>
+
+      {/* Header with Breadcrumb  */}
+              <Box
+              sx={{
+               backgroundColor:"#e3e4e6",
+                backgroundPosition: 'center',
+                color: 'blue',
+                py:1,
+                px: 4,
+                textAlign: 'left',
+                position: 'relative',
+               
+              }}
+            >
+              <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
+                <Link underline="hover" color="inherit" href="/" 
+                sx={{backgroundColor:'skyblue',  
+                  py:1,
+                px: 4,
+                }}>
+                  {t("home")}
+                </Link>
+                <Typography color="blue" sx={{
+                 
+                }}>{t("generalguidlines")}</Typography>
+              </Breadcrumbs>
+             
+            </Box>
+
+      
       <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>{t("generalguidlines")}</Typography>
 
       <Box

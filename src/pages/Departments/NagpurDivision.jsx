@@ -8,6 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Box, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { Breadcrumbs, Link, } from '@mui/material';
 
 function createData(no, name, designation) {
   return { no, name, designation };
@@ -28,6 +29,36 @@ export default function NagpurDivision() {
   const {t} =useTranslation();
   return (
     <Box sx={{ marginTop: 6, px: 2 }}>
+
+       {/* Header with Breadcrumb  */}
+       <Box
+              sx={{
+                backgroundColor: "#e3e4e6",
+                backgroundPosition: 'center',
+                color: 'blue',
+                py: 1,
+                px: 4,
+                textAlign: 'left',
+                position: 'relative',
+                mb:1
+      
+              }}
+            >
+              <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
+                <Link underline="hover" color="inherit" href="/"
+                  sx={{
+                    backgroundColor: 'skyblue',
+                    py: 1,
+                    px: 4,
+                  }}>
+                  {t("home")}
+                </Link>
+                <Typography color="blue" sx={{
+      
+                }}>{t("department2")}</Typography>
+              </Breadcrumbs>
+      
+            </Box>
       <Typography variant="h4" align="center" gutterBottom>
        {t("department2")}
       </Typography>
