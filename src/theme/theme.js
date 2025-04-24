@@ -20,10 +20,11 @@ export const theme = createTheme({
     },
   },
   typography:{
-    fontFamily:'Poppins',
+    fontFamily:'math',
     body2:{
       fontSize:pxToRem(18),
-      fontWeight:600
+      fontWeight:600,
+      fontFamily:'math'
     },
  
     

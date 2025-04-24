@@ -4,8 +4,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import {  Breadcrumbs, Link,  } from '@mui/material';
 import PdfViewer from '../../components/pdfviewer';
-
+import { useTranslation } from 'react-i18next';
 import pdf1 from '../../assets/guidlines/01.pdf';
 import pdf2 from '../../assets/guidlines/02.pdf';
 import pdf3 from '../../assets/guidlines/03.pdf';
@@ -66,6 +67,7 @@ function a11yProps(index) {
 }
 
 export default function Pmmsy() {
+  const { t } = useTranslation();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -73,8 +75,33 @@ export default function Pmmsy() {
   };
 
   return (
-    <Box sx={{ marginTop: '40px' }}>
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>PMMSY Guidelines</Typography>
+
+    
+
+    <Box sx={{marginTop:'40px'}}>
+
+        {/* Header with Breadcrumb and Image */}
+        <Box
+        sx={{
+         backgroundColor:"#e3e4e6",
+          backgroundPosition: 'center',
+          color: 'blue',
+          py:1,
+          px: 4,
+          textAlign: 'left',
+          position: 'relative',
+         
+        }}
+      >
+        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'blue' }}>
+          <Link underline="hover" color="inherit" href="/">
+            {t("home")}
+          </Link>
+          <Typography color="blue">{t("pmmsyguidlines")}</Typography>
+        </Breadcrumbs>
+       
+      </Box>
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>{t("pmmsyguidlines")}</Typography>
 
       <Box
         sx={{
@@ -91,33 +118,34 @@ export default function Pmmsy() {
             value={value}
             onChange={handleChange}
             aria-label="Vertical tabs example"
-            sx={{ width: '100%' }}
+            sx={{ width: '100%',textAlign:'start', alignItems:'flex-start' }}
           >
-            <Tab label="1. Press release by PMMSY" {...a11yProps(0)} />
-            <Tab label="2. PMMSY Framework" {...a11yProps(1)} />
-            <Tab label="3. Annexure Framework" {...a11yProps(2)} />
-            <Tab label="4. Operational Guidelines (English)" {...a11yProps(3)} />
-            <Tab label="5. Operational Guidelines (Hindi)" {...a11yProps(4)} />
-            <Tab label="6. Admin Expenses (English)" {...a11yProps(5)} />
-            <Tab label="7. Admin Expenses (Hindi)" {...a11yProps(6)} />
-            <Tab label="8. Operational Guidelines (Hindi)" {...a11yProps(7)} />
-            <Tab label="9. Admin Expenses (English)" {...a11yProps(8)} />
-            <Tab label="10. Admin Expenses (Hindi)" {...a11yProps(9)} />
-            <Tab label="11. PMMSY Entrepreneurs Models in English" {...a11yProps(10)} />
-            <Tab label="12. PMMSY Entrepreneurs Models in Hindi" {...a11yProps(11)} />
-            <Tab label="13. Revisions in Operational Guidelines (PMMSY)" {...a11yProps(12)} />
-            <Tab label="14. Beneficiary Oriented Sub-Components (English)" {...a11yProps(13)} />
-            <Tab label="15. Beneficiary Oriented Sub-Components (Hindi)" {...a11yProps(14)} />
-            <Tab label="16. FFPO Guidelines" {...a11yProps(15)} />
-            <Tab label="17. Guidelines for Implementation of Single Nodal Agencies" {...a11yProps(16)} />
-            <Tab label="18. PMMSY Initiatives FY 2020-21" {...a11yProps(17)} />
-            <Tab label="19. PMMSY Reform Booklet (English)" {...a11yProps(18)} />
-            <Tab label="20. PMMSY Reform Booklet (Hindi)" {...a11yProps(19)} />
-            <Tab label="21. PMMSY Training Guidelines" {...a11yProps(20)} />
-            <Tab label="22. Revision in PMMSY Operational Guidelines (2021)" {...a11yProps(21)} />
-            <Tab label="23. Addendum to PMMSY Operational Guidelines (March 2022)" {...a11yProps(22)} />
-            <Tab label="24. Administrative Approval for PMMSY 2020-21" {...a11yProps(23)} />
-            <Tab label="25. Administrative Approval for PMMSY 2021-23" {...a11yProps(24)} />
+            <Tab label={t("guideline1")} {...a11yProps(0)} />
+            <Tab label={t("guideline2")} {...a11yProps(1)} />
+            <Tab label={t("guideline3")} {...a11yProps(2)} />
+            <Tab label={t("guideline4")} {...a11yProps(3)} />
+            <Tab label={t("guideline5")} {...a11yProps(4)} />
+            <Tab label={t("guideline6")} {...a11yProps(5)} />
+            <Tab label={t("guideline7")} {...a11yProps(6)} />
+            <Tab label={t("guideline8")} {...a11yProps(7)} />
+            <Tab label={t("guideline9")} {...a11yProps(8)} />
+            <Tab label={t("guideline10")} {...a11yProps(9)} />
+            <Tab label={t("guideline11")} {...a11yProps(10)} />
+            <Tab label={t("guideline12")} {...a11yProps(11)} />
+            <Tab label={t("guideline13")} {...a11yProps(12)} />
+            <Tab label={t("guideline14")} {...a11yProps(13)} />
+            <Tab label={t("guideline15")} {...a11yProps(14)} />
+            <Tab label={t("guideline16")} {...a11yProps(15)} />
+            <Tab label={t("guideline17")} {...a11yProps(16)} />
+            <Tab label={t("guideline18")} {...a11yProps(17)} />
+            <Tab label={t("guideline19")} {...a11yProps(18)} />
+            <Tab label={t("guideline20")} {...a11yProps(19)} />
+            <Tab label={t("guideline21")} {...a11yProps(20)} />
+            <Tab label={t("guideline22")} {...a11yProps(21)} />
+            <Tab label={t("guideline23")} {...a11yProps(22)} />
+            <Tab label={t("guideline24")} {...a11yProps(23)} />
+            <Tab label={t("guideline25")} {...a11yProps(24)} />
+
           </Tabs>
         </Box>
 

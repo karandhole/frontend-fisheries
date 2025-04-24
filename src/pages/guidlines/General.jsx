@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import PdfViewer from '../../components/pdfviewer';
-import { useTranslation } from 'react-i18next';
+
 import pdf1 from '../../assets/guidlines/general01.pdf';
 import pdf2 from '../../assets/guidlines/general02.pdf';
 import pdf3 from '../../assets/guidlines/general03.pdf';
@@ -18,7 +18,7 @@ function TabPanel(props) {
 
   return (
     <div
-      role="tabpanel"
+      role="tabpanel" 
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
@@ -46,8 +46,7 @@ function a11yProps(index) {
   };
 }
 
-export default function GeneralGuid() {
-    const {t} = useTranslation();
+export default function General() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -56,7 +55,7 @@ export default function GeneralGuid() {
 
   return (
     <Box sx={{ marginTop: '40px' }}>
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>{t("generalguidlines")}</Typography>
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>General Guidelines</Typography>
 
       <Box
         sx={{

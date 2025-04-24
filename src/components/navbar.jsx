@@ -28,7 +28,7 @@ import { useTranslation } from 'react-i18next';
 import logo from "../assets/logo.png"
 import logo1 from "../assets/logo1.png"
 import logo2 from "../assets/Swach-Bharat.png"
-import logo3 from "../assets/logo4.png";
+import logo3 from "../assets/logo5.png";
 import { getFormatDate } from '../utility/dateformator';
 
 
@@ -66,7 +66,7 @@ function Navbar(props) {
     ];
 
     const NFDCProjects = [
-        { label: 'project1', route: '/' },
+        { label: 'project1', route: '/csr' },
         { label: 'project2', route: '/' },
         { label: 'project3', route: '/' },
         { label: 'project4', route: '/' },

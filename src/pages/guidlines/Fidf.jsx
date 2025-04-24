@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import PdfViewer from '../../components/pdfviewer';
-
+import { useTranslation } from 'react-i18next';
 import pdf1 from '../../assets/guidlines/fidfguidlines.pdf';
 
 
@@ -43,6 +43,7 @@ function a11yProps(index) {
 }
 
 export default function Fidf() {
+  const {t} =useTranslation();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -51,7 +52,7 @@ export default function Fidf() {
 
   return (
     <Box sx={{ marginTop: '40px' }}>
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>FIDF Guidelines</Typography>
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}> {t("fidfguidlines")}</Typography>
 
       <Box
         sx={{
@@ -70,7 +71,7 @@ export default function Fidf() {
             aria-label="Vertical tabs example"
             sx={{ width: '100%' }}
           >
-            <Tab label="1. FIDF Guidlines" {...a11yProps(0)} />
+            <Tab label= {t("fidfguidlines1")}{...a11yProps(0)} />
           </Tabs>
         </Box>
 

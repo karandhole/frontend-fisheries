@@ -11,12 +11,12 @@ const MainLayout = () => {
         component="main"
         sx={{
           minHeight: '80vh',
-          paddingTop: { xs: '0rem', sm: '0rem' },
+          paddingTop: { xs: '0rem', sm: '2rem' },
         }}
       >
         <Outlet />
       </Box>
-      <Footer/>
+      <Footer />
     </>
   );
 };

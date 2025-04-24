@@ -14,6 +14,7 @@ import Rti from './pages/rti';
 import Pmmsy from './pages/guidlines/Pmmsy';
 import Fidf from './pages/guidlines/Fidf';
 import GeneralGuid from './pages/guidlines/GeneralGuid';
+import Csrproject from './pages/nfdbproject/csrproject';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/pmmsyguidlines" element={<Pmmsy />} />
         <Route path="/fidfguidlines" element={<Fidf />} />
         <Route path="/generalguidlines" element={<GeneralGuid />} />
+        <Route path="/csr" element={<Csrproject/>} />
         
 
 

@@ -21,7 +21,7 @@ i18next.use(initReactI18next).init({
         schemes1: "Schemes",
         gallery: "Gallery",
         reports: "Reports",
-        recuitment:"Recuitment",
+        recuitment: "Recuitment",
 
 
         fisheriesFoundation: "Maharashtra Fisheries Development Corporation Limited, Mumbai",
@@ -163,28 +163,28 @@ i18next.use(initReactI18next).init({
         designation21: "Peon",
 
         officer31: "Mr. B. D. Garad",
-designation31: "Divisional Manager",
+        designation31: "Divisional Manager",
 
-officer32: "Mr. Rajesh T. Chandanbatwe",
-designation32: "Senior Assistant",
+        officer32: "Mr. Rajesh T. Chandanbatwe",
+        designation32: "Senior Assistant",
 
-officer33: "Mr. Sunil B. Thakre",
-designation33: "Fisheries Inspector",
+        officer33: "Mr. Sunil B. Thakre",
+        designation33: "Fisheries Inspector",
 
-officer34: "Mr. Lala R. Meshram",
-designation34: "Fisheries Inspector",
+        officer34: "Mr. Lala R. Meshram",
+        designation34: "Fisheries Inspector",
 
-officer35: "Mr. Irfan Shaikh",
-designation35: "Peon",
+        officer35: "Mr. Irfan Shaikh",
+        designation35: "Peon",
 
-officer36: "Mr. Padam B. Rijal",
-designation36: "Watchman",
+        officer36: "Mr. Padam B. Rijal",
+        designation36: "Watchman",
 
-officer37: "Mr. Vasant B. Parshive",
-designation37: "Watchman",
+        officer37: "Mr. Vasant B. Parshive",
+        designation37: "Watchman",
 
-officer38: "Mr. Dinesh Dhoke",
-designation38: "Junior Clerk",
+        officer38: "Mr. Dinesh Dhoke",
+        designation38: "Junior Clerk",
 
 
 
@@ -204,10 +204,38 @@ designation38: "Junior Clerk",
         email2: "Email: mfdcnagpur@rediffmail.com",
         phone2: "Phone: 0712-2566106",
 
-         // contact
-      message:"Send us a message",
-      submit:"Submit",
+        // contact
+        message: "Send us a message",
+        submit: "Submit",
 
+        //guidlines
+
+        guideline1: "1.Press release by PMMSY",
+        guideline2: "2.PMMSY Framework",
+        guideline3: "3. Annexure Framework",
+        guideline4: "4.PMMSY Operational Guidelines (English)",
+        guideline5: "5. PMMSY Operational Guidelines (Hindi)",
+        guideline6: "6. Administrative Expenses Guidelines (English)",
+        guideline7: "7. Administrative Expenses Guidelines (Hindi)",
+        guideline8: "8. PMMSY Entrepreneurs Models (English)",
+        guideline9: "9. PMMSY Entrepreneurs Models (Hindi)",
+        guideline10: "10. Revisions in the Operational Guidelines of the Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+        guideline11: "11. Beneficiary oriented sub-components of Centrally Sponsored Scheme of PMMSY (English)",
+        guideline12: "12. Beneficiary oriented sub-components of Centrally Sponsored Scheme of PMMSY (Hindi)",
+        guideline13: "13. FFPO Guidelines",
+        guideline14: "14. Guidelines for Implementation of Single Nodal Agencies",
+        guideline15: "15. Initiatives under PMMSY during FY 2020-21",
+        guideline16: "16. PMMSY Reform Booklet (English)",
+        guideline17: "17. PMMSY Reform Booklet (Hindi)",
+        guideline18: "18. PMMSY Training Guidelines",
+        guideline19: "19. Revision in the Operational Guidelines of PMMSY – 2021",
+        guideline20: "20. Addendum to the Operational Guidelines of PMMSY – March, 2022",
+        guideline21: "21. Administrative Approval for implementation of PMMSY 2020-21",
+        guideline22: "22. Administrative Approval for implementation of PMMSY 2021-22",
+        guideline23: "23. Administrative Approval for implementation of PMMSY 2022-23",
+        guideline24: "24. PMMSY Reform Booklet - 2022 (English)",
+        guideline25: "25. Amendments to Operational Guidelines of PMMSY – 12th Dec 2022",
+        fidfguidlines1: "1. FIDF Guidlines",
 
 
 
@@ -228,7 +256,7 @@ designation38: "Junior Clerk",
         schemes1: "योजना",
         gallery: "गॅलरी",
         reports: "अहवाल",
-        recuitment:"पद-भरती ",
+        recuitment: "पद-भरती ",
 
         fisheriesFoundation: "महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित, मुंबई",
         fisheriesaboutDescription: "खोल समुद्रातील मत्स्यव्यवसायाचा विकास व्हावा आणि मत्स्यव्यवसायात वृद्धी व्हावी यासाठी सन १९७३ मध्ये महाराष्ट्र मत्स्योद्योग विकास महामंडळाची स्थापना करण्यात आली. शासन निर्णयाच्या प्रस्तावनेनुसार, यांत्रिक मासेमारी ही आधुनिक पद्धत म्हणून स्वीकारली गेली असून यांत्रिक नौकांच्या वाढत्या संख्येमुळे मासेमारी क्षेत्रांचे अतिशोषण होण्याचा धोका आहे. त्यामुळे ३० फॅदमपेक्षा जास्त खोली असलेल्या खोल समुद्रात मासेमारी करणे गरजेचे ठरते. सध्या खाजगी उद्योजकांकडून खोल समुद्रात मासेमारी केली जात असली, तरी शासनाकडे अशा प्रकारचे कार्य हाताळणारा कोणताही अंगीकृत उपक्रम नसल्याने, पारंपरिक मच्छीमारांच्या हितासाठी शासनाने ‘महाराष्ट्र मत्स्योद्योग विकास महामंडळ मर्यादित’ या नावाने महामंडळ स्थापन केले. हे महामंडळ खोल समुद्राचे सर्वेक्षण, माशांचे लँडिंग, विपणन आणि निर्यात यासह विविध मत्स्यविकास उपक्रमांचे संघटन, समन्वय व पर्यवेक्षण करते. मत्स्यविकासासाठी सक्षम असलेल्या भागांचा विकास करून मच्छीमारांना त्याचा थेट लाभ मिळावा, यासाठीही महामंडळ प्रयत्नशील आहे. गेल्या काही वर्षांत महामंडळाच्या कारभारात आमूलाग्र बदल घडले असून मासेमारी बंदरे, फिश लँडिंग सेंटर उभारण्यासह जलाशयांचे मासेमारी व्यवस्थापन व पिंजरा पद्धतीने मत्स्यसंवर्धनाचे प्रकल्प राबवले जात आहेत. त्यामुळे मत्स्यशेतीसाठी इच्छुक व्यक्तींमध्ये उद्योजकता निर्माण होण्यास हातभार लागतो आहे.",
@@ -272,9 +300,9 @@ designation38: "Junior Clerk",
         project3: "Ongoing प्रकल्प",
         project4: "FMPIS प्रकल्प",
 
-        pmmsyguidlines:"PMMSY मार्गदर्शक तत्वे",
-        fidfguidlines:"FIDF मार्गदर्शक तत्वे",
-        generalguidlines:"सामान्य मार्गदर्शक तत्त्वे",
+        pmmsyguidlines: "PMMSY मार्गदर्शक तत्वे",
+        fidfguidlines: "FIDF मार्गदर्शक तत्वे",
+        generalguidlines: "सामान्य मार्गदर्शक तत्त्वे",
 
 
         peopleData: "मंडळाचे संचालक",
@@ -376,28 +404,28 @@ designation38: "Junior Clerk",
         designation21: "शिपाई",
 
         officer31: "श्री. बी. डी. गरड",
-designation31: "विभागीय व्यवस्थापक",
+        designation31: "विभागीय व्यवस्थापक",
 
-officer32: "श्री. राजेश तू. चंदनबटवे",
-designation32: "वरिष्ठ सहायक",
+        officer32: "श्री. राजेश तू. चंदनबटवे",
+        designation32: "वरिष्ठ सहायक",
 
-officer33: "श्री. सुनिल भि. ठाकरे",
-designation33: "मत्स्यनिरीक्षक",
+        officer33: "श्री. सुनिल भि. ठाकरे",
+        designation33: "मत्स्यनिरीक्षक",
 
-officer34: "श्री. लाला रा. मेश्राम",
-designation34: "मत्स्यनिरीक्षक",
+        officer34: "श्री. लाला रा. मेश्राम",
+        designation34: "मत्स्यनिरीक्षक",
 
-officer35: "श्री. इरफान शेख",
-designation35: "शिपाई",
+        officer35: "श्री. इरफान शेख",
+        designation35: "शिपाई",
 
-officer36: "श्री. पदम ब. रिजाल",
-designation36: "पहारेकरी",
+        officer36: "श्री. पदम ब. रिजाल",
+        designation36: "पहारेकरी",
 
-officer37: "श्री. वंसत भु. पारशिवे",
-designation37: "पहारेकरी",
+        officer37: "श्री. वंसत भु. पारशिवे",
+        designation37: "पहारेकरी",
 
-officer38: "श्री. दिनेश ढोके",
-designation38: "कनिष्ठ लिपिक",
+        officer38: "श्री. दिनेश ढोके",
+        designation38: "कनिष्ठ लिपिक",
 
 
 
@@ -422,11 +450,41 @@ designation38: "कनिष्ठ लिपिक",
 
 
 
-      // contact
-      message:"आम्हाला संदेश पाठवा",
-      submit:"सबमिट करा",
+        // contact
+        message: "आम्हाला संदेश पाठवा",
+        submit: "सबमिट करा",
+
+        //guidlines
 
 
+        guideline1: "1. पीएमएमएसवाय द्वारे प्रसिद्धीपत्रक",
+        guideline2: "2. पीएमएमएसवाय आराखडा",
+        guideline3: "3. परिशिष्ट आराखडा",
+        guideline4: "4. पीएमएमएसवाय कार्यान्वयन मार्गदर्शक तत्त्वे (इंग्रजी)",
+        guideline5: "5. पीएमएमएसवाय कार्यान्वयन मार्गदर्शक तत्त्वे (हिंदी)",
+        guideline6: "6. प्रशासकीय खर्च मार्गदर्शक तत्त्वे (इंग्रजी)",
+        guideline7: "7. प्रशासकीय खर्च मार्गदर्शक तत्त्वे (हिंदी)",
+        guideline8: "8. पीएमएमएसवाय उद्योजक मॉडेल्स (इंग्रजी)",
+        guideline9: "9. पीएमएमएसवाय उद्योजक मॉडेल्स (हिंदी)",
+        guideline10: "10. प्रधानमंत्री मत्स्य संपदा योजनेच्या कार्यान्वयन मार्गदर्शक तत्त्वांमध्ये सुधारणा",
+        guideline11: "11. पीएमएमएसवायच्या केंद्र पुरस्कृत योजनेचे लाभार्थी-केंद्रित उपघटक (इंग्रजी)",
+        guideline12: "12. पीएमएमएसवायच्या केंद्र पुरस्कृत योजनेचे लाभार्थी-केंद्रित उपघटक (हिंदी)",
+        guideline13: "13. एफएफपीओ मार्गदर्शक तत्त्वे",
+        guideline14: "14. सिंगल नोडल एजन्सी अंमलबजावणीसाठी मार्गदर्शक तत्त्वे",
+        guideline15: "15. वित्तीय वर्ष 2020-21 मध्ये पीएमएमएसवाय अंतर्गत घेतलेले उपक्रम",
+        guideline16: "16. पीएमएमएसवाय सुधारणा पुस्तिका (इंग्रजी)",
+        guideline17: "17. पीएमएमएसवाय सुधारणा पुस्तिका (हिंदी)",
+        guideline18: "18. पीएमएमएसवाय प्रशिक्षण मार्गदर्शक तत्त्वे",
+        guideline19: "19. प्रधानमंत्री मत्स्य संपदा योजनेच्या कार्यान्वयन मार्गदर्शक तत्त्वांमध्ये सुधारणा_2021",
+        guideline20: "20. पीएमएमएसवाय कार्यान्वयन मार्गदर्शक तत्त्वांचे परिशिष्ट – मार्च, 2022",
+        guideline21: "21. पीएमएमएसवाय अंमलबजावणीसाठी प्रशासकीय मान्यता 2020-21",
+        guideline22: "22. पीएमएमएसवाय अंमलबजावणीसाठी प्रशासकीय मान्यता 2021-22",
+        guideline23: "23. पीएमएमएसवाय अंमलबजावणीसाठी प्रशासकीय मान्यता 2022-23",
+        guideline24: "24. पीएमएमएसवाय सुधारणा पुस्तिका - 2022 (इंग्रजी)",
+        guideline25: "25. प्रधानमंत्री मत्स्य संपदा योजनेच्या कार्यान्वयन मार्गदर्शक तत्त्वांमध्ये दुरुस्ती_12 डिसेंबर 2022",
+
+
+        fidfguidlines1: "1. FIDF मार्गदर्शक तत्वे",
 
 
 
