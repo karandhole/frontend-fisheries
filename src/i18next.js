@@ -300,8 +300,8 @@ i18next.use(initReactI18next).init({
         project3: "Ongoing प्रकल्प",
         project4: "FMPIS प्रकल्प",
 
-        pmmsyguidlines: "PMMSY मार्गदर्शक तत्वे",
-        fidfguidlines: "FIDF मार्गदर्शक तत्वे",
+        pmmsyguidlines: "पीएमएमएसवाय मार्गदर्शक तत्वे",
+        fidfguidlines: "एफआयडीएफ मार्गदर्शक तत्वे",
         generalguidlines: "सामान्य मार्गदर्शक तत्त्वे",
 
 
