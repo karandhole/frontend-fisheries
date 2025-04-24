@@ -1,6 +1,11 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
+import rti1 from "../../assets/rti/RTIApplicationform.pdf";
+import rti2 from "../../assets/rti/rtimis.pdf";
+import rti3 from "../../assets/rti/rtiact.pdf";
+import rti4 from "../../assets/rti/list_of_cpios_dof.pdf";
+import rti5 from "../../assets/rti/CPIOs_autonomous_bodies.pdf";
 import {
   Box,
   Table,
@@ -61,12 +66,11 @@ TablePaginationActions.propTypes = {
 
 // Your custom row data (you can update with actual PDFs and titles)
 const rows = [
-  { title: 'Annual Report 2023', fileUrl: '/pdfs/report2023.pdf' },
-  { title: 'Project Proposal 2024', fileUrl: '/pdfs/proposal2024.pdf' },
-  { title: 'RTI Disclosure', fileUrl: '/pdfs/rti-disclosure.pdf' },
-  { title: 'Budget Summary', fileUrl: '/pdfs/budget-summary.pdf' },
-  { title: 'Fisheries Scheme Details', fileUrl: '/pdfs/scheme-details.pdf' },
-  { title: 'Environmental Impact', fileUrl: '/pdfs/environmental.pdf' },
+  { title: 'RTI Application Form', fileUrl: rti1 },
+  { title: 'Nodal officer for ensuring compliance with proactive disclosure guidelines', fileUrl:rti2},
+  { title: 'RTI ACT 2005', fileUrl:rti3 },
+  { title: 'List of CPIO and Appellate Authority in the Department of Fisheries', fileUrl: rti4 },
+  { title: 'List of CPIO and Appellate Authority in the subordinate institutes under Department of Fisheries', fileUrl: rti5 },
 ];
 
 export default function Rti1() {
