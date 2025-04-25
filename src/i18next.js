@@ -238,6 +238,14 @@ i18next.use(initReactI18next).init({
         fidfguidlines1: "1. FIDF Guidlines",
 
 
+        //schemes
+
+        pmmsyschemes: "PMMSY Schemes",
+        gaisschemes: "GAIS Schemes",
+        fidfschemes: "FIDF Schemes",
+        bluerschemes: "Blue Revolution Schemes"
+
+
 
 
       }
@@ -486,6 +494,12 @@ i18next.use(initReactI18next).init({
 
         fidfguidlines1: "1. FIDF मार्गदर्शक तत्वे",
 
+
+        //schemes
+        pmmsyschemes: "पीएमएमएसवाय योजना",
+        gaisschemes: "जीएआयएस योजना",
+        fidfschemes: "एफआयडीएफ योजना",
+        bluerschemes: "ब्लू रिव्होल्यूशन योजना",
 
 
 

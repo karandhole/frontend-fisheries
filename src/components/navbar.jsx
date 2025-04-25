@@ -42,7 +42,7 @@ function Navbar(props) {
     const navItems = [
         { page: 'home', route: '/' },
         { page: 'about', route: '/about' },
-        { page: 'schemes1', route: '/schemes' },
+        // { page: 'schemes1', route: '/schemes' },
         { page: 'rti', route: '/rti' },
         // { page: 'guidlines', route: '/' },
         { page: 'activities', route: '/' },
@@ -64,6 +64,12 @@ function Navbar(props) {
         { label: 'fidfguidlines', route: '/fidfguidlines' },
         { label: 'generalguidlines', route: '/generalguidlines' },
     ];
+    const Schemes = [
+        { label: 'pmmsyschemes', route: '/pmmsy_scheme' },
+        { label: 'gaisschemes', route: '/gais_scheme' },
+        { label: 'fidfschemes', route: '/fidf_scheme' },
+        { label: 'bluerschemes', route: '/bluer_scheme' },
+    ];
 
     const NFDCProjects = [
         { label: 'project1', route: '/csr' },
@@ -75,6 +81,7 @@ function Navbar(props) {
     const [mobileDeptOpen, setMobileDeptOpen] = React.useState(false);
     const [mobileNFDCOpen, setMobileNFDCOpen] = React.useState(false);
     const [mobileGuidlinesOpen, setMobileGuidlinesOpen] = React.useState(false);
+    const [mobileSchemesOpen, setMobileSchemesOpen] = React.useState(false);
 
     const handleMobileDeptToggle = () => {
         setMobileDeptOpen(!mobileDeptOpen);
@@ -82,6 +89,7 @@ function Navbar(props) {
 
     const [NFDCMenuAnchorEl, setNFDCMenuAnchorEl] = React.useState(null);
     const [GuidlinesMenuAnchorEl, setGuidlinesMenuAnchorEl] = React.useState(null);
+    const [SchemesMenuAnchorEl, setSchemesMenuAnchorEl] = React.useState(null);
 
 
 
@@ -198,6 +206,29 @@ function Navbar(props) {
                                                     sx={{ textAlign: 'center' }}
                                                 >
                                                     <ListItemText primary={t(guidlines.label)} />
+                                                </ListItemButton>
+                                            </ListItem>
+                                        ))}
+                                    </List>
+                                </Collapse>
+
+
+                                 {/* Schemes  Section */}
+                                 <ListItem button onClick={() => setMobileSchemesOpen(!mobileSchemesOpen)} sx={{ textAlign: 'center' }}>
+                                    <ListItemText primary={t("schemes1")} />
+                                    {mobileSchemesOpen ? <ExpandLess /> : <ExpandMore />}
+                                </ListItem>
+
+                                <Collapse in={mobileSchemesOpen} timeout="auto" unmountOnExit>
+                                    <List component="div" disablePadding>
+                                        {Schemes.map((schemes) => (
+                                            <ListItem key={schemes.label} disablePadding onClick={handleDrawerToggle}>
+                                                <ListItemButton
+                                                    component={Link}
+                                                    to={schemes.route}
+                                                    sx={{ textAlign: 'center' }}
+                                                >
+                                                    <ListItemText primary={t(schemes.label)} />
                                                 </ListItemButton>
                                             </ListItem>
                                         ))}
@@ -428,6 +459,33 @@ function Navbar(props) {
                                                     onClick={() => setNFDCMenuAnchorEl(null)}
                                                 >
                                                     {t(guidlines.label)}
+                                                </MenuItem>
+                                            ))}
+                                        </Menu>
+
+                                         {/* Schemes Button */}
+                                         <Button
+                                            sx={{ color: 'white', fontWeight: '600' }}
+                                            onClick={(e) => setSchemesMenuAnchorEl(e.currentTarget)}
+                                            endIcon={<ArrowDropDownIcon />}
+                                        >
+                                            {t('schemes1')}
+                                        </Button>
+                                        <Menu
+                                            anchorEl={SchemesMenuAnchorEl}
+                                            open={Boolean(SchemesMenuAnchorEl)}
+                                            onClose={() => setSchemesMenuAnchorEl(null)}
+                                            anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                                            transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+                                        >
+                                            {Schemes.map((schemes) => (
+                                                <MenuItem
+                                                    key={schemes.label}
+                                                    component={Link}
+                                                    to={schemes.route}
+                                                    onClick={() => setNFDCMenuAnchorEl(null)}
+                                                >
+                                                    {t(schemes.label)}
                                                 </MenuItem>
                                             ))}
                                         </Menu>
