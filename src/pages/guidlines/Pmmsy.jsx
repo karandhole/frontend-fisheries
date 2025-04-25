@@ -4,9 +4,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {  Breadcrumbs, Link,  } from '@mui/material';
+import { Breadcrumbs, Link } from '@mui/material';
 import PdfViewer from '../../components/pdfviewer';
 import { useTranslation } from 'react-i18next';
+
+// Import PDFs
 import pdf1 from '../../assets/guidlines/01.pdf';
 import pdf2 from '../../assets/guidlines/02.pdf';
 import pdf3 from '../../assets/guidlines/03.pdf';
@@ -33,9 +35,16 @@ import pdf23 from '../../assets/guidlines/23.pdf';
 import pdf24 from '../../assets/guidlines/24.pdf';
 import pdf25 from '../../assets/guidlines/25.pdf';
 
+const pdfs = [
+  pdf1, pdf2, pdf3, pdf4, pdf5,
+  pdf6, pdf7, pdf8, pdf9, pdf10,
+  pdf11, pdf12, pdf13, pdf14, pdf15,
+  pdf16, pdf17, pdf18, pdf19, pdf20,
+  pdf21, pdf22, pdf23, pdf24, pdf25
+];
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
   return (
     <div
       role="tabpanel"
@@ -46,7 +55,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -75,115 +84,79 @@ export default function Pmmsy() {
   };
 
   return (
-
-    
-
-    <Box sx={{marginTop:'40px'}}>
-
-        {/* Header with Breadcrumb  */}
-        <Box
-        sx={{
-         backgroundColor:"#e3e4e6",
-          backgroundPosition: 'center',
-          color: 'blue',
-          py:1,
-          px: 4,
-          textAlign: 'left',
-          position: 'relative',
-         
-        }}
-      >
+    <Box sx={{ marginTop: '40px' , padding:'10px' }}>
+      {/* Header with Breadcrumb  */}
+      <Box sx={{
+        backgroundColor: "#e3e4e6",
+        py: 1,
+        px: 4,
+        color: 'blue',
+        textAlign: 'left',
+      }}>
         <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
-          <Link underline="hover" color="inherit" href="/" 
-          sx={{backgroundColor:'skyblue',  
-            py:1,
-          px: 4,
+          <Link underline="hover" color="inherit" href="/" sx={{
+            backgroundColor: 'skyblue',
+            py: 1,
+            px: 2,
+            borderRadius: 1,
           }}>
             {t("home")}
           </Link>
-          <Typography color="blue" sx={{
-           
-          }}>{t("pmmsyguidlines")}</Typography>
+          <Typography color="blue">{t("pmmsyguidlines")}</Typography>
         </Breadcrumbs>
-       
       </Box>
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>{t("pmmsyguidlines")}</Typography>
 
-      <Box
-        sx={{
-          display: 'flex',
-          bgcolor: 'background.paper',
-          // height: 'calc(100vh - 150px)', // adjust height based on your page structure
-        }}
-      >
-        {/* Left: Tabs 30% */}
-        <Box sx={{ width: '30%', borderRight: 1, borderColor: 'divider' }}>
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>
+        {t("pmmsyguidlines")}
+      </Typography>
+
+      <Box sx={{
+        display: 'flex',
+        bgcolor: 'background.paper',
+        flexDirection: { xs: 'column', sm: 'row' },
+      }}>
+        {/* Tabs: 30% width */}
+        <Box sx={{ width: { xs: '100%', sm: '30%' }, borderRight: { sm: 1 }, borderColor: 'divider' }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            aria-label="Vertical tabs example"
-            sx={{ width: '100%',textAlign:'start', alignItems:'flex-start' }}
-
-            
+            aria-label="Vertical tabs"
+            sx={{
+              width: '100%',
+              alignItems: 'flex-start',
+            }}
           >
-            <Tab label={t("guideline1")} {...a11yProps(0)} />
-            <Tab label={t("guideline2")} {...a11yProps(1)} />
-            <Tab label={t("guideline3")} {...a11yProps(2)} />
-            <Tab label={t("guideline4")} {...a11yProps(3)} />
-            <Tab label={t("guideline5")} {...a11yProps(4)} />
-            <Tab label={t("guideline6")} {...a11yProps(5)} />
-            <Tab label={t("guideline7")} {...a11yProps(6)} />
-            <Tab label={t("guideline8")} {...a11yProps(7)} />
-            <Tab label={t("guideline9")} {...a11yProps(8)} />
-            <Tab label={t("guideline10")} {...a11yProps(9)} />
-            <Tab label={t("guideline11")} {...a11yProps(10)} />
-            <Tab label={t("guideline12")} {...a11yProps(11)} />
-            <Tab label={t("guideline13")} {...a11yProps(12)} />
-            <Tab label={t("guideline14")} {...a11yProps(13)} />
-            <Tab label={t("guideline15")} {...a11yProps(14)} />
-            <Tab label={t("guideline16")} {...a11yProps(15)} />
-            <Tab label={t("guideline17")} {...a11yProps(16)} />
-            <Tab label={t("guideline18")} {...a11yProps(17)} />
-            <Tab label={t("guideline19")} {...a11yProps(18)} />
-            <Tab label={t("guideline20")} {...a11yProps(19)} />
-            <Tab label={t("guideline21")} {...a11yProps(20)} />
-            <Tab label={t("guideline22")} {...a11yProps(21)} />
-            <Tab label={t("guideline23")} {...a11yProps(22)} />
-            <Tab label={t("guideline24")} {...a11yProps(23)} />
-            <Tab label={t("guideline25")} {...a11yProps(24)} />
-
+            {[...Array(25)].map((_, index) => (
+              <Tab
+                key={index}
+                label={t(`guideline${index + 1}`)}
+                {...a11yProps(index)}
+                sx={{
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  backgroundColor: value === index ? 'skyblue' : 'transparent',
+                  color: value === index ? 'white' : 'black',
+                  fontWeight: value === index ? 'bold' : 'normal',
+                  borderRadius: '4px',
+                  textTransform: 'none',
+                  '&:hover': {
+                    backgroundColor: value === index ? 'skyblue' : '#f5f5f5',
+                  },
+                }}
+              />
+            ))}
           </Tabs>
         </Box>
 
-        {/* Right: PDF Viewer 70% */}
-        <Box sx={{ width: '70%', overflow: 'hidden' }}>
-          <TabPanel value={value} index={0}><PdfViewer file={pdf1} /></TabPanel>
-          <TabPanel value={value} index={1}><PdfViewer file={pdf2} /></TabPanel>
-          <TabPanel value={value} index={2}><PdfViewer file={pdf3} /></TabPanel>
-          <TabPanel value={value} index={3}><PdfViewer file={pdf4} /></TabPanel>
-          <TabPanel value={value} index={4}><PdfViewer file={pdf5} /></TabPanel>
-          <TabPanel value={value} index={5}><PdfViewer file={pdf6} /></TabPanel>
-          <TabPanel value={value} index={6}><PdfViewer file={pdf7} /></TabPanel>
-          <TabPanel value={value} index={7}><PdfViewer file={pdf8} /></TabPanel>
-          <TabPanel value={value} index={8}><PdfViewer file={pdf9} /></TabPanel>
-          <TabPanel value={value} index={9}><PdfViewer file={pdf10} /></TabPanel>
-          <TabPanel value={value} index={10}><PdfViewer file={pdf11} /></TabPanel>
-          <TabPanel value={value} index={11}><PdfViewer file={pdf12} /></TabPanel>
-          <TabPanel value={value} index={12}><PdfViewer file={pdf13} /></TabPanel>
-          <TabPanel value={value} index={13}><PdfViewer file={pdf14} /></TabPanel>
-          <TabPanel value={value} index={14}><PdfViewer file={pdf15} /></TabPanel>
-          <TabPanel value={value} index={15}><PdfViewer file={pdf16} /></TabPanel>
-          <TabPanel value={value} index={16}><PdfViewer file={pdf17} /></TabPanel>
-          <TabPanel value={value} index={17}><PdfViewer file={pdf18} /></TabPanel>
-          <TabPanel value={value} index={18}><PdfViewer file={pdf19} /></TabPanel>
-          <TabPanel value={value} index={19}><PdfViewer file={pdf20} /></TabPanel>
-          <TabPanel value={value} index={20}><PdfViewer file={pdf21} /></TabPanel>
-          <TabPanel value={value} index={21}><PdfViewer file={pdf22} /></TabPanel>
-          <TabPanel value={value} index={22}><PdfViewer file={pdf23} /></TabPanel>
-          <TabPanel value={value} index={23}><PdfViewer file={pdf24} /></TabPanel>
-          <TabPanel value={value} index={24}><PdfViewer file={pdf25} /></TabPanel>
+        {/* Right panel: PDF Viewer */}
+        <Box sx={{ width: { xs: '100%', sm: '70%' }, overflow: 'hidden' }}>
+          {pdfs.map((pdf, index) => (
+            <TabPanel key={index} value={value} index={index}>
+              <PdfViewer file={pdf} />
+            </TabPanel>
+          ))}
         </Box>
       </Box>
     </Box>

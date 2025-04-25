@@ -4,11 +4,11 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {  Breadcrumbs, Link,  } from '@mui/material';
+import { Breadcrumbs, Link } from '@mui/material';
 import PdfViewer from '../../components/pdfviewer';
 import { useTranslation } from 'react-i18next';
-import pdf1 from '../../assets/guidlines/fidfguidlines.pdf';
 
+import pdf1 from '../../assets/guidlines/fidfguidlines.pdf';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -23,7 +23,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -44,7 +44,7 @@ function a11yProps(index) {
 }
 
 export default function Fidf() {
-  const {t} =useTranslation();
+  const { t } = useTranslation();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -52,47 +52,41 @@ export default function Fidf() {
   };
 
   return (
-    <Box sx={{ marginTop: '40px' }}>
-{/* Header with Breadcrumb  */}
-<Box
-              sx={{
-               backgroundColor:"#e3e4e6",
-                backgroundPosition: 'center',
-                color: 'blue',
-                py:1,
-                px: 4,
-                textAlign: 'left',
-                position: 'relative',
-               
-              }}
-            >
-              <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
-                <Link underline="hover" color="inherit" href="/" 
-                sx={{backgroundColor:'skyblue',  
-                  py:1,
-                px: 4,
-                }}>
-                  {t("home")}
-                </Link>
-                <Typography color="blue" sx={{
-                 
-                }}>{t("fidfguidlines")}</Typography>
-              </Breadcrumbs>
-             
-            </Box>
-
-      
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}> {t("fidfguidlines")}</Typography>
-
+    <Box sx={{ marginTop: '40px', padding:'10px' }}>
+      {/* Header with Breadcrumb */}
       <Box
         sx={{
-          display: 'flex',
-          bgcolor: 'background.paper',
-          // height: 'calc(100vh - 150px)', // adjust height based on your page structure
+          backgroundColor: "#e3e4e6",
+          py: 1,
+          px: 4,
+          textAlign: 'left',
         }}
       >
-        {/* Left: Tabs 30% */}
-        <Box sx={{ width: '30%', borderRight: 1, borderColor: 'divider' }}>
+        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
+          <Link
+            underline="hover"
+            color="inherit"
+            href="/"
+            sx={{
+              backgroundColor: 'skyblue',
+              py: 1,
+              px: 2,
+              borderRadius: 1,
+            }}
+          >
+            {t("home")}
+          </Link>
+          <Typography color="blue">{t("fidfguidlines")}</Typography>
+        </Breadcrumbs>
+      </Box>
+
+      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>
+        {t("fidfguidlines")}
+      </Typography>
+
+      <Box sx={{ display: 'flex', bgcolor: 'background.paper', flexDirection: { xs: 'column', sm: 'row' } }}>
+        {/* Tabs Section */}
+        <Box sx={{ width: { xs: '100%', sm: '30%' }, borderRight: { sm: 1 }, borderColor: 'divider' }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -101,14 +95,30 @@ export default function Fidf() {
             aria-label="Vertical tabs example"
             sx={{ width: '100%' }}
           >
-            <Tab label= {t("fidfguidlines1")}{...a11yProps(0)} />
+            <Tab
+              label={t("fidfguidlines1")}
+              {...a11yProps(0)}
+              sx={{
+                alignItems: 'flex-start',
+                justifyContent: 'flex-start',
+                backgroundColor: value === 0 ? 'skyblue' : 'transparent',
+                color: value === 0 ? 'white' : 'black',
+                fontWeight: value === 0 ? 'bold' : 'normal',
+                borderRadius: '4px',
+                textTransform: 'none',
+                '&:hover': {
+                  backgroundColor: value === 0 ? 'skyblue' : '#f5f5f5',
+                },
+              }}
+            />
           </Tabs>
         </Box>
 
-        {/* Right: PDF Viewer 70% */}
-        <Box sx={{ width: '70%', overflow: 'hidden' }}>
-          <TabPanel value={value} index={0}><PdfViewer file={pdf1} /></TabPanel>
-
+        {/* PDF Viewer Section */}
+        <Box sx={{ width: { xs: '100%', sm: '70%' }, overflow: 'hidden' }}>
+          <TabPanel value={value} index={0}>
+            <PdfViewer file={pdf1} />
+          </TabPanel>
         </Box>
       </Box>
     </Box>

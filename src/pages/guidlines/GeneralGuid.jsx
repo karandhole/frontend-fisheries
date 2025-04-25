@@ -4,15 +4,27 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {  Breadcrumbs, Link,  } from '@mui/material';
+import { Breadcrumbs, Link } from '@mui/material';
 import PdfViewer from '../../components/pdfviewer';
 import { useTranslation } from 'react-i18next';
+
 import pdf1 from '../../assets/guidlines/general01.pdf';
 import pdf2 from '../../assets/guidlines/general02.pdf';
 import pdf3 from '../../assets/guidlines/general03.pdf';
 import pdf4 from '../../assets/guidlines/general04.pdf';
 import pdf5 from '../../assets/guidlines/general05.pdf';
 import pdf6 from '../../assets/guidlines/general06.pdf';
+
+const pdfs = [pdf1, pdf2, pdf3, pdf4, pdf5, pdf6];
+
+const labels = [
+  "1. NFDB Guidelines for Establishment of Fish Brood Bank",
+  "2. Guidelines for Cage Culture in Inland Open Water Bodies of India - September 2016",
+  "3. Guidelines for Responsible Farming of Tilapia in India",
+  "4. Sanitary Protocol for Import of Ornamental Fishes into India",
+  "5. Guidelines for Import of Asian Seabass/ Barramundi (Lates calcarifer) Seeds and Fingerlings",
+  "6. Guidelines for Regulating Establishment and Operation of SPF Shrimp Broodstock Multiplication Centres"
+];
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -27,7 +39,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -48,7 +60,7 @@ function a11yProps(index) {
 }
 
 export default function GeneralGuid() {
-    const {t} = useTranslation();
+  const { t } = useTranslation();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -56,84 +68,81 @@ export default function GeneralGuid() {
   };
 
   return (
-    <Box sx={{ marginTop: '40px' }}>
+    <Box sx={{ marginTop: '40px', padding:'10px' }}>
+      {/* Header with Breadcrumb */}
+      <Box sx={{
+        backgroundColor: "#e3e4e6",
+        py: 1,
+        px: 4,
+        color: 'blue',
+        textAlign: 'left',
+      }}>
+        <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
+          <Link
+            underline="hover"
+            color="inherit"
+            href="/"
+            sx={{
+              backgroundColor: 'skyblue',
+              py: 1,
+              px: 2,
+              borderRadius: 1,
+            }}
+          >
+            {t("home")}
+          </Link>
+          <Typography color="blue">{t("generalguidlines")}</Typography>
+        </Breadcrumbs>
+      </Box>
 
-      {/* Header with Breadcrumb  */}
-              <Box
-              sx={{
-               backgroundColor:"#e3e4e6",
-                backgroundPosition: 'center',
-                color: 'blue',
-                py:1,
-                px: 4,
-                textAlign: 'left',
-                position: 'relative',
-               
-              }}
-            >
-              <Breadcrumbs aria-label="breadcrumb" sx={{ color: 'black' }}>
-                <Link underline="hover" color="inherit" href="/" 
-                sx={{backgroundColor:'skyblue',  
-                  py:1,
-                px: 4,
-                }}>
-                  {t("home")}
-                </Link>
-                <Typography color="blue" sx={{
-                 
-                }}>{t("generalguidlines")}</Typography>
-              </Breadcrumbs>
-             
-            </Box>
+      <Typography variant="h5" sx={{ textAlign: 'center', py: 5 }}>
+        {t("generalguidlines")}
+      </Typography>
 
-      
-      <Typography variant='h5' sx={{ textAlign: 'center', py: 5 }}>{t("generalguidlines")}</Typography>
-
-      <Box
-        sx={{
-          display: 'flex',
-          bgcolor: 'background.paper',
-          // height: 'calc(100vh - 150px)', // adjust height based on your page structure
-        }}
-      >
-        {/* Left: Tabs 30% */}
-        <Box sx={{ width: '30%', borderRight: 1, borderColor: 'divider' }}>
+      <Box sx={{
+        display: 'flex',
+        bgcolor: 'background.paper',
+        flexDirection: { xs: 'column', sm: 'row' },
+      }}>
+        {/* Left: Tabs */}
+        <Box sx={{ width: { xs: '100%', sm: '30%' }, borderRight: { sm: 1 }, borderColor: 'divider' }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
             onChange={handleChange}
-            aria-label="Vertical tabs example"
+            aria-label="Vertical tabs"
             sx={{ width: '100%' }}
           >
-            <Tab label="1. NFDB Guidelines for Establishment of Fish Brood Bank" {...a11yProps(0)} />
-            <Tab label="2. Guidelines for Cage Culture in Inland Open Water Bodies of India - September 2016" {...a11yProps(1)} />
-            <Tab label="3. Guidelines for Responsible Farming of Tilapia in India" {...a11yProps(2)} />
-            <Tab label="4. Sanitary Protocol for Import of Ornamental Fishes into India" {...a11yProps(3)} />
-            <Tab label="5. Guidelines for Import of Asian Seabass/ Barramundi (Lates calcarifer) Seeds and Fingerlings" {...a11yProps(4)} />
-            <Tab label="6. Guidelines for Regulating Establishment and Operation of SPF Shrimp Broodstock Multiplication Centres" {...a11yProps(4)} />
-           
+            {labels.map((label, index) => (
+              <Tab
+                key={index}
+                label={label}
+                {...a11yProps(index)}
+                sx={{
+                  alignItems: 'flex-start',
+                  justifyContent: 'flex-start',
+                  backgroundColor: value === index ? 'skyblue' : 'transparent',
+                  color: value === index ? 'white' : 'black',
+                  fontWeight: value === index ? 'bold' : 'normal',
+                  borderRadius: '4px',
+                  textTransform: 'none',
+                  '&:hover': {
+                    backgroundColor: value === index ? 'skyblue' : '#f5f5f5',
+                  },
+                }}
+              />
+            ))}
           </Tabs>
         </Box>
 
-
-
-
-        
-
-
-
-
-
-        {/* Right: PDF Viewer 70% */}
-        <Box sx={{ width: '70%', overflow: 'hidden' }}>
-          <TabPanel value={value} index={0}><PdfViewer file={pdf1} /></TabPanel>
-          <TabPanel value={value} index={1}><PdfViewer file={pdf2} /></TabPanel>
-          <TabPanel value={value} index={2}><PdfViewer file={pdf3} /></TabPanel>
-          <TabPanel value={value} index={3}><PdfViewer file={pdf4} /></TabPanel>
-          <TabPanel value={value} index={4}><PdfViewer file={pdf5} /></TabPanel>
-          <TabPanel value={value} index={5}><PdfViewer file={pdf6} /></TabPanel>
-         
+        {/* Right: PDF Viewer */}
+        <Box sx={{ width: { xs: '100%', sm: '70%' }, overflow: 'hidden' }}>
+          {pdfs.map((pdf, index) => (
+            <TabPanel key={index} value={value} index={index}>
+              <PdfViewer file={pdf} />
+            </TabPanel>
+          ))}
         </Box>
       </Box>
     </Box>
