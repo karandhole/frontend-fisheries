@@ -125,6 +125,8 @@ export default function Pmmsy() {
             onChange={handleChange}
             aria-label="Vertical tabs example"
             sx={{ width: '100%',textAlign:'start', alignItems:'flex-start' }}
+
+            
           >
             <Tab label={t("guideline1")} {...a11yProps(0)} />
             <Tab label={t("guideline2")} {...a11yProps(1)} />
