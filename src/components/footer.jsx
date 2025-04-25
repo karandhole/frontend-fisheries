@@ -17,6 +17,7 @@ import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import background from "../assets/background.jpg";
 
 const Footer = () => {
 
@@ -27,7 +28,9 @@ const Footer = () => {
                 component={"footer"}
                 position="static"
                 sx={{
-                    bgcolor: "#393185",
+                    backgroundImage: `url(${background})`, 
+                    backgroundSize: 'cover',
+    backgroundPosition: 'center',
                     paddingY: "60px",
                     paddingX: { xs: "20px", md: "60px" },
                     paddingBottom: "20px",
