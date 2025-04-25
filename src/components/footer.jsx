@@ -28,9 +28,9 @@ const Footer = () => {
                 component={"footer"}
                 position="static"
                 sx={{
-                    backgroundImage: `url(${background})`, 
+                    backgroundImage: `url(${background})`,
                     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+                    backgroundPosition: 'center',
                     paddingY: "60px",
                     paddingX: { xs: "20px", md: "60px" },
                     paddingBottom: "20px",
@@ -47,7 +47,7 @@ const Footer = () => {
                                     {t("fisherieslocation")}
                                 </Typography>
                             </Box>
-                            
+
                             <Box sx={{ textAlign: "center", marginBottom: "20px" }}>
                                 <Typography variant="body1" sx={{ marginTop: "5px" }}>
                                     {t("connectWithUs")}
@@ -196,7 +196,7 @@ const Footer = () => {
                                     fontSize="large"
                                     sx={{ paddingRight: "10px" }}
                                 />{" "}
-                                {t("mfdcAddress")} <br/>
+                                {t("mfdcAddress")} <br />
                                 {t("mfdcAddress1")}
                             </Typography>
                         </Grid>
