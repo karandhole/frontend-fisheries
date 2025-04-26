@@ -141,17 +141,7 @@ const Footer = () => {
                             >
                                 <CallIcon fontSize="large" sx={{ paddingRight: "10px" }} /> 022-35114917 (TollFree)
                             </Typography>
-                            {/* <Typography
-                variant="body1"
-                sx={{
-                  marginTop: "10px",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <PhoneAndroid fontSize="large" sx={{ paddingRight: "10px" }} />{" "}
-                +91888888888{" "}
-              </Typography> */}
+                           
 
                             <Typography
                                 variant="body1"

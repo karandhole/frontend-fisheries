@@ -44,13 +44,7 @@ function App() {
         <Route path="/gais_scheme" element={<Gais_Scheme/>} />
         <Route path="/fidf_scheme" element={<Fidf_Scheme/>} />
         <Route path="/bluer_scheme" element={<BlueR_Scheme/>} />
-        
-
-
-
-
-
-        
+          
       </Route>
       <Route path="/admin-sidebar" element={<Sidebar/>} />
        {/* Sidebar-wrapped Routes */}

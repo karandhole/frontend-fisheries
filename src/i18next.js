@@ -107,7 +107,7 @@ i18next.use(initReactI18next).init({
         //footer
 
         fisheriesCorporation:
-          "Maharashtra Fisheries Development Corporation,",
+          "Maharashtra Fisheries Development ",
         committedEmpowerment: "Empowering Fisheries, Enriching Livelihoods",
         quickLinks: "Quick Links",
         aboutUs: "About Us",
@@ -115,7 +115,7 @@ i18next.use(initReactI18next).init({
         contactUs: "Contact Us",
         tender: "Tender",
         privacyPolicy: "Privacy Policy",
-        fisherieslocation: " Mumbai, Maharashtra",
+        fisherieslocation: " Corporation,Mumbai, Maharashtra",
         accessibleGuide: "Accessible Guide",
 
         //schemes
