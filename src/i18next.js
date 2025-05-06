@@ -127,6 +127,10 @@ i18next.use(initReactI18next).init({
         schemetitle5: "Pradhan Mantri Matsya Sampada Yojana",
         viewmore: "View More",
 
+        pmmsyguidlines: "PMMSY Guidlines",
+        fidfguidlines: "FIDF Guidlines",
+        generalguidlines: "General Guidlines",
+
 
         //RTi
 
