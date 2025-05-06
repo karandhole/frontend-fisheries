@@ -246,7 +246,7 @@ function Navbar(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex'}}>
+        <Box sx={{ display: 'flex', }}>
             <CssBaseline />
             <AppBar component="nav"  >
                 <Box
@@ -302,7 +302,7 @@ function Navbar(props) {
                 {/*///////////////////////// second nav////////////////////////////////// */}
 
 
-                <Toolbar sx={{ backgroundColor: "white", px: { xs: 2, sm: 0 } }}>
+                <Toolbar sx={{ backgroundColor: "white", px: { xs: 0, sm: 0 } }}>
                     <IconButton color="inherit">
                         <MenuIcon />
                     </IconButton>
@@ -314,6 +314,7 @@ function Navbar(props) {
                             flexDirection: { xs: "row", sm: "row" }, // Stack vertically on xs
                             alignItems: "center",
                             justifyContent: "flex-start",
+                           
                             gap: { xs: 1, sm: 6 }, // Smaller gap on mobile
                             py: 1,
                         }}
@@ -366,7 +367,7 @@ function Navbar(props) {
                     </IconButton>
 
                     {/* Desktop nav buttons */}
-                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 1, }}
+                    <Box sx={{ display: { xs: 'none', sm: 'flex', flexWrap: "wrap",}, gap: 1, }}
                     >
                         {navItems.map((item) => (
                             <React.Fragment key={item.page}>
