@@ -140,6 +140,9 @@ export default function Pmmsy() {
                   color: value === index ? 'white' : 'black',
                   fontWeight: value === index ? 'bold' : 'normal',
                   borderRadius: '4px',
+                  alignContent:'start',
+                  textAlign:'justify',
+
                   textTransform: 'none',
                   '&:hover': {
                     backgroundColor: value === index ? 'skyblue' : '#f5f5f5',

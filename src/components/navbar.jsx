@@ -313,9 +313,8 @@ function Navbar(props) {
                             display: "flex",
                             flexDirection: { xs: "row", sm: "row" }, // Stack vertically on xs
                             alignItems: "center",
-                            justifyContent: "flex-start",
-                           
-                            gap: { xs: 1, sm: 6 }, // Smaller gap on mobile
+                            justifyContent: { xs: 'flex-start', sm: 'space-evenly' },
+                          gap: { xs: 1, sm: 2 }, // Smaller gap on mobile
                             py: 1,
                         }}
                     >
@@ -325,12 +324,7 @@ function Navbar(props) {
                             alt="Logo 1"
                             sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
                         />
-                        <Box
-                            component="img"
-                            src={logo1}
-                            alt="Logo 2"
-                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
-                        />
+                      
                          <Box
                             component="img"
                             src={logo3}
@@ -342,6 +336,12 @@ function Navbar(props) {
                             src={logo2}
                             alt="Logo 3"
                             sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%",  objectFit: "contain" }}
+                        />
+                          <Box
+                            component="img"
+                            src={logo1}
+                            alt="Logo 2"
+                            sx={{ height: { xs: 50, sm: 80 }, maxWidth: "100%", objectFit: "contain" }}
                         />
                        
                     </Box>
